@@ -1,0 +1,9 @@
+AccessModifier	withinSameCls	childClsSamePkg childClsOutsidePkg	 nonChildClsSamePkg nonChildClsOutsidePkg
+Public				Y					Y				Y					Y					Y
+Protected			Y					Y				**					Y					Y
+Default				Y					Y				N					Y					N
+Private				Y					N				N					N					N
+	
+	
+** To access Protected Access Modifier for a child class which is outside package - Mandatory to use child class Reference.
+- If wrong modifier used, then it would simply effect the visibility of Class, method or function 
