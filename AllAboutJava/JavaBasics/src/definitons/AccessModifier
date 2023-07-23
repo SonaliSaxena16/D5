@@ -1,0 +1,19 @@
+-Whenever we are creating own classes we've to provide some info to the JVM about our classes like -
+1. Whether this class is accessible from any other class/pkg or not 
+2. Whether we can create child class
+3. Whether we create Object 
+-We provide this info by using Access Modifiers
+Modifiers applicable for Top Level Classes - public, default, final, abstract
+Modifiers applicable for Top Level Classes - All Top Level + private, protected, static
+
+
+AccessModifier	withinSameCls	childClsSamePkg childClsOutsidePkg	 nonChildClsSamePkg nonChildClsOutsidePkg
+Public				Y					Y				Y					Y					Y
+Protected			Y					Y				**					Y					Y
+Default				Y					Y				N					Y					N
+Private				Y					N				N					N					N
+	
+	
+** To access Protected Access Modifier for a child class which is outside package - Mandatory to use child class Reference.
+- If wrong modifier used, then it would simply effect the visibility of Class, method or function 
+

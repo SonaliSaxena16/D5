@@ -1,0 +1,23 @@
+-DataMembers are member variables which are used to store the value. Ex - a=10, b=20, c=a+b
+-Data members may be private or public,but are usually held private so that values may only be changed at the discretion 
+of the class
+-Data member are of two types --> Variable Data Member & Constant Data Member
+Variable Data Member(whose value can be changed, updated or modified)
+
+Ex - display()
+int a=10;
+sopln(a);
+a=20;
+sopln(20); // Value updated
+
+-Constant Data Member(value can't be changed, updated or modified)
+-To make Data Member Constant we use FINAL keyword. In case if FINAL Data Member is not initialised then it can only be
+initialised once
+
+Ex - final int a=10;
+sopln(a);
+a=20; // Compile time error
+sopln(20);  Compile time error
+
+-Member Function - Are the methods which we write in order to do some operation on those var(Data Members).Ex - with 
+the Data Members (a,b,c) we are going to have sum function(). So sum() is the Member Function.

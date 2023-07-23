@@ -1,0 +1,38 @@
+						HashSet Uses HashMap Internally
+						
+You can check it out google - hashset java api - goto docJar link 
+
+- It's true that HashSet Uses HashMap Internally 
+- HashSet<> hs = new HashMap<>();
+- Though Map works on Key, Value pair but in HashSet we don't have any key
+- But in set we do hs.add("Naveen"); internally it's taking Naveen as a Key and a defined Private Static Final
+Constant which is PRESENT as a value which is by default null so it takes hs.add("Naveen",PRESENT(null));
+
+- HashMap has 4 types of constructor defined in java doc which HashSet uses eventually
+
+- 1st default(No-Paramenter Constructor) : Public HashSet(){ 
+						map = new HashMap<>();	
+							}
+- 2nd 1Parameter Constructor : Public HashSet(int capacity){
+								map = new HashMap<>(capacity);
+								}
+								
+- 3rd 2Parameter Constructor : Public HashSet(int capacity, float loadFactor){
+								map = new HashMap<>(capacity, loadFactor);
+								}						
+								
+								
+- 4th Collection E Constructor : Public HashSet(Collection E){
+								map = new HashMap<>(E);
+								}						
+								
+And internally uses all same methods hs.size() , hs.remove(), hs.clear() - Use clear() to empty the map;
+
+ public boolean isEmpty() {
+             return map.isEmpty();
+         }							
+								
+								
+								
+								
+								
