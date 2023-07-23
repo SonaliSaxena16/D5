@@ -1,7 +1,7 @@
 package allAboutMainMethod;
 
 public class mainMethodOverloading {
-	// JVM will try to search for exact method signture i.e.(public static void main(String[] args))
+	// However JVM will try to search for exact method signture i.e.(public static void main(String[] args))
 // JVM does not know any other main method if not found String[] args these parametrs JVM will not execute ur code
 
 	public static void main(String[] args) {

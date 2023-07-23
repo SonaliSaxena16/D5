@@ -1,0 +1,49 @@
+												AGILE/SCRUM
+												
+	Agile means - able to move quickly and easily. (It's a METHODOLOGY)
+	Scrum means - a crowd of people or things.	(It's a FRAMEWORK)
+											
+- AGILE - Agile methodology is a project management approach that prioritizes continuous improvement. 
+It divides projects into smaller phases and guides teams through cycles of planning, execution, and evaluation.
+
+Scrum in Agile - Scrum is a management framework that teams use to self-organize and work towards a common goal. 
+It describes a set of meetings, tools, and roles for efficient project delivery. Much like a sports team 
+practicing for a big match, Scrum practices allow teams to self-manage, learn from experience, and adapt to
+change. Software teams use Scrum to solve complex problems cost effectively and sustainably.
+
+- What are Scrum artifacts ?
+
+- Product Backlog - list of features, requirements, enhancements, and fixes that must be completed for project
+success. It is essentially the team’s to-do list, which is constantly revisited and reprioritized to adapt to
+market changes. The product owner maintains and updates the list, removing irrelevant items or adding new 
+requests from customers.
+
+- Sprint Backlog - The Sprint Backlog is the list of items to be completed by the development team in the current
+Sprint cycle. Before each Sprint, the team chooses which items it will work on from the Product Backlog. 
+A Sprint Backlog is flexible and can evolve during a Sprint.
+
+- What are Scrum roles ?
+
+Product Owner, Scrum development team, Scrum Master, 
+
+- What are Scrum events?
+	
+Daily Scrum or stand-up - 15 mins Onwer SM
+Backlog Refinement - 1hr - PO Story pointing parameters - Complexity/Efforts/Uncertainity - 1,2,3,5 Plan it poker for voting
+Sprint Planning - 1hr - SM owner PO 
+Sprint Retrospective - SM - qa dev leads PO open forum	- IdeaBoardz 
+Sprint Review/Demo - Stakeholders / client / dev qa leads PO
+				
+
+How many types of Issues we've in JIRA ?
+- Feature, Epic, Bug Story, Spike(Research) Technical Debt
+
+Stages your ticket undergoes ?
+Bcklog - InProgress - Cancel - StakeholderReview(PO) - Approved/ReadyToShip
+
+What is Acceptance Criteria ? - Entry gate
+
+What is Definition of Done ? 
+
+What is Definition of Ready ? your ticket shud properly groomed
+

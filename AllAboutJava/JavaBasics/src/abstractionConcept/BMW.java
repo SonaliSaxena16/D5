@@ -2,6 +2,8 @@ package abstractionConcept;
 
 public class BMW implements Car{
 
+	int wheels = 5;
+	
 	@Override
 	public void start() {
 		System.out.println("BMW Starts");

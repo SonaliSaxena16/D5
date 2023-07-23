@@ -6,7 +6,7 @@ public class Car extends Vehicle{
 	
 //Method Overridding is Methods with same signature(which means same method name with same parameters) are created in Parent & child class but implementation comes from different class
 
-// Children can inherit properties from Parent, however Parent can't inherit from childern. Same is the case for Parent and Child classes
+//Just like in life, Children can inherit properties from Parent, however Parent can't inherit from childern. Same is the case for Parent and Child classes
 
 //In the Test class, we can create Obj of the Parent class(Car) as well as Child class(BMW). 
 	

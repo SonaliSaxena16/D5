@@ -1,0 +1,42 @@
+-Hiding the implemetation logic and showing the functionality only is called ABSTRACTION
+-Abstract class can have Abstract & non-abstract methods
+-Object can't be created for Abstract class 
+-If a class is ABSTRACT, then atlease thr shud be 1 abstract method defined. Ex- Bank class is ABSTRACT
+-You can achieve 0-100% Partial abstraction in ABSTRACION CLASS
+- We can define Static, Final, Non-Static, Non-Final variables
+-When to use Abstraction -->Some common implemetation logic when you wants to define or make it visible for all classes like 
+debit(), credit() and at the same time hiding some of the implemetation logic as well like loan()
+-Performace wise Abstract classes are faster then Interface bcz methods defined in Test class need to traverse a lot first 
+TestClass to ParentClass then to find it's implemetation it'll goto child class
+
+public abstract class Bank(){
+		
+		int amt = 100;
+	final int interestRate = 8
+	static int loanRate = 10
+		
+		public abstract void loan() //abstract method, & it shud not have neother parameters nor body defined
+		
+		public void debit(){
+		sysout("Bank debit method"); //Non-Abstract method
+		}
+		
+		public void credit(){
+		sysout("Bank credit method");  //Non-Abstract method
+		}
+
+}
+If another class HDFC extends BANK(abstract cls), now it's child class responsibility to provide implementation to the 
+abstract method
+
+public class Hdfc{
+		public void loan(){
+		sysout("HDFC loan method"); //Loan method override from Abstract Bank class, with same method name & param(sign)
+		}
+
+Advantage - Now HDFC wud says it's ok I'll override ur method but the condition is I'll give my own implementation logic
+such as ROI, tenure etc. Also bcz HDFC extends BANK, so here HDFC gets easy access to other methods as well without implementing 
+them again in own class like debit() & credit()
+
+
+}

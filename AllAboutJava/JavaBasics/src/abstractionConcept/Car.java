@@ -2,7 +2,7 @@ package abstractionConcept;
 
 public interface Car {
 //Must have all abstract()
-//No need to mention abstract keywrd, Creating Interface itself means are methods are absract in nature.
+//No need to mention abstract keywrd, Creating Interface itself means all methods are absract in nature.
 //No Method Body as all are by default ABSTRACT only declaration
 //Implementation of declared() will be in child class
 //Using INTERFACE, we can achieve 100% ABSTRACTION

@@ -1,0 +1,39 @@
+Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
+It is an important part of OOPs (Object Oriented programming system).
+
+Why we shud use it -
+For Method Overriding (so runtime polymorphism can be achieved).
+For Code Reusability.
+
+Types of it -
+Three types of inheritance in java: single, multilevel and hierarchical.Multiple also a type but not in use now
+& Hybrid is also a type which we can say Interface these days 
+
+Note: Multiple & Hybrid are also a type & are not supported in Java through class.
+
+Single inheritance - When a class inherits another class, it is known as a single inheritance.
+Dog class inherits the Animal class, so there is the single inheritance.
+
+Multilevel inheritance -When there is a chain of inheritance, it is known as multilevel inheritance.
+BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance.
+By creating Babydog's obj we can access all the methods of Babydog, dog & animal class
+
+Hierarchial - Multiple child classes inherits from single parent class like A is a parent for B C D. Animal parent class Dog Cat Cow child cls
+
+Multiple - When 2 parents class have 1 single child class which inherits properties from both A & B. It's highly discarded
+
+Hybrid - Its a combo of more than 1 inheritance. Ex - single inheritance+multiple or multiple+hierarchial etc...
+
+Why multiple inheritance is not supported in java ?
+Consider a scenario where A, B, and C are three classes. The C class inherits A and B classes. If A and B classes 
+have the same method eat() and we call eat()it from child class B class object, there will be ambiguity, complier wud be 
+confused as whose eat() it needs to call bcz B class inherits from A & B as well
+Since compile-time errors are better than runtime errors, Java renders compile-time error if you inherit 2 classes
+
+IS-A relationship exists in Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in
+BaseClass. We use Extends keyword to implement IS-A relationship
+
+HAS-A relationship we can say that by using object creation with NEW keyword we shud be able to access some part of the functionality of the class 
+as per requirment. Ex- Test1 class has 100 methods now we want some of them in our Test2 class. In order to access those we've to create an obj of 
+Test1 and acess only m1() & m70() method
+

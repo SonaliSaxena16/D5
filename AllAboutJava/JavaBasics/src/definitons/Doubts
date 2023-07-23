@@ -1,0 +1,13 @@
+Difference b/w Method Overloading, Overriding and Method Hiding 
+
+Late Binding ki type - Overloading and hiding 
+
+Is automatic promotion supported by Overloading for Data Variable(ex- int short etc) - Yes
+
+Is automatic promotion supported by Overridding for Data Variable(ex- int short etc) - Yes
+
+if class in not final method is final can we inherit class ?
+
+can we define the constructor in the Abstract Parent class ?
+
+
