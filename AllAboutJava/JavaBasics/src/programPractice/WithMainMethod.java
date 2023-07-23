@@ -1,4 +1,4 @@
-package basicPrograms;
+package programPractice;
 
 public class WithMainMethod {
 	public void display(){

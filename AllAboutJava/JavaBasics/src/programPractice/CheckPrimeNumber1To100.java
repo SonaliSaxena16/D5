@@ -17,12 +17,12 @@ public class CheckPrimeNumber1To100 {
 				}
 			}
 			
-			
 			if(factorCount==2) {
 				System.out.println(i);
-			}
 			
-			
+		}
+		
+
 		}
 	}
 
