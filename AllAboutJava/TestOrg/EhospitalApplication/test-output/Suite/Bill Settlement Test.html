@@ -1,0 +1,2391 @@
+<html>
+<head>
+<title>TestNG:  Bill Settlement Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Bill Settlement Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>40/4/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 03 10:11:59 IST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>285 seconds (285476 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>Smoke </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled()'><b>DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-411802142" onClick='toggleBox("Output-411802142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-411802142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-411802142">
+DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabledscript execution starts atThu Dec 03 10:14:57 IST 2020<br/>
+DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Disscount Amount Text Box in Concession Calculator Should Not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled(BillSettlementTestScripts.java:851)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace411802142", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace411802142'><pre>java.lang.Exception: Disscount Amount Text Box in Concession Calculator Should Not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled(BillSettlementTestScripts.java:851)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.DisscountAmountTextBoxisEnabledandEnterAmount()'><b>DisscountAmountTextBoxisEnabledandEnterAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1418993149" onClick='toggleBox("Output-1418993149", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418993149" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418993149">
+DisscountAmountTextBoxisEnabledandEnterAmountscript execution starts atThu Dec 03 10:06:37 IST 2020<br/>
+DisscountAmountTextBoxisEnabledandEnterAmount script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Disscount Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.DisscountAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:266)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1418993149", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1418993149'><pre>java.lang.Exception: Disscount Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.DisscountAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:266)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.NetAmountTextBoxisEnabledandEnterAmount()'><b>NetAmountTextBoxisEnabledandEnterAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1938438604" onClick='toggleBox("Output-1938438604", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1938438604" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1938438604">
+NetAmountTextBoxisEnabledandEnterAmountscript execution starts atThu Dec 03 10:06:39 IST 2020<br/>
+NetAmountTextBoxisEnabledandEnterAmount script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Net Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.NetAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:280)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938438604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1938438604'><pre>java.lang.Exception: Net Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.NetAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:280)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount()'><b>NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1755226641" onClick='toggleBox("Output-1755226641", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1755226641" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1755226641">
+NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmountscript execution starts atThu Dec 03 10:14:38 IST 2020<br/>
+NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Net Disscount Text Box should not be editable.
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount(BillSettlementTestScripts.java:816)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1755226641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1755226641'><pre>java.lang.Exception: Net Disscount Text Box should not be editable.
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount(BillSettlementTestScripts.java:816)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate()'><b>RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1211112446" onClick='toggleBox("Output-1211112446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1211112446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1211112446">
+RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRatescript execution starts atThu Dec 03 10:13:28 IST 2020<br/>
+RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Rate Text Box should not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate(BillSettlementTestScripts.java:518)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1211112446", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1211112446'><pre>java.lang.Exception: Rate Text Box should not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate(BillSettlementTestScripts.java:518)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.ReSearchbuttonisEnabledandClickable()'><b>ReSearchbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-417816833" onClick='toggleBox("Output-417816833", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-417816833" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-417816833">
+ReSearchbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:10:29 IST 2020<br/>
+ReSearchbuttonisEnabledandClickable script  is failed<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;other_div&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E38VFT2&apos;, ip: &apos;192.168.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201201213706, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 1204, moz:profile: C:\Users\nicsi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e03be95-292b-420c-94da-cab5ae4db6b0
+*** Element info: {Using=xpath, value=//*[@id=&apos;other_div&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isEnabled(Unknown Source)
+	at ehospital.Billing_Module.helper.RegistrationFeeCancellationHelper.ValidateSearchFilterContainerBoxisEnabled(RegistrationFeeCancellationHelper.java:55)
+	at ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.ReSearchbuttonisEnabledandClickable(RegistrationFeeCancellationTestScripts.java:396)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace417816833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace417816833'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[@id=&apos;other_div&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-E38VFT2&apos;, ip: &apos;192.168.75.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 84.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20201201213706, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 1204, moz:profile: C:\Users\nicsi\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4e03be95-292b-420c-94da-cab5ae4db6b0
+*** Element info: {Using=xpath, value=//*[@id=&apos;other_div&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy9.isEnabled(Unknown Source)
+	at ehospital.Billing_Module.helper.RegistrationFeeCancellationHelper.ValidateSearchFilterContainerBoxisEnabled(RegistrationFeeCancellationHelper.java:55)
+	at ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.ReSearchbuttonisEnabledandClickable(RegistrationFeeCancellationTestScripts.java:396)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>22</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled()'><b>TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1295359081" onClick='toggleBox("Output-1295359081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1295359081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1295359081">
+TotalAmountTextBoxofConcessionCalculatorPopUpisEnabledscript execution starts atThu Dec 03 10:14:54 IST 2020<br/>
+TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Total Amount Text Box in Concession Calculator Should Not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled(BillSettlementTestScripts.java:839)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295359081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295359081'><pre>java.lang.Exception: Total Amount Text Box in Concession Calculator Should Not be Editable
+	at ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled(BillSettlementTestScripts.java:839)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.TotalRefundAmountTextBoxisEnabledandEnterAmount()'><b>TotalRefundAmountTextBoxisEnabledandEnterAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1746759758" onClick='toggleBox("Output-1746759758", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1746759758" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1746759758">
+TotalRefundAmountTextBoxisEnabledandEnterAmountscript execution starts atThu Dec 03 10:06:42 IST 2020<br/>
+TotalRefundAmountTextBoxisEnabledandEnterAmount script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Total Refund Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.TotalRefundAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:294)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1746759758", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746759758'><pre>java.lang.Exception: Total Refund Amount Text Box Should not be Enabled
+	at ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.TotalRefundAmountTextBoxisEnabledandEnterAmount(RefundReceiptTestScripts.java:294)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues()'><b>ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-549982920" onClick='toggleBox("Output-549982920", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-549982920" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-549982920">
+ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValuesscript execution starts atThu Dec 03 10:01:04 IST 2020<br/>
+ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues script  is failed<br/>
+</div>
+</td>
+<td><div><pre>java.lang.Exception: Dropdown is Selectable
+	at ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues(PreparationOfReceiptsTestScripts.java:227)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace549982920", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace549982920'><pre>java.lang.Exception: Dropdown is Selectable
+	at ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues(PreparationOfReceiptsTestScripts.java:227)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(Unknown Source)
+	at org.testng.TestRunner.privateRun(TestRunner.java:770)
+	at org.testng.TestRunner.run(TestRunner.java:591)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+	at org.testng.TestNG.runSuites(TestNG.java:1032)
+	at org.testng.TestNG.run(TestNG.java:1000)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AddButtonofBillingServiceEntryPopUpisEnabledandClickable()'><b>AddButtonofBillingServiceEntryPopUpisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-94931017" onClick='toggleBox("Output-94931017", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-94931017" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94931017">
+AddButtonofBillingServiceEntryPopUpisEnabledandClickablescript execution starts atThu Dec 03 10:13:32 IST 2020<br/>
+AddButtonofBillingServiceEntryPopUpisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AddButtonofRoomRentEntryPopUpisEnabledandClickable()'><b>AddButtonofRoomRentEntryPopUpisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-573495946" onClick='toggleBox("Output-573495946", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-573495946" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-573495946">
+AddButtonofRoomRentEntryPopUpisEnabledandClickablescript execution starts atThu Dec 03 10:12:46 IST 2020<br/>
+AddButtonofRoomRentEntryPopUpisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.AddToListButtonisEnabledandClickable()'><b>AddToListButtonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-465427162" onClick='toggleBox("Output-465427162", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-465427162" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-465427162">
+AddToListButtonisEnabledandClickablescript execution starts atThu Dec 03 10:01:40 IST 2020<br/>
+AddToListButtonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AddbuttonofAdmissionChargePopUpisEnabledandClickable()'><b>AddbuttonofAdmissionChargePopUpisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1302132509" onClick='toggleBox("Output-1302132509", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1302132509" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1302132509">
+AddbuttonofAdmissionChargePopUpisEnabledandClickablescript execution starts atThu Dec 03 10:12:29 IST 2020<br/>
+AddbuttonofAdmissionChargePopUpisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AddbuttonofOtherServiceEntryPopUpisEnabledandClickable()'><b>AddbuttonofOtherServiceEntryPopUpisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1031158501" onClick='toggleBox("Output-1031158501", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1031158501" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1031158501">
+AddbuttonofOtherServiceEntryPopUpisEnabledandClickablescript execution starts atThu Dec 03 10:14:02 IST 2020<br/>
+AddbuttonofOtherServiceEntryPopUpisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AddbuttonoffDietChargeEntryPopupisEnabledandClickable()'><b>AddbuttonoffDietChargeEntryPopupisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1823741948" onClick='toggleBox("Output-1823741948", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1823741948" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1823741948">
+AddbuttonoffDietChargeEntryPopupisEnabledandClickablescript execution starts atThu Dec 03 10:13:00 IST 2020<br/>
+AddbuttonoffDietChargeEntryPopupisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.Adminlinkdisplayed()'><b>Adminlinkdisplayed</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1618984457" onClick='toggleBox("Output-1618984457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1618984457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1618984457">
+Adminlinkdisplayedscript execution starts atThu Dec 03 09:54:13 IST 2020<br/>
+Adminlinkdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.AdmissionChargeCheckBoxisEnabledandSelectable()'><b>AdmissionChargeCheckBoxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-521961438" onClick='toggleBox("Output-521961438", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-521961438" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-521961438">
+AdmissionChargeCheckBoxisEnabledandSelectablescript execution starts atThu Dec 03 10:12:22 IST 2020<br/>
+AdmissionChargeCheckBoxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.ADT_Module.TestScripts.ExistingPatientTestScripts.AdmitthePatient()'><b>AdmitthePatient</b><br>Test class: ehospital.ADT_Module.TestScripts.ExistingPatientTestScripts<br/>
+<a href="#Output-1108811877" onClick='toggleBox("Output-1108811877", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108811877" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108811877">
+AdmitthePatientscript execution starts atThu Dec 03 10:10:52 IST 2020<br/>
+AdmitthePatientscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>66</td>
+<td>ehospital.ADT_Module.TestScripts.ExistingPatientTestScripts@4034c28c</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.BackbuttoninRecepitisEnabledandClckable()'><b>BackbuttoninRecepitisEnabledandClckable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1714922341" onClick='toggleBox("Output-1714922341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1714922341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1714922341">
+BackbuttoninRecepitisEnabledandClckablescript execution starts atThu Dec 03 10:02:20 IST 2020<br/>
+BackbuttoninRecepitisEnabledandClckablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.BasicRateTextBoxisEnabledandEntervalidRate()'><b>BasicRateTextBoxisEnabledandEntervalidRate</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-373355023" onClick='toggleBox("Output-373355023", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-373355023" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-373355023">
+BasicRateTextBoxisEnabledandEntervalidRatescript execution starts atThu Dec 03 10:05:20 IST 2020<br/>
+BasicRateTextBoxisEnabledandEntervalidRatescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.BillSettlementlinkisDispalyed()'><b>BillSettlementlinkisDispalyed</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1188137523" onClick='toggleBox("Output-1188137523", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1188137523" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1188137523">
+BillSettlementlinkisDispalyedscript execution starts atThu Dec 03 10:11:59 IST 2020<br/>
+BillSettlementlinkisDispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.BillSettlementlinkisEnabled()'><b>BillSettlementlinkisEnabled</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1139305484" onClick='toggleBox("Output-1139305484", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1139305484" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1139305484">
+BillSettlementlinkisEnabledscript execution starts atThu Dec 03 10:12:03 IST 2020<br/>
+BillSettlementlinkisEnabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.BillingAdminSubModuleisDispalyed()'><b>BillingAdminSubModuleisDispalyed</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-712753515" onClick='toggleBox("Output-712753515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-712753515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-712753515">
+BillingAdminSubModuleisDispalyedscript execution starts atThu Dec 03 10:05:05 IST 2020<br/>
+BillingAdminSubModuleisDispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.BillingAdminSubModuleisEnabledandClickable()'><b>BillingAdminSubModuleisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-1268261468" onClick='toggleBox("Output-1268261468", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1268261468" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1268261468">
+BillingAdminSubModuleisEnabledandClickablescript execution starts atThu Dec 03 10:05:09 IST 2020<br/>
+BillingAdminSubModuleisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.BillingCounterisEnabledandClickable()'><b>BillingCounterisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1523683407" onClick='toggleBox("Output-1523683407", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1523683407" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1523683407">
+BillingCounterisEnabledandClickablescript execution starts atThu Dec 03 10:00:12 IST 2020<br/>
+BillingCounterisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.BillingModuleisdisplayed()'><b>BillingModuleisdisplayed</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-37768026" onClick='toggleBox("Output-37768026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-37768026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-37768026">
+BillingModuleisdisplayedscript execution starts atThu Dec 03 09:59:55 IST 2020<br/>
+BillingModuleisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.BillingModuleisenabledandClickable()'><b>BillingModuleisenabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1469235340" onClick='toggleBox("Output-1469235340", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1469235340" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1469235340">
+BillingModuleisenabledandClickablescript execution starts atThu Dec 03 10:00:07 IST 2020<br/>
+BillingModuleisenabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.BillingRefundRecepitisDispalyed()'><b>BillingRefundRecepitisDispalyed</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1075390175" onClick='toggleBox("Output-1075390175", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1075390175" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1075390175">
+BillingRefundRecepitisDispalyedscript execution starts atThu Dec 03 10:05:51 IST 2020<br/>
+BillingRefundRecepitisDispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.BillingRefundRecepitisEnabledandClickable()'><b>BillingRefundRecepitisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1632979819" onClick='toggleBox("Output-1632979819", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1632979819" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1632979819">
+BillingRefundRecepitisEnabledandClickablescript execution starts atThu Dec 03 10:05:55 IST 2020<br/>
+BillingRefundRecepitisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.BillingServiceEntryCheckboxisEnabledandSelectable()'><b>BillingServiceEntryCheckboxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-270730839" onClick='toggleBox("Output-270730839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-270730839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-270730839">
+BillingServiceEntryCheckboxisEnabledandSelectablescript execution starts atThu Dec 03 10:13:11 IST 2020<br/>
+BillingServiceEntryCheckboxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.CONFIGUREOPDREGISTRATIONSLIPtabisdisplayed()'><b>CONFIGUREOPDREGISTRATIONSLIPtabisdisplayed</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-612693043" onClick='toggleBox("Output-612693043", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-612693043" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-612693043">
+CONFIGUREOPDREGISTRATIONSLIPtabisdisplayedscript execution starts atThu Dec 03 09:55:02 IST 2020<br/>
+CONFIGUREOPDREGISTRATIONSLIPtabisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.CalculateConcessionbuttonofConcessionCalculatorPopUpisEnabledandClickable()'><b>CalculateConcessionbuttonofConcessionCalculatorPopUpisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1008561904" onClick='toggleBox("Output-1008561904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1008561904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1008561904">
+CalculateConcessionbuttonofConcessionCalculatorPopUpisEnabledandClickablescript execution starts atThu Dec 03 10:14:59 IST 2020<br/>
+CalculateConcessionbuttonofConcessionCalculatorPopUpisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.CancelOptionForSelectedServicesisEnabledandSelectOption()'><b>CancelOptionForSelectedServicesisEnabledandSelectOption</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1413306467" onClick='toggleBox("Output-1413306467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1413306467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1413306467">
+CancelOptionForSelectedServicesisEnabledandSelectOptionscript execution starts atThu Dec 03 10:01:44 IST 2020<br/>
+CancelOptionForSelectedServicesisEnabledandSelectOptionscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.CancelReceiptButtonisenabledandClickable()'><b>CancelReceiptButtonisenabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1946866478" onClick='toggleBox("Output-1946866478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1946866478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1946866478">
+CancelReceiptButtonisenabledandClickablescript execution starts atThu Dec 03 10:08:30 IST 2020<br/>
+CancelReceiptButtonisenabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.CancelReceiptlinkisDispalyed()'><b>CancelReceiptlinkisDispalyed</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-861500069" onClick='toggleBox("Output-861500069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-861500069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-861500069">
+CancelReceiptlinkisDispalyedscript execution starts atThu Dec 03 10:07:42 IST 2020<br/>
+CancelReceiptlinkisDispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.CancelReceiptlinkisEnabledandClickable()'><b>CancelReceiptlinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-568564610" onClick='toggleBox("Output-568564610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-568564610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-568564610">
+CancelReceiptlinkisEnabledandClickablescript execution starts atThu Dec 03 10:07:46 IST 2020<br/>
+CancelReceiptlinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.CancelRegistrationFeebuttonisEnabledandClickable()'><b>CancelRegistrationFeebuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-13642752" onClick='toggleBox("Output-13642752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-13642752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-13642752">
+CancelRegistrationFeebuttonisEnabledandClickablescript execution starts atThu Dec 03 10:09:29 IST 2020<br/>
+CancelRegistrationFeebuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.CancelbuttonisEnabledandClickable()'><b>CancelbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-1723238207" onClick='toggleBox("Output-1723238207", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1723238207" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1723238207">
+CancelbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:05:48 IST 2020<br/>
+CancelbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.CashbookDropdownisEnabledandSelectable()'><b>CashbookDropdownisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-1716368074" onClick='toggleBox("Output-1716368074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1716368074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716368074">
+CashbookDropdownisEnabledandSelectablescript execution starts atThu Dec 03 10:04:08 IST 2020<br/>
+CashbookDropdownisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.CashbookDropdownisEnabledandSelectable()'><b>CashbookDropdownisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-482950564" onClick='toggleBox("Output-482950564", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-482950564" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-482950564">
+CashbookDropdownisEnabledandSelectablescript execution starts atThu Dec 03 10:06:08 IST 2020<br/>
+CashbookDropdownisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.CashbookDropdownisEnabledandSelectable()'><b>CashbookDropdownisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1141927461" onClick='toggleBox("Output-1141927461", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1141927461" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1141927461">
+CashbookDropdownisEnabledandSelectablescript execution starts atThu Dec 03 10:07:59 IST 2020<br/>
+CashbookDropdownisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.CategoryDropdownisEnabledandSelectvalue()'><b>CategoryDropdownisEnabledandSelectvalue</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-393594087" onClick='toggleBox("Output-393594087", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-393594087" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-393594087">
+CategoryDropdownisEnabledandSelectvaluescript execution starts atThu Dec 03 10:01:21 IST 2020<br/>
+CategoryDropdownisEnabledandSelectvaluescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.CategoryDropdownofBillingServiceEntryPopUpisEnabledandSelectValue()'><b>CategoryDropdownofBillingServiceEntryPopUpisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-313142474" onClick='toggleBox("Output-313142474", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313142474" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313142474">
+CategoryDropdownofBillingServiceEntryPopUpisEnabledandSelectValuescript execution starts atThu Dec 03 10:13:15 IST 2020<br/>
+CategoryDropdownofBillingServiceEntryPopUpisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.CategorytextBoxofOtherServiceEntryPopUpisEnabledandEnterValidCategory()'><b>CategorytextBoxofOtherServiceEntryPopUpisEnabledandEnterValidCategory</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-119988893" onClick='toggleBox("Output-119988893", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-119988893" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-119988893">
+CategorytextBoxofOtherServiceEntryPopUpisEnabledandEnterValidCategoryscript execution starts atThu Dec 03 10:13:45 IST 2020<br/>
+CategorytextBoxofOtherServiceEntryPopUpisEnabledandEnterValidCategoryscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.ChangeForAlllinkisEnabledandClickable()'><b>ChangeForAlllinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-1329602599" onClick='toggleBox("Output-1329602599", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1329602599" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1329602599">
+ChangeForAlllinkisEnabledandClickablescript execution starts atThu Dec 03 10:05:25 IST 2020<br/>
+ChangeForAlllinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.CheckboxofRecommendedTestDetailsisEnabledandSelectable()'><b>CheckboxofRecommendedTestDetailsisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1980588880" onClick='toggleBox("Output-1980588880", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1980588880" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1980588880">
+CheckboxofRecommendedTestDetailsisEnabledandSelectablescript execution starts atThu Dec 03 10:14:16 IST 2020<br/>
+CheckboxofRecommendedTestDetailsisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.Checkboxtoselectservices1isEnabledandSelectable()'><b>Checkboxtoselectservices1isEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-472124658" onClick='toggleBox("Output-472124658", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472124658" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472124658">
+Checkboxtoselectservices1isEnabledandSelectablescript execution starts atThu Dec 03 10:01:33 IST 2020<br/>
+Checkboxtoselectservices1isEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ClickheretoprintMoneyReceiptbuttonisEnabledandClickable()'><b>ClickheretoprintMoneyReceiptbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1905766527" onClick='toggleBox("Output-1905766527", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1905766527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1905766527">
+ClickheretoprintMoneyReceiptbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:02:17 IST 2020<br/>
+ClickheretoprintMoneyReceiptbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ClickonAddButtonofOtherServicesWithoutanyEntry()'><b>ClickonAddButtonofOtherServicesWithoutanyEntry</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-798874225" onClick='toggleBox("Output-798874225", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-798874225" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-798874225">
+ClickonAddButtonofOtherServicesWithoutanyEntryscript execution starts atThu Dec 03 10:02:26 IST 2020<br/>
+ClickonAddButtonofOtherServicesWithoutanyEntryscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.ClickonAdminmoduleandcheckenabled()'><b>ClickonAdminmoduleandcheckenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-500230084" onClick='toggleBox("Output-500230084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500230084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500230084">
+ClickonAdminmoduleandcheckenabledscript execution starts atThu Dec 03 09:54:29 IST 2020<br/>
+ClickonAdminmoduleandcheckenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.ClickonSerchbuttonWithvalidRecepitNo()'><b>ClickonSerchbuttonWithvalidRecepitNo</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-218857805" onClick='toggleBox("Output-218857805", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-218857805" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-218857805">
+ClickonSerchbuttonWithvalidRecepitNoscript execution starts atThu Dec 03 10:04:47 IST 2020<br/>
+ClickonSerchbuttonWithvalidRecepitNoscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.ClickonSerchbuttonWithvalidRecepitNo()'><b>ClickonSerchbuttonWithvalidRecepitNo</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1235247239" onClick='toggleBox("Output-1235247239", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1235247239" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1235247239">
+ClickonSerchbuttonWithvalidRecepitNoscript execution starts atThu Dec 03 10:07:20 IST 2020<br/>
+ClickonSerchbuttonWithvalidRecepitNoscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.ClickonSerchbuttonWithvalidRecepitNo()'><b>ClickonSerchbuttonWithvalidRecepitNo</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1731814517" onClick='toggleBox("Output-1731814517", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1731814517" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1731814517">
+ClickonSerchbuttonWithvalidRecepitNoscript execution starts atThu Dec 03 10:08:43 IST 2020<br/>
+ClickonSerchbuttonWithvalidRecepitNoscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ConcessionCalculatorImgbuttonisEnabledandClickable()'><b>ConcessionCalculatorImgbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-775635860" onClick='toggleBox("Output-775635860", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-775635860" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-775635860">
+ConcessionCalculatorImgbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:14:23 IST 2020<br/>
+ConcessionCalculatorImgbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DateRadiobuttonisEnabledandSelectable()'><b>DateRadiobuttonisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1882802109" onClick='toggleBox("Output-1882802109", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1882802109" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1882802109">
+DateRadiobuttonisEnabledandSelectablescript execution starts atThu Dec 03 10:15:28 IST 2020<br/>
+DateRadiobuttonisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.DetailslinkisEnabledandClickable()'><b>DetailslinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-2043540180" onClick='toggleBox("Output-2043540180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2043540180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2043540180">
+DetailslinkisEnabledandClickablescript execution starts atThu Dec 03 10:05:18 IST 2020<br/>
+DetailslinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DietChargeEntryCheckBoxisEnabledandSelectable()'><b>DietChargeEntryCheckBoxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-854056805" onClick='toggleBox("Output-854056805", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-854056805" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-854056805">
+DietChargeEntryCheckBoxisEnabledandSelectablescript execution starts atThu Dec 03 10:12:54 IST 2020<br/>
+DietChargeEntryCheckBoxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DisscountAmountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmount()'><b>DisscountAmountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1956642247" onClick='toggleBox("Output-1956642247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1956642247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1956642247">
+DisscountAmountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmountscript execution starts atThu Dec 03 10:14:34 IST 2020<br/>
+DisscountAmountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmountscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.DisscountTypeDropdownofConcessionCalculatorPopUpisEnabledandSelectValue()'><b>DisscountTypeDropdownofConcessionCalculatorPopUpisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-474059546" onClick='toggleBox("Output-474059546", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-474059546" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-474059546">
+DisscountTypeDropdownofConcessionCalculatorPopUpisEnabledandSelectValuescript execution starts atThu Dec 03 10:14:29 IST 2020<br/>
+DisscountTypeDropdownofConcessionCalculatorPopUpisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.DuplicateRecepitlinkisDisplayed()'><b>DuplicateRecepitlinkisDisplayed</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-1962629977" onClick='toggleBox("Output-1962629977", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1962629977" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1962629977">
+DuplicateRecepitlinkisDisplayedscript execution starts atThu Dec 03 10:03:55 IST 2020<br/>
+DuplicateRecepitlinkisDisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.DuplicateRecepitlinkisEnabledandClickable()'><b>DuplicateRecepitlinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-54254849" onClick='toggleBox("Output-54254849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54254849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54254849">
+DuplicateRecepitlinkisEnabledandClickablescript execution starts atThu Dec 03 10:03:59 IST 2020<br/>
+DuplicateRecepitlinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.EnterValidquantityintoQuantityTextBoxforService()'><b>EnterValidquantityintoQuantityTextBoxforService</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1110095671" onClick='toggleBox("Output-1110095671", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1110095671" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1110095671">
+EnterValidquantityintoQuantityTextBoxforServicescript execution starts atThu Dec 03 10:01:27 IST 2020<br/>
+EnterValidquantityintoQuantityTextBoxforServicescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.EntervalidIDintothePatientIDTextBox()'><b>EntervalidIDintothePatientIDTextBox</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-316746441" onClick='toggleBox("Output-316746441", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-316746441" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-316746441">
+EntervalidIDintothePatientIDTextBoxscript execution starts atThu Dec 03 10:00:48 IST 2020<br/>
+EntervalidIDintothePatientIDTextBoxscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.FirstCheckboxtoSelectServiceisEnabledandClickable()'><b>FirstCheckboxtoSelectServiceisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1826091905" onClick='toggleBox("Output-1826091905", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1826091905" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1826091905">
+FirstCheckboxtoSelectServiceisEnabledandClickablescript execution starts atThu Dec 03 10:06:33 IST 2020<br/>
+FirstCheckboxtoSelectServiceisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.FreeCheckBoxisEnabledandSelectable()'><b>FreeCheckBoxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-195388128" onClick='toggleBox("Output-195388128", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-195388128" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-195388128">
+FreeCheckBoxisEnabledandSelectablescript execution starts atThu Dec 03 10:05:42 IST 2020<br/>
+FreeCheckBoxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.GenerateUHIDandPasteintoexcelsheet()'><b>GenerateUHIDandPasteintoexcelsheet</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-348148678" onClick='toggleBox("Output-348148678", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-348148678" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-348148678">
+GenerateUHIDandPasteintoexcelsheetscript execution starts atThu Dec 03 09:55:59 IST 2020<br/>
+GenerateUHIDandPasteintoexcelsheetscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>222</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.GeneratebuttonisEnabledandClickable()'><b>GeneratebuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1996476498" onClick='toggleBox("Output-1996476498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996476498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996476498">
+GeneratebuttonisEnabledandClickablescript execution starts atThu Dec 03 10:15:46 IST 2020<br/>
+GeneratebuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.GetSearchresultbuttonofRecepitNoFilterisEnabledandClickable()'><b>GetSearchresultbuttonofRecepitNoFilterisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-1871079355" onClick='toggleBox("Output-1871079355", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1871079355" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1871079355">
+GetSearchresultbuttonofRecepitNoFilterisEnabledandClickablescript execution starts atThu Dec 03 10:04:43 IST 2020<br/>
+GetSearchresultbuttonofRecepitNoFilterisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.GetSearchresultbuttonofUHIDFilterisEnabledandClickable()'><b>GetSearchresultbuttonofUHIDFilterisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-299989139" onClick='toggleBox("Output-299989139", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-299989139" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-299989139">
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript execution starts atThu Dec 03 10:04:12 IST 2020<br/>
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.GetSearchresultbuttonofUHIDFilterisEnabledandClickable()'><b>GetSearchresultbuttonofUHIDFilterisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-993263609" onClick='toggleBox("Output-993263609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-993263609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-993263609">
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript execution starts atThu Dec 03 10:06:12 IST 2020<br/>
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.GetSearchresultbuttonofUHIDFilterisEnabledandClickable()'><b>GetSearchresultbuttonofUHIDFilterisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-8149696" onClick='toggleBox("Output-8149696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-8149696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-8149696">
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript execution starts atThu Dec 03 10:08:03 IST 2020<br/>
+GetSearchresultbuttonofUHIDFilterisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.GoForApprovallinkisEnabledandClickable()'><b>GoForApprovallinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-2020015678" onClick='toggleBox("Output-2020015678", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2020015678" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2020015678">
+GoForApprovallinkisEnabledandClickablescript execution starts atThu Dec 03 10:15:26 IST 2020<br/>
+GoForApprovallinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.HeadOfAccountDropdownisEnabledandSelectValue()'><b>HeadOfAccountDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-436028378" onClick='toggleBox("Output-436028378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-436028378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-436028378">
+HeadOfAccountDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:01:15 IST 2020<br/>
+HeadOfAccountDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.HeadofAccountDropdownisEnabledandSelectValue()'><b>HeadofAccountDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-739101205" onClick='toggleBox("Output-739101205", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-739101205" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-739101205">
+HeadofAccountDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:06:01 IST 2020<br/>
+HeadofAccountDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.HeadofAccountDropdownisEnabledandSelectValue()'><b>HeadofAccountDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-117227681" onClick='toggleBox("Output-117227681", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-117227681" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-117227681">
+HeadofAccountDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:07:52 IST 2020<br/>
+HeadofAccountDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.NDMCTemplateCheckBoxisenabled()'><b>NDMCTemplateCheckBoxisenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1687627235" onClick='toggleBox("Output-1687627235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1687627235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1687627235">
+NDMCTemplateCheckBoxisenabledscript execution starts atThu Dec 03 09:54:47 IST 2020<br/>
+NDMCTemplateCheckBoxisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmount()'><b>NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmount</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1131228089" onClick='toggleBox("Output-1131228089", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1131228089" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1131228089">
+NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmountscript execution starts atThu Dec 03 10:14:42 IST 2020<br/>
+NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterValidAmountscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.NewRegistrationlinkisdisplayed()'><b>NewRegistrationlinkisdisplayed</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-984567559" onClick='toggleBox("Output-984567559", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-984567559" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-984567559">
+NewRegistrationlinkisdisplayedscript execution starts atThu Dec 03 09:55:53 IST 2020<br/>
+NewRegistrationlinkisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.NextButtonisEnabledandClickable()'><b>NextButtonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1066504752" onClick='toggleBox("Output-1066504752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1066504752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066504752">
+NextButtonisEnabledandClickablescript execution starts atThu Dec 03 10:15:03 IST 2020<br/>
+NextButtonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.OtherServiceEntryCheckboxisEnabledandSelectable()'><b>OtherServiceEntryCheckboxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-839190056" onClick='toggleBox("Output-839190056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-839190056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-839190056">
+OtherServiceEntryCheckboxisEnabledandSelectablescript execution starts atThu Dec 03 10:13:41 IST 2020<br/>
+OtherServiceEntryCheckboxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PatientWithUHIDRadioButtonisEnabledandClickable()'><b>PatientWithUHIDRadioButtonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1573349881" onClick='toggleBox("Output-1573349881", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1573349881" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1573349881">
+PatientWithUHIDRadioButtonisEnabledandClickablescript execution starts atThu Dec 03 10:00:24 IST 2020<br/>
+PatientWithUHIDRadioButtonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.Patientregistrationlinkisdisplayed()'><b>Patientregistrationlinkisdisplayed</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-238874235" onClick='toggleBox("Output-238874235", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-238874235" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-238874235">
+Patientregistrationlinkisdisplayedscript execution starts atThu Dec 03 09:55:34 IST 2020<br/>
+Patientregistrationlinkisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PaymentModeDropdownisEnabledandSelectValue()'><b>PaymentModeDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1305194069" onClick='toggleBox("Output-1305194069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1305194069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1305194069">
+PaymentModeDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:01:08 IST 2020<br/>
+PaymentModeDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PrePareRecepitWithValidMobileNumber()'><b>PrePareRecepitWithValidMobileNumber</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1675999402" onClick='toggleBox("Output-1675999402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1675999402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1675999402">
+PrePareRecepitWithValidMobileNumberscript execution starts atThu Dec 03 10:03:16 IST 2020<br/>
+PrePareRecepitWithValidMobileNumberscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>38</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PreparationOfReceiptslinkisEnabledandClickable()'><b>PreparationOfReceiptslinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-208181619" onClick='toggleBox("Output-208181619", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-208181619" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-208181619">
+PreparationOfReceiptslinkisEnabledandClickablescript execution starts atThu Dec 03 10:00:16 IST 2020<br/>
+PreparationOfReceiptslinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PrepareRecepitForOtherServices()'><b>PrepareRecepitForOtherServices</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-973777648" onClick='toggleBox("Output-973777648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-973777648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-973777648">
+PrepareRecepitForOtherServicesscript execution starts atThu Dec 03 10:02:42 IST 2020<br/>
+PrepareRecepitForOtherServicesscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>33</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.PrepareRecepitForPayAdvanceOption()'><b>PrepareRecepitForPayAdvanceOption</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1484994456" onClick='toggleBox("Output-1484994456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1484994456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1484994456">
+PrepareRecepitForPayAdvanceOptionscript execution starts atThu Dec 03 10:01:47 IST 2020<br/>
+PrepareRecepitForPayAdvanceOptionscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>30</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.QuantityTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidQuantity()'><b>QuantityTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidQuantity</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-961106093" onClick='toggleBox("Output-961106093", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-961106093" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-961106093">
+QuantityTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidQuantityscript execution starts atThu Dec 03 10:13:24 IST 2020<br/>
+QuantityTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidQuantityscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.QuantitytextBoxofOtherServiceEntryPopUpandEnterValidService()'><b>QuantitytextBoxofOtherServiceEntryPopUpandEnterValidService</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1629827491" onClick='toggleBox("Output-1629827491", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1629827491" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1629827491">
+QuantitytextBoxofOtherServiceEntryPopUpandEnterValidServicescript execution starts atThu Dec 03 10:13:53 IST 2020<br/>
+QuantitytextBoxofOtherServiceEntryPopUpandEnterValidServicescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.RateConfigurationofServicesLinkisEnabledandClickable()'><b>RateConfigurationofServicesLinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-303354428" onClick='toggleBox("Output-303354428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-303354428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-303354428">
+RateConfigurationofServicesLinkisEnabledandClickablescript execution starts atThu Dec 03 10:05:11 IST 2020<br/>
+RateConfigurationofServicesLinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.RateTextBoxisEnabledandEnterValidData()'><b>RateTextBoxisEnabledandEnterValidData</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-710699894" onClick='toggleBox("Output-710699894", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-710699894" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-710699894">
+RateTextBoxisEnabledandEnterValidDatascript execution starts atThu Dec 03 10:05:33 IST 2020<br/>
+RateTextBoxisEnabledandEnterValidDatascript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RatetextBoxofOtherServiceEntryPopUpIsEnabledandEnterValidService()'><b>RatetextBoxofOtherServiceEntryPopUpIsEnabledandEnterValidService</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1781893382" onClick='toggleBox("Output-1781893382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1781893382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1781893382">
+RatetextBoxofOtherServiceEntryPopUpIsEnabledandEnterValidServicescript execution starts atThu Dec 03 10:13:58 IST 2020<br/>
+RatetextBoxofOtherServiceEntryPopUpIsEnabledandEnterValidServicescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.ReasonForCancellationTextBoxisEnabledandEnterResult()'><b>ReasonForCancellationTextBoxisEnabledandEnterResult</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1035726142" onClick='toggleBox("Output-1035726142", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1035726142" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1035726142">
+ReasonForCancellationTextBoxisEnabledandEnterResultscript execution starts atThu Dec 03 10:08:26 IST 2020<br/>
+ReasonForCancellationTextBoxisEnabledandEnterResultscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.RecepitNoRadiobuttonisEnabledandSelectable()'><b>RecepitNoRadiobuttonisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-561200318" onClick='toggleBox("Output-561200318", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-561200318" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-561200318">
+RecepitNoRadiobuttonisEnabledandSelectablescript execution starts atThu Dec 03 10:04:39 IST 2020<br/>
+RecepitNoRadiobuttonisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.RecepitNoRadiobuttonisEnabledandSelectable()'><b>RecepitNoRadiobuttonisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1334378672" onClick='toggleBox("Output-1334378672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1334378672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1334378672">
+RecepitNoRadiobuttonisEnabledandSelectablescript execution starts atThu Dec 03 10:07:16 IST 2020<br/>
+RecepitNoRadiobuttonisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.RecepitNoRadiobuttonisEnabledandSelectable()'><b>RecepitNoRadiobuttonisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1498514648" onClick='toggleBox("Output-1498514648", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1498514648" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1498514648">
+RecepitNoRadiobuttonisEnabledandSelectablescript execution starts atThu Dec 03 10:08:38 IST 2020<br/>
+RecepitNoRadiobuttonisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.RefundBillButtonisEnabledandClickable()'><b>RefundBillButtonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-896508113" onClick='toggleBox("Output-896508113", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-896508113" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-896508113">
+RefundBillButtonisEnabledandClickablescript execution starts atThu Dec 03 10:06:48 IST 2020<br/>
+RefundBillButtonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.RegistrationFeeCancellationlinkisDispalyed()'><b>RegistrationFeeCancellationlinkisDispalyed</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-1944665146" onClick='toggleBox("Output-1944665146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944665146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944665146">
+RegistrationFeeCancellationlinkisDispalyedscript execution starts atThu Dec 03 10:09:02 IST 2020<br/>
+RegistrationFeeCancellationlinkisDispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.RegistrationFeeCancellationlinkisEnabledandClickable()'><b>RegistrationFeeCancellationlinkisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-1156725031" onClick='toggleBox("Output-1156725031", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1156725031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1156725031">
+RegistrationFeeCancellationlinkisEnabledandClickablescript execution starts atThu Dec 03 10:09:07 IST 2020<br/>
+RegistrationFeeCancellationlinkisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.RegistrationFeeTextboxisEnabledandEnterValidFee()'><b>RegistrationFeeTextboxisEnabledandEnterValidFee</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-597531831" onClick='toggleBox("Output-597531831", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-597531831" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-597531831">
+RegistrationFeeTextboxisEnabledandEnterValidFeescript execution starts atThu Dec 03 10:09:37 IST 2020<br/>
+RegistrationFeeTextboxisEnabledandEnterValidFeescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>51</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RemarksTextAreaisEnabledandEnterRemarks()'><b>RemarksTextAreaisEnabledandEnterRemarks</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1981924343" onClick='toggleBox("Output-1981924343", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1981924343" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1981924343">
+RemarksTextAreaisEnabledandEnterRemarksscript execution starts atThu Dec 03 10:15:13 IST 2020<br/>
+RemarksTextAreaisEnabledandEnterRemarksscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.RemarksTextAreaisEnabledandEnterText()'><b>RemarksTextAreaisEnabledandEnterText</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-1782208222" onClick='toggleBox("Output-1782208222", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1782208222" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1782208222">
+RemarksTextAreaisEnabledandEnterTextscript execution starts atThu Dec 03 10:09:33 IST 2020<br/>
+RemarksTextAreaisEnabledandEnterTextscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.RemarksTextBoxisEnabledandEnterRemarks()'><b>RemarksTextBoxisEnabledandEnterRemarks</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-675157849" onClick='toggleBox("Output-675157849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-675157849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-675157849">
+RemarksTextBoxisEnabledandEnterRemarksscript execution starts atThu Dec 03 10:06:44 IST 2020<br/>
+RemarksTextBoxisEnabledandEnterRemarksscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.RoomRentEntryCheckboxisEnabledandSelectable()'><b>RoomRentEntryCheckboxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-103563939" onClick='toggleBox("Output-103563939", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-103563939" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-103563939">
+RoomRentEntryCheckboxisEnabledandSelectablescript execution starts atThu Dec 03 10:12:39 IST 2020<br/>
+RoomRentEntryCheckboxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.SavebuttonisEnabledandClickable()'><b>SavebuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-1593727781" onClick='toggleBox("Output-1593727781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1593727781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1593727781">
+SavebuttonisEnabledandClickablescript execution starts atThu Dec 03 10:05:27 IST 2020<br/>
+SavebuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.SearchFilterOfPatientWithUHIDDropdownisEnabledandSelectvalue()'><b>SearchFilterOfPatientWithUHIDDropdownisEnabledandSelectvalue</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-778234583" onClick='toggleBox("Output-778234583", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-778234583" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-778234583">
+SearchFilterOfPatientWithUHIDDropdownisEnabledandSelectvaluescript execution starts atThu Dec 03 10:00:29 IST 2020<br/>
+SearchFilterOfPatientWithUHIDDropdownisEnabledandSelectvaluescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.SearchbuttonisEnabledandClickable()'><b>SearchbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-1240727361" onClick='toggleBox("Output-1240727361", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1240727361" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1240727361">
+SearchbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:00:33 IST 2020<br/>
+SearchbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.SelectCheckbocofBillingServiceEntryPopUpisEnabledandSelectable()'><b>SelectCheckbocofBillingServiceEntryPopUpisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1025281845" onClick='toggleBox("Output-1025281845", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1025281845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1025281845">
+SelectCheckbocofBillingServiceEntryPopUpisEnabledandSelectablescript execution starts atThu Dec 03 10:13:13 IST 2020<br/>
+SelectCheckbocofBillingServiceEntryPopUpisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.SelectCheckboxofOtherServiceEntryPopUpisEnabledandSelectable()'><b>SelectCheckboxofOtherServiceEntryPopUpisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1373194140" onClick='toggleBox("Output-1373194140", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1373194140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1373194140">
+SelectCheckboxofOtherServiceEntryPopUpisEnabledandSelectablescript execution starts atThu Dec 03 10:13:43 IST 2020<br/>
+SelectCheckboxofOtherServiceEntryPopUpisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.SelectOPDCardTemplateimageisdisplayed()'><b>SelectOPDCardTemplateimageisdisplayed</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1360541835" onClick='toggleBox("Output-1360541835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1360541835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1360541835">
+SelectOPDCardTemplateimageisdisplayedscript execution starts atThu Dec 03 09:55:05 IST 2020<br/>
+SelectOPDCardTemplateimageisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.SelectbuttonisEnabledandClickable()'><b>SelectbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-50592708" onClick='toggleBox("Output-50592708", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-50592708" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-50592708">
+SelectbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:08:22 IST 2020<br/>
+SelectbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.SelectbuttonisEnabledandClickable()'><b>SelectbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-1098372130" onClick='toggleBox("Output-1098372130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1098372130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1098372130">
+SelectbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:09:22 IST 2020<br/>
+SelectbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.SelectbuttonisEnabledandClickable()'><b>SelectbuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1362405334" onClick='toggleBox("Output-1362405334", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1362405334" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1362405334">
+SelectbuttonisEnabledandClickablescript execution starts atThu Dec 03 10:15:35 IST 2020<br/>
+SelectbuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.Selecttemplate5()'><b>Selecttemplate5</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1997344422" onClick='toggleBox("Output-1997344422", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1997344422" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1997344422">
+Selecttemplate5script execution starts atThu Dec 03 09:55:10 IST 2020<br/>
+Selecttemplate5script   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts.ServiceCategoryDropdownisEnabledandSelectValue()'><b>ServiceCategoryDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts<br/>
+<a href="#Output-666596577" onClick='toggleBox("Output-666596577", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-666596577" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-666596577">
+ServiceCategoryDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:05:14 IST 2020<br/>
+ServiceCategoryDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RateConfigurationofServicesTestScripts@123f1134</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ServiceDropdownUnderAdmissionChargePopUpisEnabledandSelectValue()'><b>ServiceDropdownUnderAdmissionChargePopUpisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1461482866" onClick='toggleBox("Output-1461482866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1461482866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1461482866">
+ServiceDropdownUnderAdmissionChargePopUpisEnabledandSelectValuescript execution starts atThu Dec 03 10:12:24 IST 2020<br/>
+ServiceDropdownUnderAdmissionChargePopUpisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ServiceDropdownofBillingServiceEntryPopUpisEnabledandSelectValue()'><b>ServiceDropdownofBillingServiceEntryPopUpisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-518334273" onClick='toggleBox("Output-518334273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-518334273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-518334273">
+ServiceDropdownofBillingServiceEntryPopUpisEnabledandSelectValuescript execution starts atThu Dec 03 10:13:20 IST 2020<br/>
+ServiceDropdownofBillingServiceEntryPopUpisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ServiceDropdownofRoomRentEntryPopUpisEnabledandSelectValue()'><b>ServiceDropdownofRoomRentEntryPopUpisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-52620058" onClick='toggleBox("Output-52620058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-52620058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-52620058">
+ServiceDropdownofRoomRentEntryPopUpisEnabledandSelectValuescript execution starts atThu Dec 03 10:12:41 IST 2020<br/>
+ServiceDropdownofRoomRentEntryPopUpisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ServiceDropdownoffDietChargeEntryPopupisEnabledandSelectValue()'><b>ServiceDropdownoffDietChargeEntryPopupisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1365891887" onClick='toggleBox("Output-1365891887", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365891887" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365891887">
+ServiceDropdownoffDietChargeEntryPopupisEnabledandSelectValuescript execution starts atThu Dec 03 10:12:56 IST 2020<br/>
+ServiceDropdownoffDietChargeEntryPopupisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.ServicetextBoxofOtherServiceEntryPopUpisEnabledandEnterValidService()'><b>ServicetextBoxofOtherServiceEntryPopUpisEnabledandEnterValidService</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-1218147673" onClick='toggleBox("Output-1218147673", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1218147673" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1218147673">
+ServicetextBoxofOtherServiceEntryPopUpisEnabledandEnterValidServicescript execution starts atThu Dec 03 10:13:49 IST 2020<br/>
+ServicetextBoxofOtherServiceEntryPopUpisEnabledandEnterValidServicescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.SettleBillWithDischargebuttonisEnabledandClickable()'><b>SettleBillWithDischargebuttonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-966902272" onClick='toggleBox("Output-966902272", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-966902272" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-966902272">
+SettleBillWithDischargebuttonisEnabledandClickablescript execution starts atThu Dec 03 10:16:11 IST 2020<br/>
+SettleBillWithDischargebuttonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>32</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.SettleBillWithoutDischargeButtonisEnabledandClickable()'><b>SettleBillWithoutDischargeButtonisEnabledandClickable</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-250977006" onClick='toggleBox("Output-250977006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-250977006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-250977006">
+SettleBillWithoutDischargeButtonisEnabledandClickablescript execution starts atThu Dec 03 10:15:17 IST 2020<br/>
+SettleBillWithoutDischargeButtonisEnabledandClickablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.TestDoneorNotDropdownisEnabledandSelectValue()'><b>TestDoneorNotDropdownisEnabledandSelectValue</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-568168922" onClick='toggleBox("Output-568168922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-568168922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-568168922">
+TestDoneorNotDropdownisEnabledandSelectValuescript execution starts atThu Dec 03 10:14:10 IST 2020<br/>
+TestDoneorNotDropdownisEnabledandSelectValuescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.UHIDRadiobuttonisEnabledandClickbale()'><b>UHIDRadiobuttonisEnabledandClickbale</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-553629909" onClick='toggleBox("Output-553629909", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-553629909" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-553629909">
+UHIDRadiobuttonisEnabledandClickbalescript execution starts atThu Dec 03 10:04:05 IST 2020<br/>
+UHIDRadiobuttonisEnabledandClickbalescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.UHIDRadiobuttonisEnabledandClickbale()'><b>UHIDRadiobuttonisEnabledandClickbale</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1300389310" onClick='toggleBox("Output-1300389310", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1300389310" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1300389310">
+UHIDRadiobuttonisEnabledandClickbalescript execution starts atThu Dec 03 10:06:06 IST 2020<br/>
+UHIDRadiobuttonisEnabledandClickbalescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.UHIDRadiobuttonisEnabledandClickbale()'><b>UHIDRadiobuttonisEnabledandClickbale</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1752820099" onClick='toggleBox("Output-1752820099", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1752820099" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1752820099">
+UHIDRadiobuttonisEnabledandClickbalescript execution starts atThu Dec 03 10:07:56 IST 2020<br/>
+UHIDRadiobuttonisEnabledandClickbalescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.UHIDTextBoxisEnabledandEnterValidID()'><b>UHIDTextBoxisEnabledandEnterValidID</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-1219145433" onClick='toggleBox("Output-1219145433", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1219145433" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1219145433">
+UHIDTextBoxisEnabledandEnterValidIDscript execution starts atThu Dec 03 10:09:15 IST 2020<br/>
+UHIDTextBoxisEnabledandEnterValidIDscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.BillSettlementTestScripts.UHIDTextBoxisEnabledandEnterValidID()'><b>UHIDTextBoxisEnabledandEnterValidID</b><br>Test class: ehospital.Billing_Module.TestScripts.BillSettlementTestScripts<br/>
+<a href="#Output-546552684" onClick='toggleBox("Output-546552684", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-546552684" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-546552684">
+UHIDTextBoxisEnabledandEnterValidIDscript execution starts atThu Dec 03 10:12:09 IST 2020<br/>
+UHIDTextBoxisEnabledandEnterValidIDscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>ehospital.Billing_Module.TestScripts.BillSettlementTestScripts@1a84f40f</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts.UHIDcheckBoxisEnabledandSelectable()'><b>UHIDcheckBoxisEnabledandSelectable</b><br>Test class: ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts<br/>
+<a href="#Output-673992821" onClick='toggleBox("Output-673992821", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-673992821" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-673992821">
+UHIDcheckBoxisEnabledandSelectablescript execution starts atThu Dec 03 10:09:11 IST 2020<br/>
+UHIDcheckBoxisEnabledandSelectablescript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts@1d548a08</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.Updatebuttonisenabled()'><b>Updatebuttonisenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-2024711353" onClick='toggleBox("Output-2024711353", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2024711353" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2024711353">
+Updatebuttonisenabledscript execution starts atThu Dec 03 09:54:54 IST 2020<br/>
+Updatebuttonisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.ValidateCONFIGUREREGISTRATIONTEMPLATETabisenabled()'><b>ValidateCONFIGUREREGISTRATIONTEMPLATETabisenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-2118096382" onClick='toggleBox("Output-2118096382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2118096382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2118096382">
+ValidateCONFIGUREREGISTRATIONTEMPLATETabisenabledscript execution starts atThu Dec 03 09:54:36 IST 2020<br/>
+ValidateCONFIGUREREGISTRATIONTEMPLATETabisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts.ValidatePatientTypeDropdownandIsEnabledTryingtoselectValues()'><b>ValidatePatientTypeDropdownandIsEnabledTryingtoselectValues</b><br>Test class: ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts<br/>
+<a href="#Output-633514467" onClick='toggleBox("Output-633514467", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-633514467" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-633514467">
+ValidatePatientTypeDropdownandIsEnabledTryingtoselectValuesscript execution starts atThu Dec 03 10:01:00 IST 2020<br/>
+ValidatePatientTypeDropdownandIsEnabledTryingtoselectValuesscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts@5d47c63f</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonCONFIGUREOPDREGISTRATIONSLIPtabandcheckisenabled()'><b>clickonCONFIGUREOPDREGISTRATIONSLIPtabandcheckisenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1548271808" onClick='toggleBox("Output-1548271808", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1548271808" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1548271808">
+clickonCONFIGUREOPDREGISTRATIONSLIPtabandcheckisenabledscript execution starts atThu Dec 03 09:55:02 IST 2020<br/>
+clickonCONFIGUREOPDREGISTRATIONSLIPtabandcheckisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts.clickonGetSearchResultbuttonwithvalidUHID()'><b>clickonGetSearchResultbuttonwithvalidUHID</b><br>Test class: ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts<br/>
+<a href="#Output-1712003741" onClick='toggleBox("Output-1712003741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1712003741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1712003741">
+clickonGetSearchResultbuttonwithvalidUHIDscript execution starts atThu Dec 03 10:04:16 IST 2020<br/>
+clickonGetSearchResultbuttonwithvalidUHIDscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>ehospital.Billing_Module.TestScripts.DuplicateReceiptTestScripts@45f45fa1</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts.clickonGetSearchResultbuttonwithvalidUHID()'><b>clickonGetSearchResultbuttonwithvalidUHID</b><br>Test class: ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts<br/>
+<a href="#Output-1996472700" onClick='toggleBox("Output-1996472700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1996472700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1996472700">
+clickonGetSearchResultbuttonwithvalidUHIDscript execution starts atThu Dec 03 10:06:16 IST 2020<br/>
+clickonGetSearchResultbuttonwithvalidUHIDscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts@2893de87</td></tr>
+<tr>
+<td title='ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts.clickonGetSearchResultbuttonwithvalidUHID()'><b>clickonGetSearchResultbuttonwithvalidUHID</b><br>Test class: ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts<br/>
+<a href="#Output-1247783800" onClick='toggleBox("Output-1247783800", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1247783800" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1247783800">
+clickonGetSearchResultbuttonwithvalidUHIDscript execution starts atThu Dec 03 10:08:07 IST 2020<br/>
+clickonGetSearchResultbuttonwithvalidUHIDscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>ehospital.Billing_Module.TestScripts.CancelReceiptTestScripts@14a2f921</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonSelectOPDCardTemplateimageandcheckisenabled()'><b>clickonSelectOPDCardTemplateimageandcheckisenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-467632528" onClick='toggleBox("Output-467632528", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-467632528" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-467632528">
+clickonSelectOPDCardTemplateimageandcheckisenabledscript execution starts atThu Dec 03 09:55:05 IST 2020<br/>
+clickonSelectOPDCardTemplateimageandcheckisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonconfiglinkandcheckenabled()'><b>clickonconfiglinkandcheckenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-811562535" onClick='toggleBox("Output-811562535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-811562535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-811562535">
+clickonconfiglinkandcheckenabledscript execution starts atThu Dec 03 09:54:32 IST 2020<br/>
+clickonconfiglinkandcheckenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonconfigureOPDRegisterlinkandcheckenabled()'><b>clickonconfigureOPDRegisterlinkandcheckenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-1191864687" onClick='toggleBox("Output-1191864687", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1191864687" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1191864687">
+clickonconfigureOPDRegisterlinkandcheckenabledscript execution starts atThu Dec 03 09:54:34 IST 2020<br/>
+clickonconfigureOPDRegisterlinkandcheckenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonleftbuttontoselectslipandcheckenabled()'><b>clickonleftbuttontoselectslipandcheckenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-338620258" onClick='toggleBox("Output-338620258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-338620258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-338620258">
+clickonleftbuttontoselectslipandcheckenabledscript execution starts atThu Dec 03 09:55:07 IST 2020<br/>
+clickonleftbuttontoselectslipandcheckenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.clickonlinkandPatientregistrationlinkandisenabled()'><b>clickonlinkandPatientregistrationlinkandisenabled</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-1354280589" onClick='toggleBox("Output-1354280589", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1354280589" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1354280589">
+clickonlinkandPatientregistrationlinkandisenabledscript execution starts atThu Dec 03 09:55:48 IST 2020<br/>
+clickonlinkandPatientregistrationlinkandisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.clickonnewregistrationlinkandisenabled()'><b>clickonnewregistrationlinkandisenabled</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-869290854" onClick='toggleBox("Output-869290854", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869290854" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869290854">
+clickonnewregistrationlinkandisenabledscript execution starts atThu Dec 03 09:55:53 IST 2020<br/>
+clickonnewregistrationlinkandisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.clickonsavebuttonandcheckenabled()'><b>clickonsavebuttonandcheckenabled</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-562561015" onClick='toggleBox("Output-562561015", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-562561015" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-562561015">
+clickonsavebuttonandcheckenabledscript execution starts atThu Dec 03 09:55:16 IST 2020<br/>
+clickonsavebuttonandcheckenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.clickonskipbuttonandisenabled()'><b>clickonskipbuttonandisenabled</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-670084377" onClick='toggleBox("Output-670084377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-670084377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-670084377">
+clickonskipbuttonandisenabledscript execution starts atThu Dec 03 09:55:57 IST 2020<br/>
+clickonskipbuttonandisenabledscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.configureOPDRegisterlinkisdisplayed()'><b>configureOPDRegisterlinkisdisplayed</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-548795052" onClick='toggleBox("Output-548795052", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-548795052" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-548795052">
+configureOPDRegisterlinkisdisplayedscript execution starts atThu Dec 03 09:54:34 IST 2020<br/>
+configureOPDRegisterlinkisdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.configurelinkdisplayed()'><b>configurelinkdisplayed</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-2023917549" onClick='toggleBox("Output-2023917549", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2023917549" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2023917549">
+configurelinkdisplayedscript execution starts atThu Dec 03 09:54:31 IST 2020<br/>
+configurelinkdisplayedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.HomeTest.logout()'><b>logout</b><br>Test class: ehospital.Login_Page.TestScripts.HomeTest<br/>
+<a href="#Output-211973922" onClick='toggleBox("Output-211973922", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-211973922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-211973922">
+logoutscript execution starts atThu Dec 03 09:55:20 IST 2020<br/>
+logoutscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>ehospital.Login_Page.TestScripts.HomeTest@41ee392b</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.logout()'><b>logout</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-1664093259" onClick='toggleBox("Output-1664093259", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1664093259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1664093259">
+logoutscript execution starts atThu Dec 03 09:59:41 IST 2020<br/>
+logoutscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts.skipbuttonisdispalyed()'><b>skipbuttonisdispalyed</b><br>Test class: ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts<br/>
+<a href="#Output-1809129176" onClick='toggleBox("Output-1809129176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1809129176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1809129176">
+skipbuttonisdispalyedscript execution starts atThu Dec 03 09:55:55 IST 2020<br/>
+skipbuttonisdispalyedscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ehospital.Patient_Registration.TestScripts.PatientRegistrationTestScripts@64c87930</td></tr>
+<tr>
+<td title='ehospital.Login_Page.TestScripts.LoginTest.validlogin()'><b>validlogin</b><br>Test class: ehospital.Login_Page.TestScripts.LoginTest<br/>
+<a href="#Output-1175259735" onClick='toggleBox("Output-1175259735", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1175259735" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1175259735">
+validloginscript execution starts atThu Dec 03 09:53:04 IST 2020<br/>
+firefox launched<br/>
+Home-Decks Page is Verified<br/>
+validloginscript   is passed<br/>
+</div>
+</td>
+<td></td>
+<td>68</td>
+<td>ehospital.Login_Page.TestScripts.LoginTest@35fc6dc4</td></tr>
+</table><p>
+</body>
+</html>

@@ -13,7 +13,7 @@ public class StringBuilderBasics {
         StringBuilder s1 = new StringBuilder("Hello");    //String 1  
         StringBuilder s2 = new StringBuilder(" World");    //String 2  
         StringBuilder s = s1.append(s2);   //String 3 to store the result  
-        System.out.println(s);  //Displays result  
+        System.out.println(s + " ...................");  //Displays result  
       
         
 // Converts the value from other Data Type to String. Take wrapper class while converting a DataType to String

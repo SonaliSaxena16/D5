@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Suite execution starts: Sun Aug 20 17:53:24 IST 2023]]>
+    </line>
+    <line>
+      <![CDATA[getStartedButtonIsClickable script execution starts Sun Aug 20 17:53:24 IST 2023]]>
+    </line>
+    <line>
+      <![CDATA[getStartedButtonIsClickable script is passed ]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-08-20T17:53:24 IST" name="Suite" finished-at="2023-08-20T17:53:33 IST" duration-ms="9692">
+    <groups>
+    </groups>
+    <test started-at="2023-08-20T17:53:24 IST" name="browserLaunchAndGenericTest" finished-at="2023-08-20T17:53:33 IST" duration-ms="9657">
+      <class name="com.qa.testcases.LoginPageTest">
+        <test-method signature="getStartedButtonIsClickable()[pri:1, instance:com.qa.testcases.LoginPageTest@4201c465]" started-at="2023-08-20T17:53:24 IST" name="getStartedButtonIsClickable" finished-at="2023-08-20T17:53:33 IST" duration-ms="9609" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[getStartedButtonIsClickable script execution starts Sun Aug 20 17:53:24 IST 2023]]>
+            </line>
+            <line>
+              <![CDATA[getStartedButtonIsClickable script is passed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- getStartedButtonIsClickable -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+    </test> <!-- browserLaunchAndGenericTest -->
+    <test started-at="2023-08-20T17:53:33 IST" name="Test" finished-at="2023-08-20T17:53:33 IST" duration-ms="0">
+      <class name="com.qa.testcases.LoginPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.testcases.LoginPageTest@4201c465]" started-at="2023-08-20T17:53:02 IST" name="setUp" finished-at="2023-08-20T17:53:24 IST" duration-ms="22065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- com.qa.testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

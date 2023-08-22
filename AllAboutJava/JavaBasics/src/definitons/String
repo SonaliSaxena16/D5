@@ -1,5 +1,6 @@
 										STRING
-										
+String is a class in Java
+String is a non-primitive data type also as it can store value of different data types like "1" , 's' . It can store int, char etc.										
 String is basically an object that represents sequence of char values Ex below -
 String is Thread Safe and Final Class in Java
 char[] ch={'j','a','v','a','t','p','o','i','n','t'};  

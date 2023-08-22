@@ -10,6 +10,8 @@ public class SubstringBasic {
 		 System.out.println("Substring starting from index 0 to 6: "+s.substring(0,6)); //Sachin  
 
 		 // Index starts from 0 and it'll goto lastIndex-1
+		 
+		 
 	
 	}
 }

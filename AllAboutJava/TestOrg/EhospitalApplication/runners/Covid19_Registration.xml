@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="eHospital_CovidModule" >
+<listeners>
+<!--  <listener class-name="Analyzer.Transformer"/> -->
+<listener class-name ="in.nic.ehospial.generic.TestListener"/>
+</listeners>
+
+
+ <test thread-count="5" name="Covid">
+ 
+ 
+ <classes>
+ 
+  <class name="ehospital.Covid_Module.TestScripts.Covid19_RegistrationTestScripts"/>
+  <class name="ehospital.Covid_Module.TestScripts.CovidDischargeTestScript"/>
+  
+  </classes>
+ 
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+ 

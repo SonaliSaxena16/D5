@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="in.nic.ehospial.generic.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="PreperationOfRecepit Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts">
+        <methods>
+          <include name="ValidateBillibgTypeDropdownandIsEnabledTryingtoselectValues"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.PreparationOfReceiptsTestScripts -->
+    </classes>
+  </test> <!-- PreperationOfRecepit Test(failed) -->
+  <test thread-count="5" name="Refund Receipt Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts">
+        <methods>
+          <include name="TotalRefundAmountTextBoxisEnabledandEnterAmount"/>
+          <include name="NetAmountTextBoxisEnabledandEnterAmount"/>
+          <include name="DisscountAmountTextBoxisEnabledandEnterAmount"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.RefundReceiptTestScripts -->
+    </classes>
+  </test> <!-- Refund Receipt Test(failed) -->
+  <test thread-count="5" name="Registration Fee Cancellation Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts">
+        <methods>
+          <include name="ReSearchbuttonisEnabledandClickable"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.RegistrationFeeCancellationTestScripts -->
+    </classes>
+  </test> <!-- Registration Fee Cancellation Test(failed) -->
+  <test thread-count="5" name="Bill Settlement Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.BillSettlementTestScripts">
+        <methods>
+          <include name="NetDisscountTextboxofConcessionCalculatorPopUpisEnabledandEnterInValidAmount"/>
+          <include name="TotalAmountTextBoxofConcessionCalculatorPopUpisEnabled"/>
+          <include name="RateTextBoxofBillingServiceEntryPopUpisEnabledandEnterValidRate"/>
+          <include name="DiscountAmountTextBoxofConcessionCalculatorPopUpisEnabled"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.BillSettlementTestScripts -->
+    </classes>
+  </test> <!-- Bill Settlement Test(failed) -->
+  <test thread-count="5" name="Create Scheme Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.CreateSchemeTestScripts">
+        <methods>
+          <include name="UpdateSCHEMEbuttonisEnabledandClickable"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.CreateSchemeTestScripts -->
+    </classes>
+  </test> <!-- Create Scheme Test(failed) -->
+  <test thread-count="5" name="Map Service With Scheme Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.MapServiceWithSchemeTestScripts">
+        <methods>
+          <include name="MapServicebuttonisEnabledandClickable"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.MapServiceWithSchemeTestScripts -->
+    </classes>
+  </test> <!-- Map Service With Scheme Test(failed) -->
+  <test thread-count="5" name="Create patient account Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.CreatepatientaccountTestScripts">
+        <methods>
+          <include name="TryingtocreatePatientAccountforTransGenderPatirnt"/>
+          <include name="AmountLimitTextBoxisEnabledandChangetheAmount"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.CreatepatientaccountTestScripts -->
+    </classes>
+  </test> <!-- Create patient account Test(failed) -->
+  <test thread-count="5" name="Bill Generation Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="ehospital.Billing_Module.TestScripts.BillGenerationTestScripts">
+        <methods>
+          <include name="SearchbuttonisEnabledandClickable"/>
+        </methods>
+      </class> <!-- ehospital.Billing_Module.TestScripts.BillGenerationTestScripts -->
+    </classes>
+  </test> <!-- Bill Generation Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

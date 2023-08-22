@@ -1,4 +1,4 @@
--Interface is achieving 1005 Abstraction
+-Interface is achieving 100% Abstraction
 -We need to write keyword ex - public interface Car
 -As it's 100% abstraction, all the methods defined here are by default abstract means without body & param only name
 -As methods are by default Abstract no need to specify keyword Abstract in method
@@ -7,7 +7,7 @@
 -We can define only Static, Final variable. Also no need to write final by default it's final in nature
 -If you've initialized int wheel = 4, now child cls can't update the vaule
 -When to use Interface, when you want to completely hide ur functionality/bussiness logic. Now BMW is a child class 
-implemets Car interface. Now nobody will come to know abt the implemetation of the start() stop() & restart()
+implements Car interface. Now nobody will come to know abt the implemetation of the start() stop() & restart()
 
 public interface car{
 
@@ -18,3 +18,6 @@ public interface car{
 }
 
 -Note, now it's the child class responsibility to give implementation to all of the above metioned abstract methods
+
+
+ 
