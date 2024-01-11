@@ -1,10 +1,7 @@
 package constructorBasics;
 
 public class ConstructorWithThisKeyword {
-	
-//this keyword can be used to refer current class instance variable,method & constructor
-//The this() constructor refers to the current class object
-// Left Hand Variable is Class/Instance/Global var & Right Hand side is Local var
+
 	
 	String name;
 	int age;

@@ -2,14 +2,12 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	
- 	<listeners>
-		<listener class-name="com.qa.Base.ApplicationListener"></listener>
-	</listeners>
+ 
 	
 	<test name="browserLaunchAndGenericTest">
 		
 		<classes>
-			<class name="com.qa.testcases.LoginPageTest"></class>
+			<class name="com.qa.testcases.PlaceOrderTest"></class>
 		</classes>
 		
 		

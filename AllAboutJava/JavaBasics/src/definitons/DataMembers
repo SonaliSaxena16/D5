@@ -1,4 +1,4 @@
--DataMembers are member variables which are used to store the value. Ex - a=10, b=20, c=a+b
+-DataMembers are the nothing but VARIABLE which are used to store the value. Ex - a=10, b=20, c=a+b
 -Data members may be private or public,but are usually held private so that values may only be changed at the discretion 
 of the class
 -Data member are of two types --> Variable Data Member & Constant Data Member
@@ -8,7 +8,7 @@ Ex - display()
 int a=10;
 sopln(a);
 a=20;
-sopln(20); // Value updated
+sopln(a); // Output is - 20 now Value updated.
 
 -Constant Data Member(value can't be changed, updated or modified)
 -To make Data Member Constant we use FINAL keyword. In case if FINAL Data Member is not initialised then it can only be

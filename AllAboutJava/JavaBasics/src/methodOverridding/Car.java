@@ -4,23 +4,27 @@ public class Car extends Vehicle{
 
 // Polymorphism - One type of Data used in Many Forms
 	
-//Method Overridding is Methods with same signature(which means same method name with same parameters) are created in Parent & child class but implementation comes from different class
+//Method Overridding is Methods with same signature(which means same method name with same parameters) are
+//created in Parent & child class but implementation comes from different class
 
-//Just like in life, Children can inherit properties from Parent, however Parent can't inherit from childern. Same is the case for Parent and Child classes
+//Just like in life, Children can inherit properties from Parent, however Parent can't inherit from 
+	// childern. Same is the case for Parent and Child classes
 
 //In the Test class, we can create Obj of the Parent class(Car) as well as Child class(BMW). 
 	
-//Overridding is a HAS-A Relationship of Inheritance
+//Overridding is an example of HAS-A Relationship of Inheritance
 	
 // Using child class Obj we can call Methods of child as well as Parent class. 
 // -------------Till here it's called STATIC/EARLY BINDING/COMPILE-TIME Polymorphism--------------------------
 	
-// However using Parent class Obj one can call only Parent class method not child class. Bcz Parent's can't have 
+// However using Parent class Obj one can call only Parent class method not child class. Bcz Parent's can't  
 	
-// Child's prorpeties, whereas child can inherit properties from Parents.
+// have Child's prorpeties, whereas child can inherit properties from Parents.
 	
-// In Test class if Parent class wants to call common method b/w Parent and Child class, then child class Obj can be called by Parent Class Reference var. Ex- Car c=new BMW();
-// However still Parent class won't be able to call exclusive method of child class like Car class obj can't call BMWs refuel();
+// In Test class if Parent class wants to call common method b/w Parent and Child class, then child class
+// Obj can be called by Parent Class Reference var. Ex- Car c=new BMW();
+// However still Parent class won't be able to call exclusive method of child class like Car class obj 
+// can't call BMWs refuel();
 	
 // This is also called UPCASTING -> Typecasting a Child Obj to a Parent Obj
 	

@@ -1,12 +1,11 @@
+
 package overloading;
 
 public class MethodOverloading {
-	// Polymorphism - One type of Data used in Many Forms
-	// Method Overloading is same Method name but different Parameter
-	// A method can't have another method inside one method
-	// A class cannot have Methods with the same Signature i.e. same name & param but shud have with same name & different Parameters
-	// Same method name with same parameters aren't allowed
-	// Ex- I've used Overloading in Selenium Action Class, Implicit Wait, Assert	
+//	 Method Overloading is same Method name but different Parameter
+// A class cannot have Methods with the same Signature i.e. same name & param but shud have with same name 
+//	& different Parameters
+//	 Ex- I've used Overloading in Selenium - Action Class, Implicit Wait, Assert	
 	
 	public void eat() { // No parameter
 		System.out.println("no param");
@@ -26,6 +25,7 @@ public class MethodOverloading {
 	}
 		
 	public static void main(String[] args) {
+	
 		MethodOverloading obj = new MethodOverloading();
 		obj.eat();
 		obj.eat("cow");

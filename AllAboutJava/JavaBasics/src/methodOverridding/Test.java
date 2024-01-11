@@ -37,7 +37,9 @@ public class Test {
 		
 		Vehicle v1 = new Car(); // Upcasting
 		v1.engine();
-		
+
+		Vehicle v7 = new BMW(); // Also possible
+		v7.engine();
 	}
 	
 }

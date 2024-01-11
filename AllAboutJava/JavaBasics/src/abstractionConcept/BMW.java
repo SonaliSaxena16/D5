@@ -23,4 +23,10 @@ public class BMW implements Car{
 	public void openroof(){
 		System.out.println("BMW Openroof");
 	}
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		
+	}
 }

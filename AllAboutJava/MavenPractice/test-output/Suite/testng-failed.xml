@@ -3,11 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="browserLaunchAndGenericTest(failed)">
     <classes>
-      <class name="com.qa.testcases.LoginPageTest">
+      <class name="com.qa.testcases.PlaceOrderTest">
         <methods>
-          <include name="setUp"/>
+          <include name="fetchReportSmc"/>
         </methods>
-      </class> <!-- com.qa.testcases.LoginPageTest -->
+      </class> <!-- com.qa.testcases.PlaceOrderTest -->
     </classes>
   </test> <!-- browserLaunchAndGenericTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

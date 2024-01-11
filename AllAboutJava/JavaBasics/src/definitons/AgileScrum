@@ -36,14 +36,14 @@ Sprint Review/Demo - Stakeholders / client / dev qa leads PO
 				
 
 How many types of Issues we've in JIRA ?
-- Feature, Epic, Bug Story, Spike(Research) Technical Debt
+- Feature, Epic, Bug, Story, Spike(Research) Technical Debt
 
 Stages your ticket undergoes ?
 Bcklog - InProgress - Cancel - StakeholderReview(PO) - Approved/ReadyToShip
 
 What is Acceptance Criteria ? - Entry gate
 
-What is Definition of Done ? 
+What is Definition of Done ? It's been tested and verified by Product Owner as well and now ready to ship to PRODUCTION
 
 What is Definition of Ready ? your ticket shud properly groomed
 

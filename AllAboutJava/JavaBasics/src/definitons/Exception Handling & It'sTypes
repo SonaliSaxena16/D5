@@ -10,7 +10,7 @@ handled else it'll terminate the program by throwing an exception which can be s
 				Error(NoChild)											Exception()	
 				Ex - StackOverflow				Checked(CompileTime) -			Unchecked(RUNTIMEExc) -  				
 				OutOfMemory							IO Exception				ArithmenticExc
-													FileNotFoundExc							NullPointerExc
+													FileNotFoundExc				NullPointerExc
 																				ClassCastExc
 																				ArrayIndexOutOfBoundExc
 																				StringIndexOutOfBoundExc

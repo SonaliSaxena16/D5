@@ -1,0 +1,12 @@
+
+We use Extends keyword to implement IS-A relationship.
+We can use all the Methods of Parent class in child class.
+Ex - Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in
+BaseClass. 
+
+If we want to call particular methods not all of the parent class in child class. The we can use HAS-A.
+We can implement this relation by creating object with NEW keyword.
+Now we shud be able to access all those particular methods which we want as per our requirement. 
+Ex- class A has 100 methods now we want some of them in class B. In order to access those we've to create an obj of 
+Class A and access only m1() & m70() method
+

@@ -16,5 +16,11 @@ public interface Car {
 	public void stop();
 	public void refuel();
 	
-	
+	public abstract void eat();
+
+
+
+
 }
+
+
