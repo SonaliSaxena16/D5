@@ -24,12 +24,12 @@ Default constructor (no-arg constructor)
 Parameterized constructor
 
 Is there Constructor class in Java?
-Yes.
+Yes. Java provides a Constructor class which can be used to get the internal information of a constructor in the class. It is found in the java.lang.reflect package.
 
 Does constructor return any value?
 Yes, it is the current class instance it returns the value provided to the Object however if no value provided then it returns 0 or null
 depends on the data types of Variable we are calling. It'll return the basic value of dataTypes ex- for int it'll return 0 for String
-it'll return null(You cannot use return type yet it returns a value).
+it'll return null(You haven't used any return type yet it returns a value).
 
 Ex - 
 

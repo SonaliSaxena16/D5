@@ -1,4 +1,4 @@
-												ABSTRACTION			
+												ABSTRACTION	in JAVA
 Hiding the partial implementation and showing the functionality only is called ABSTRACTION bcz methods may or may not be 
 abstract
 We can create empty Abstract class as well, which means no Variable and no methods defined.
@@ -7,17 +7,17 @@ Object can't be created for Abstract class
 If a method is ABSTRACT, then class must be ABSTRACT and if class is ABSTRACT there may or may not be Abstract methods 
 present
 You can achieve 0-100% abstraction in ABSTRACION CLASS
-Showing partial implementations like deposit()and withdraw() and at the same time hiding some of the implementation logic as well like loan()
+Showing partial implementations like deposit()and withdraw() and at the same time hiding some of the implementation logic for some methods
+like loan()
 Performance wise Abstract classes are faster then Interface bcz methods defined in Test class need to traverse a lot first
 TestClass to ParentClass then to find it's implementation it'll goto child class
 
 
 										INTERFACE
 										
-Hiding the complete implementation and showing the functionality only is called INTERFACE bcz all of the methods are 
-abstract by default Interface have by default all abstract methods
+Interface in Java is a mechanism to achieve 100% Abstraction
+Hiding the complete implementation and showing the functionality only is called INTERFACE bcz all of the methods are abstract by default
 Object can't be created here
-It's 100% abstraction  
 Performance wise Abstract classes are faster then Interface bcz methods defined in Test class need to traverse a lot first TestClass to ParentClass 
 then to find it's implementation it'll goto child class									
 										
@@ -25,12 +25,14 @@ then to find it's implementation it'll goto child class
 Difference in Abstraction & Interface -
 
 			Abstraction 																						Interface
-Hiding the partial implementation and showing the functionality only || Hiding the complete implemetation and showing the functionality only 		
+Hiding the partial implementation and showing the functionality only || Hiding the complete implementation and showing the functionality only 		
 can have Abstract & non-abstract methods || All methods are by default Abstract
 constructor can be defined here || can't be defined in Interface
 variables can be of Static,Final, Non-Static and Non-Final || variables are of public static and final type by default
 It includes class || It includes Interface as the name suggests
 It always class extends class and then Implements interface || Interface always extends interface
+
+														|| Interface also represents the IS-A relationship
 
 NOTE -> class to interface not possible.
 

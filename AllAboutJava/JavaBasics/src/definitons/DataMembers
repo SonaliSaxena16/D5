@@ -1,6 +1,5 @@
--DataMembers are the nothing but VARIABLE which are used to store the value. Ex - a=10, b=20, c=a+b
--Data members may be private or public,but are usually held private so that values may only be changed at the discretion 
-of the class
+-DataMembers are the nothing but VARIABLE or Containers which are used to store the value. Ex - a=10, b=20, c=a+b
+-Data members may be private or public,but are usually held private so that values may only be changed at the discretion of the class
 -Data member are of two types --> Variable Data Member & Constant Data Member
 Variable Data Member(whose value can be changed, updated or modified)
 
