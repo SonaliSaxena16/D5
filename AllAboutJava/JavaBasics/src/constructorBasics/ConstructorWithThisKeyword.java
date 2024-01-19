@@ -7,10 +7,12 @@ public class ConstructorWithThisKeyword {
 	int age;
 	
 	
-	public ConstructorWithThisKeyword(String name,int age){
+	 ConstructorWithThisKeyword(String name,int age){
 		
 //	public ConstructorWithThisKeyword(String name1,int age1){ But this isn't a good practice
 
+		 
+		 
 		this.name = name;
 		this.age = age;
 		

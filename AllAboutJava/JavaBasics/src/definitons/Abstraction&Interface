@@ -7,7 +7,8 @@ Object can't be created for Abstract class
 If a method is ABSTRACT, then class must be ABSTRACT and if class is ABSTRACT there may or may not be Abstract methods 
 present
 You can achieve 0-100% abstraction in ABSTRACION CLASS
-Showing partial implementations like deposit()and withdraw() and at the same time hiding some of the implementation logic for some methods
+Showing partial implementations like Abstract Parent class Bank have common non-abstract methods like deposit()and withdraw() and one 
+abstract() like loanROI() now every child class must provide implementation for it. Hence hiding the partial functionality for some methods
 like loan()
 Performance wise Abstract classes are faster then Interface bcz methods defined in Test class need to traverse a lot first
 TestClass to ParentClass then to find it's implementation it'll goto child class

@@ -1,4 +1,5 @@
 OOPs (Object-Oriented Programming System)
+5 MAIN OOPs - AIIEP (Abstraction, Interface,Inheritance, Encapsulation and Polymorphism). 
 
 A class can also be defined as a blueprint(plan) from which you can create an individual object. Class doesn't consume any space.
 Object means a real-world entity such as a pen, chair, table, computer, watch, etc. 
@@ -6,7 +7,7 @@ Object-Oriented Programming is a methodology
 
 OOPs have some basic concepts - 
 Object - Real world entity
-Class - Collection of Objects or a blueprint to derive objects
+Class - Is a blueprint/roadmap of the objects(how the obj shud behave wt are the color type properties obj wud hold)
 Inheritance - When one Class acquires all the properties and behaviors of a parent Class 
 Polymorphism - If one task is performed in different ways, it is known as polymorphism. Ex - Find area, it can be of circle, triangle etc
 Abstraction - Hiding internal details and showing functionality only

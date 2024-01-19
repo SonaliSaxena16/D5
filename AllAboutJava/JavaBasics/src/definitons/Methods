@@ -1,12 +1,18 @@
 -Methods in Java are used to describe the actions
 -These are of 2 types - Concrete (Which has a body) Abstract (Which doesn't have a body)
--Methods can Parameterized and Non-Parameterized 
 -Method Signature means Method Name and it's parameters
 -A method can't be created inside another method
 -A method can be only Called inside another method. Like in MAIN() we call many other methods 
 - If a method doesn't return anything then the return type would be void
 - Method are of two types - Abstract and Concrete(Parameterised and non-Parameterised method)
-Abstract Method - The method that does not has method body
-Concrete - Which has a body 
-
 - Method can be Overloaded and Overridden.
+
+
+
+
+
+
+
+
+
+

@@ -3,18 +3,20 @@ package superKeyword;
 
 public class A {
 
-	public A(){
-		System.out.println("Parent class constructor");
-	}
-	
-	public A(int i){
+	 A(){
+			System.out.println("Parent class constructor");
+		}
+	 
+	 A(int i){
 		System.out.println("Parent class constructor with i value:"+ i);
 	}
 	
-	public A(int i,String name){
-		System.out.println("Parent class constructor with i & name value:"+ i +" "+name);
+
+	 A(int i,String name){
+		System.out.println("Parent class constructor with i & name value:" + i +" , "+name);
 	}
-	public static void main(String[] args) {
+	
+	 public static void main(String[] args) {
 		A a = new A();
 		A a1 = new A(10);
 		A a2 = new A(10,"Sonali");

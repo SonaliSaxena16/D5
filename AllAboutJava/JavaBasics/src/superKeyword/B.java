@@ -5,22 +5,22 @@ public class B extends A{
 // Super Keyword shud always be written in Child class and it shud be the first statement written inside a Constructor
 // Super Keyword is used to call Parent Class Constructor
 //By creating 3 different obj of the same constructor having same name but different parameters (Constructor Overloading) accordingly to the Parameters passed in Object, a Constructor is called weather it's 1 argument 1 argument or no argument constructor , so here we have achieved CONSTRUCTOR OVERLODING
-//The super() constructor refers immediate parent class object
+//The super keyword constructor refers immediate parent class object
 // Call Parent class constructor thru child cls obj/constructor is called Constructor Chaining can be done by Using SUPER keyword.
-// If you comment all super keyword in class B. It'll still goto cls A (bcz you're using Extends) but evertime before every B class constructor it'll call A cls 1st construcotr define which is non-parameterised then agn come to B cls and call accordingly if it's 1 para or 2 para.
+// If you comment all super keyword in class B. It'll still goto cls A (bcz you're using Extends) but everytime before every B class constructor is called it'll call A cls 1st construcotr define which is non-parameterised then agn come to B cls and call accordingly if it's 1 para or 2 para.
 	
 	
-	public B(){
+	 B(){
 	 super();// Super will immediately go to Parent class A and call its constructor
 	 System.out.println("Child class constructor");
 	}
  
-	public B(int i){
+	 B(int i){
 		 super(i);// Super will immediately go to Parent class and call its constructor
 		 System.out.println("Child class constructor 1 Parameter");
 		}
  
-	public B(int i,String name){
+	 B(int i,String name){
 		 super(i,name);// Super will immediately go to Parent class and call its constructor
 		 System.out.println("Child class constructor 2 Parameter");
 		}

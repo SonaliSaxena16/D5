@@ -1,12 +1,28 @@
+IS-A relationship - Used in INHERITANCE hence called as INHERITANCE-RELATIONSHIP when one lass EXTENDS another class. So using of 
+EXTENDS KEYWORD shows IS-A relationship.
 
-We use Extends keyword to implement IS-A relationship.
-We can use all the Methods of Parent class in child class.
 Ex - Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in
-BaseClass. 
+BaseClass.
 
-If we want to call particular methods not all of the parent class in child class. The we can use HAS-A.
-We can implement this relation by creating object with NEW keyword.
-Now we shud be able to access all those particular methods which we want as per our requirement. 
-Ex- class A has 100 methods now we want some of them in class B. In order to access those we've to create an obj of 
-Class A and access only m1() & m70() method
+HAS-A relationship - It is called as OBJECT/INSTANCE-RELATIONSHIP. When we create 2 different classes and wanted to call methods of class1 in
+class2. It can be achieved by creating object of class1 in class2. 
+
+Ex - class1 {
+		public void display(){ }
+	}
+	
+	class2 {
+		public void show(){ }
+		
+		psvm(String[] args){
+		
+		class1 obj = new class1();
+		obj.display(); // This line shows HAS-A relationship 
+		} }
+		
+		
+ 
+
+
+
 

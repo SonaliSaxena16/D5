@@ -33,8 +33,7 @@ it'll return null(You haven't used any return type yet it returns a value).
 
 Ex - 
 
-//Let us see another example of default constructor  
-//which displays the default values  
+//Let us see another example of default constructor which displays the default values  
 class Student3{  
 int id;  
 String name;  

@@ -8,14 +8,15 @@ public class ConstShowsDefaultValues {
 	void display(){System.out.println(id+" "+name);} 
 	void show() {System.out.println(id); }
 	  
-	public static void main(String args[]){  
+	public static void main(String args[]){ 
+
+		int id1=9;  
 	//creating objects  
 		ConstShowsDefaultValues s1=new ConstShowsDefaultValues();  
 		//ConstShowsDefaultValues s2=new ConstShowsDefaultValues();  
 	//displaying values of the object  
 	s1.display(); 
 	s1.show();
-	//s2.display();  
 	}  
 	}  
 	
