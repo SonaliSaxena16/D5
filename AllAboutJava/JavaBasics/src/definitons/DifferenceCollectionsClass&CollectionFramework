@@ -1,5 +1,0 @@
-Collections 																Collection
-
-It's a class available in java.util package	||		It's a Framework in java, collection is the Parent interface in framework
-It defines several utility methods for collection	|| It is used to represent group of individual objects as a single entity
-framework like sorting,searching etc

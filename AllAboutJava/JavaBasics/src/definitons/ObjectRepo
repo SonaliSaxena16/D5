@@ -1,5 +1,0 @@
--What is Object Reporsitory ?
--Objects are created in HEAP MEMORY
--Object has 2 Values --> Class Name & HashCode
--Hash Code is an integer which is only known to JVM
--JVM creates the Object at run-timeObj has all the Properties & methods defined in a class
