@@ -1,0 +1,28 @@
+IS-A relationship - Used in INHERITANCE hence called as INHERITANCE-RELATIONSHIP when one lass EXTENDS another class. So using of 
+EXTENDS KEYWORD shows IS-A relationship.
+
+Ex - Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in
+BaseClass.
+
+HAS-A relationship - It is called as OBJECT/INSTANCE-RELATIONSHIP. When we create 2 different classes and wanted to call methods of class1 in
+class2. It can be achieved by creating object of class1 in class2. 
+
+Ex - class1 {
+		public void display(){ }
+	}
+	
+	class2 {
+		public void show(){ }
+		
+		psvm(String[] args){
+		
+		class1 obj = new class1();
+		obj.display(); // This line shows HAS-A relationship 
+		} }
+		
+		
+ 
+
+
+
+

@@ -1,0 +1,9 @@
+
+		ARRAY															COLLECTION
+
+These are of fixed size || It is growable as per requirement it can grow and shrink as well
+It contains only homogeneous means similar type of elements || It has both homo and hetrogeneous types of elements
+Array is a class || It's an Interface
+No readymade methods are available || Supports readymade methods like sorting, add, remove etc
+Memory utilization is bad ||	Memory utilization is good here
+Performance is faster bcz of Homo data types || As it is dynamic in nature, supports both Homo & Hetro elements hence performance wise Array is better.					

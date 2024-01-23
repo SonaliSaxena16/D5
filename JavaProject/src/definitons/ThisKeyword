@@ -1,0 +1,50 @@
+THIS Keyword
+ this keyword can be used to refer current class Instance/Global/Class variable 
+ this keyword can be used to invoke current class method
+ Left Hand Variable is Class/Instance/Global var & Right Hand side is Local var
+ 
+ this keyword can be used to invoke current class method
+ Ex - 
+ class A{  
+void m(){System.out.println("hello m");}  
+void n(){  
+System.out.println("hello n");  
+//m();//same as this.m()  
+this.m();  
+}  
+}  
+class TestThis4{  
+public static void main(String args[]){  
+A a=new A();  
+a.n();  
+}}  
+
+Output - 
+hello n
+hello m
+
+// We haven't called a.m() method but itself call as in the same class we can use thisKeyword  to invoke method
+
+this() : to invoke current class constructor
+
+class A{  
+A(){System.out.println("hello a");}  // default constructor
+A(int x){ // Parameterised constructor  
+this();  
+System.out.println(x);  
+}  
+}  
+class TestThis5{  
+public static void main(String args[]){  
+A a=new A(10);  
+}}  
+
+Output - 
+hello a
+10
+
+ 
+ 
+ 
+ 
+ 

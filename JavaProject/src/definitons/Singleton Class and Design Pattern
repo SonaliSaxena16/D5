@@ -1,0 +1,33 @@
+Singleton Class - A class which has only 1 or single OBJECT(Instance)can be created 
+in the heap memory. And provides a single point of access to that object.
+
+-There shud be no other way to create the Object(Instance)of that class.
+
+- TRICK TO DO THAT-
+1 As we know Constructors are called to create the Class Object, what if we make that
+Constructor Private. 
+2 Then we won't be able to create Object with private constructor.
+
+3 Steps to make singleton class, however there's no suh keyword in Java but a CONCEPT
+
+a Declare a Variable(Pvt Static instance). 
+b Declare a Pvt Constructor
+c Declare a public static method, namely getInstance() (is the method we use as it return a 
+Signature object) which'll return the singleTon object/instance created in Point(a)
+as it is wrapped inside a IFstatement 
+
+Ex - 
+
+public class Employee{
+
+private static Employee instance; // Variable
+
+private Employee(){  // Pvt Constructor
+}
+
+public static Employee getInstance(){
+
+if(instance==null){
+instance = new Employee();
+}
+}

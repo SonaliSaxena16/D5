@@ -1,0 +1,78 @@
+An unexpected or unwanted event that disturbs normal flow of the program is called Exception. 
+A program Throws exception, means Java Interpreter wud create an Obj of the exception and 
+throws it to the area where exceptions are being handled. So if you've written a code to catch or handle, it'll be
+handled else it'll terminate the program by throwing an exception which can be seen in your console
+							
+							  Object			(SuperSuper class for every class)
+							  
+							THROWABLE			(Parent class has 2 children)
+							
+				Error(NoChild)											Exception()	
+				Ex - StackOverflow				Checked(CompileTime) -			Unchecked(RUNTIMEExc) 				
+				OutOfMemory							IO Exception				ArithmenticExc
+													FileNotFoundExc				NullPointerExc
+																				ClassCastExc
+																				ArrayIndexOutOfBoundExc
+																				StringIndexOutOfBoundExc
+																				IllegalArgumentExc
+
+
+Lifecycle of an exception
+
+1 find the exception (Hit the exception)
+2 inform the error (throw the exception)
+3 receive the error (catch the exception by writing some code to handle it)
+4 take action (handle the exception)
+
+Mistakes at Compile Time - those are syntax error or semantics error(something wrong in programming logic or syntax errors).
+
+Exception is what we get on run time --> these are of two types -
+1 Checked exception - these are handled in the code itself by using try/catch
+2 Unchecked exception - these are not necessarily handled in the code
+
+Exceptions can be handled by using Try/Catch Block, Throw, Throws, Throwable & with Exception Keyword as well and these are handled by 
+Programmer before hand. Also checked exceptions are extended from java.lang.exception
+
+Try is the block which contains exception & catch is the block where we write code to handle that exception. 
+
+-TRY/CATCH used for reporting & logging of error and by using certain methods with catch. e.printStackTrace() is the 1st fine of catch 
+block this method help to debug as it mentions the line no. in the console
+
+-Throws isn't used for reporting. Is used for a particular method, if you find that method is suspicious and may encounter exception. It's 
+main work is to find the exception only not to handle it. It is written with the method name after bracket. 
+ex - public void grace() throws Exception. Now you've to add try/catch block to handle it.
+
+-You can add THROWALBE with the try catch. If you aren't sure whether your program may get encountered with Error or 
+Exception.To avoid such scenario write - catch(Throwable e)
+
+-You can add EXCEPTION with the try catch. If you aren't sure what kind of Exception your program may encounter with 
+To avoid such scenario write - catch(Exception e)
+
+-You can define your own custom or user-defined exceptions using THROW keyword. Ex - throw new Exception("Sonali Exception"). You can add 
+THROWS with it but again it can only catch the exception and not handle it.Better surround it with try/catch block to handle also.
+However not used in our automation framework.
+
+-As we know OBJECT Class is the Super Super class for every class. So we can pass - catch(Object e) also
+
+UNCHECKED exception - Unchecked exception is an exception that one is not aware abt. Bcz it occurs at the runtime or at 
+the time of execution. Not handled by Programmer beforehand. Also unchecked exceptions are extended from 
+java.lang.runtimeException class
+
+METHODS TO PRINT EXCEPTION INFORMATION - 
+1 written inside catch - e.printStackTrace(); It'll print exception name, description & stacktrace(clsName:java:lineNo)[stacktrace helps to 
+debug].
+
+Ex of Errors - OutOfMemory , StackOverflow
+Ex of Checked exception - FileNotFound, NoSuchMethodException
+Ex of PartiallyChecked exception - Exception & Throwable
+Ex of FullyChecked exception - IOException
+Ex of Unchecked exception - NullPointerException, ArithmeticException, ArrayIndexOutOfBound, classcastexception(Ex-String object cannot be
+cast to an Integer object), IllegalArgumentException() suppose we need input from user ex- % needs to enter 1-100 and user enters 101.
+
+A FULLY checked exception is a checked exception where all its child classes are also checked, like 
+IOException, and InterruptedException. 
+
+A PARTIALLY checked exception is a checked exception where some of its child classes are unchecked, 
+like an Exception. Examples - Exception and Throwable.
+
+

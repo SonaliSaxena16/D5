@@ -1,0 +1,9 @@
+Why Map isn't a Part of Collection Framework ?
+
+Because Map has - Keys, values, key-value pairs, entrySet, ketSet and Col Interface
+doesn't have this Key-Value concept as it has simple methods like add(object) etc.  
+So the reason was it was incompatible with Collection Framework and not possible
+to have these 2 different concepts in the same Hierarchy. Hence it was build in 
+a separate Hierarchy.
+
+
