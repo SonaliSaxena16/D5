@@ -1,0 +1,10 @@
+@DataProvider & @Factory both are Annotations under TestNg
+ 
+@DataProvider: It is annotation used by TestNG to execute the test method multiple numbers of times
+based on the data provided by the DataProvider. Used to supply test data to test methods. This can 
+be useful when you need to test a single method with different sets of input dataIt works on 2d 
+Array. Only 1 instance(object) of class is required that too gets created implicitly no needs to
+created on your own. Can be run directly with @Test Annotation with the dataProvider name provided.
+
+@Factory: It is annotation used by the TestNG to execute the test methods present in the same test class using different instances of the respective class.
+It works on 1d Array. Multiple instance(object) of class needs to be created.

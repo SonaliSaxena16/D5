@@ -1,0 +1,21 @@
+Selenium has basically 4 Components -
+
+Selenium IDE - 
+
+Selenium RC(Remote Control) Server -
+
+WebDriver
+
+Selenium Grid
+
+Architecture of Selenium Suite -
+
+			 Selenium Suite
+		IDE	RC	WebDriver	Grid
+			Selenium2.0(Merged RC+WebDriver)
+			Selenium3.0(New advanced features with Bug fixtures of 2.0)
+
+What is Selenese? 
+Selenese is the set of Selenium commands which are used to test your web application.
+
+ 

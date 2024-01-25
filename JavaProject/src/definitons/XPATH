@@ -1,0 +1,18 @@
+
+What is an XPATH ?
+Xpath allows bidirectional flow which means the traversal can be both ways from parent to child and
+child to parent as well. And is used to locate different WebElements within the XML/HTML Document.
+
+What is the difference between "/" and "//" in XPath
+
+Single slash is used to create Xpath with an absolute path i.e. the XPath would be created to 
+start selection from the start node.
+
+/html/body/div[2]/div[1]/div[1]/a
+
+Double slash is used to create Xpath with relative path i.e. the XPath would be created to start
+selection from anywhere within the document
+
+//div[class="qa-logo"]/a
+
+8 Types of XPATH Axes are there -

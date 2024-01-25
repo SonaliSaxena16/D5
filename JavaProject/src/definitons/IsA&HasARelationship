@@ -4,8 +4,8 @@ EXTENDS KEYWORD shows IS-A relationship.
 Ex - Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in
 BaseClass.
 
-HAS-A relationship - It is called as OBJECT/INSTANCE-RELATIONSHIP. When we create 2 different classes and wanted to call methods of class1 in
-class2. It can be achieved by creating object of class1 in class2. 
+HAS-A relationship - It is called as OBJECT/INSTANCE-RELATIONSHIP. When we create 2 different classes and 
+wanted to call methods of class1 in class2. It can be achieved by creating object of class1 in class2. 
 
 Ex - class1 {
 		public void display(){ }
