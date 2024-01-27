@@ -20,7 +20,7 @@ The CharSequence interface is used to represent the sequence of characters.
 String, StringBuffer and StringBuilder classes implement it. It means, we can create strings in Java by
 using these three classes.
 
-The Java String is immutable which means it cannot be changed. Whenever we change any string, 
+String Objects are immutable which means it cannot be changed. Whenever we change any string, 
 a new instance is created. For mutable strings, you can use StringBuffer and StringBuilder classes.
 
 String Methods -	

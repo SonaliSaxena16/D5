@@ -1,27 +1,36 @@
-HashMap always have a bucket of 16 nodes or 0-15 you can say. If no node is added to the Parent node then it is 
-called as HashMap once 2 or more nodes added to the Parent Node it becomes Linked List and to the max of 8 nodes 
-if added to the LinkedList then it is converted to Balanced Binary Tree.
+
+HashMap always have a bucket of 16 nodes or 0-15 you can say. If no node is added to the Parent node then
+it is called as HashMap once 2 or more nodes added to the Parent Node it becomes Linked List and to the
+max of 8 nodes if added to the LinkedList then it is converted to Balanced Binary Tree.
 
 Balanced Binary Tree is - On the LHS smaller values are stored and on the RHS greater values are stored
-And the ThreshHold of adding a node to the Parent node is 8. After JDK-8 it's mentioned once you reach the 
-threshHold of 8. Then your linkedList converted to a Balanced Binary tree as it's performance is much better.
-And it's complexity is O(log n) as compared to Java 1.8 version in LinkedList O(n)
+And the ThreshHold of adding a node to the Parent node is 8. After JDK-8 it's mentioned once you reach
+the threshHold of 8. Then your linkedList converted to a Balanced Binary tree as it's performance is much
+better. And it's complexity is O(log n) as compared to Java 1.8 version in LinkedList O(n)
+
+So Hashmap has a 1 node or single block which has 4 parts namely Key,HashCode, Value, Pointer of NextObj(toBeAdded) else pointsToNull
 
 Collision - When at the same index more than 2 values get stored it is collision in HashMap
-How to handle Collision - By creating different nodes attached with the parentNode which we called by creating LinkedList.
+How to handle Collision - By creating different nodes attached with the parentNode which we called by 
+creating LinkedList. 
+
+After collision once LinkedList is created then again it gets added to the Parent node mentioned in line 11(having 1 node with four parts same to HashMap).
+
 
 How to calculate index in HashMap ? - On the basis of HashCode index gets calculated
 
-As we know in case of Hash Collision entry objects are stored as a Node in LinkedList & .equals() is used to 
+As we know in case of Hash Collision entry objects are stored as a Node in LinkedList & .equals() is used
 to compare HashCode with Key and if it got the correct matching of both then it'll print the defined Value
 
-At first, index got calculated now program will goto the defined index and check on the basis of hashCode & key with the 
-help of .equals(). 
+At first, index got calculated now program will goto the defined index and check on the basis of hashCode
+& key with the help of .equals(). 
 
 Many objects can have same hashCodes, so it'll check for hashCode which user asking & matches the
-one which is defined in the object but key does not matches so it'll check next object till it gets same HashCode
-& Key for that particular index or until and this way Hashmap converted to Linked List 
+one which is defined in the object but key does not matches so it'll check next object till it gets same 
+HashCode & Key for that particular index or until and this way Hashmap converted to Linked List 
 
+QUE - Wht is the Hashcode of a null ?
+Ans - Hashcode wud be zero and index wud also be zero.
 IMP******** HashCode & Index of Null key is always null means 0. Ex- marks.put(null,700); // It'll return null
 Also we can have only 1 null in the HashMap for that particular HashCode. Another node can be added if we get 
 other node with different HashCode means you've already 700 value at 0th index now you entered 

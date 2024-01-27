@@ -86,7 +86,7 @@ public class ArrayClass {
 
 		//2.
 		   
-		 String []s = {"A", "B"}; // Possible for non-primitive datatypes like string obj enum class
+		 String []s = {"A", "B"}; // Possible for non-primitive datatypes like string, obj & enum class
 		 Object []a = s;
 		 a[1] = "c";
 		 System.out.println("String to obj-- " + s[0]+a[1]); // Output AC

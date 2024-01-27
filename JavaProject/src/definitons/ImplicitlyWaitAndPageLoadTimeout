@@ -1,7 +1,7 @@
-It's a Dynamic Wait menas if you have defined 20 sec and driver instance has found the web element in 2 sec
+It's a Dynamic Wait means if you have defined 20 sec and driver instance has found the web element in 2 sec
 then it'll move to the other action and would not wait for rest 18 seconds.
 
-Though thread.sleep(5000); is a static wait
+Though thread.sleep(5000); is a static and HardCoded wait.
 
 Also Implicitly Wait and PageLoadTimeout is GLOBAL WAIT - 
 
@@ -11,7 +11,15 @@ in your framework in testBase Class
 So suppose driver is interacting with 50 web Elements it's automatically applied for all of them to wait as per the 
 timeunit in seconds you've defined. 
 
-You need not to write pageload or implicitly wait for 50 times.
+You need not to write pageload or implicitly wait 50 times for 50 elements again and again.
 
 That's why we mentioned them in our TestBase class and extends this to every other class so it's applied for all 
 WebElements
+
+PAGELOADTIMEOUT - PageLoadTimeout sets the amount of time to wait for a page to load completely before
+throwing an org.openqa.selenium.TimeoutException error.
+
+While both implicit wait and PageLoadTimeout can be used in the same script, it's important to use them 
+judiciously to avoid unnecessary delays in test execution. Using them together can help ensure that your
+script waits for both individual elements to load and for the entire page to load before proceeding 
+with the next steps.

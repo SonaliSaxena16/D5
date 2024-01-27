@@ -8,7 +8,7 @@ in the heap memory. And provides a single point of access to that object.
 Constructor Private. 
 2 Then we won't be able to create Object with private constructor.
 
-3 Steps to make singleton class, however there's no suh keyword in Java but a CONCEPT
+3 Steps to make singleton class, however there's no such keyword in Java but a CONCEPT
 
 a Declare a Variable(Pvt Static instance). 
 b Declare a Pvt Constructor

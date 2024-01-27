@@ -25,7 +25,7 @@ Student obj2 = new Student(11, "Sakshi");			//		in heap memory obj created with 
 -Static Data is stored in STATIC POOL  
 - Static Variables and Methods can be called directly with ClassName no need to create obj as these are part of the cls not obj
 - Inside Static Method we can only use Static data members.
-- Only Nested class can be STATIC not the Primary class bcz ??
+- Only Nested class can be STATIC not the Primary class bcz it's not allowed in Java.
 -Why is the Java main method static? 
 -It is because the object is not required to call a static method. 
 If it were a non-static method, JVM creates an object first then call main() method that will lead the problem of extra memory

@@ -1,21 +1,32 @@
 Static Block will execute first even b4 Main()
+
 We can have n number of Static Blocks
-It can be written anywhere in the program but will be executed in the sequence as they were written. So output wud be Static Block 1,2,3,4
+
+It can be written anywhere in the program but will be executed in the sequence as they were written. 
+So output wud be Static Block 1,2,3,4
+
 Que - If there's a static Block and static() which will execute first. 
 So 1st wud be blok then method
-Que - If there's a static Block and Static() and in Main() we're calling static() which will execute first. 
-So 1st wud be blok then any statement if written in Main() then static()
+
+Que - If there's a static Block and Static() and in Main() we're calling static() wt'll execute first. 
+So 1st wud be Static block then any statement if written in Main() then static()
+
 Que - How can we run a program without creating a object
 If in the same class calling the method directly, in other class calling it with classname
+
 Que - How can we create object of 1 class in another class, if we make the constructor private ?
 Either with static block or with static()
+
 Que - Is it possible to run & compile a Java Program without writting Main() ?
 Yes if those have static block, static() and static variable.
+
 Que - Can we initialize Non-Static Variable with Static Block ?
 Yes for that create obj of the class inside Static Block and with obj ref call the var within Static Block
+
 Static Variables declared at class level can be directly initialized inside static block.
 
-NOTE - Always 1st static block wud be executed then Main() then instance blok the csonstructor
+NOTE - Always 1st static block wud be executed then Main() then instance block then constructor
+
  
  
  

@@ -22,9 +22,18 @@ value need to initialized
 
 -DataTypes are of two types -->
 -Primitive --> These are Pre-defined by java. Byte1 Short2 int4 long8 float4 double8 boolean char2
--Non Primitive --> These are user-defined. class, enum, interface, String 
 
-Instance variable type	Default values
+-Non Primitive --> These are user-defined in terms of size or length as these parameters aren't fixed by 
+Java unlike these are fixed for Primitives. NonPrimitives are - class, enum, interface, String.
+NonPrimitives can be declared directly with new Keyword.
+Ex if(new String("Tony")== new String ("Tony")){
+
+
+}
+
+
+
+Variable and their Default values
 
 Object	null
 byte	(byte) 0
@@ -39,7 +48,7 @@ char	\u0000
 b 1
 s 2
 i 4
-l 8
+l 8L
 f 4
 d 8
 b 1

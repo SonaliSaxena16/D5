@@ -4,10 +4,47 @@ public class StringBasics {
 
 	public static void main(String[] args) {
 
-		String s1="java";//creating string by Java string literal    
+	//	String s1="java";//creating string with string literal 
+		String s1="Lava"; 
+// here I've easily changed the value of s1 from Java to Lava and physically we can see it on console 
+// but internally in the StringConstantPool Java already exists and now Lava also added. Earlier the 
+//reference s1 which was pointing to java now pointing to lava and JVM wud internally give some ref. to
+// Java. This is how Strings are immutable. 
+		
+		// Ex - how strings are immutable if I try to chng values
+		String sb = new String("Demo ");
+		sb.concat("class"); // Still it'll give Demo
+		// And now
+		sb = sb.concat("class"); // Demo Class
+		System.out.println(sb);
+		
+	//	QUE - Difference in .equals() and == operator
+	// IMP NOTE - == Operator used for Reference Variable(Address Var)Comparison & .equals() used for COntent Comparison
+		
+	//	https://www.youtube.com/watch?v=i7vYjvJOIiw
+			
+		String as1 = new String("Stats");	
+			
+		String as2 = new String("Stats");	
+		
+		System.out.println("chk add " + as1==as2); 
+		
+// It'll chk for reference hence FALSE bcz as1 has got obj created
+// in HEAP as well as StingConstantPool but as2 got created in HEAP only it chk in StringPool but found
+// that "stats" already present there so now both are pointing to different objects in different memory 
+//area HENCE FLSE
+		System.out.println(as1.equals(as2) + "chk content"); // TRUE bcz it'll compare on Content present inside
+		
+		
+		
+		
+		
+		
+		
+		
 		char ch[]={'s','t','r','i','n','g','s'};    
 		String s2=new String(ch);//converting char array to string    
-		String s3=new String("example");//creating Java string by new keyword    
+		String s3=new String("example");//creating string with new keyword    
 		System.out.println(s1);    
 		System.out.println(s2);    
 		System.out.println(s3);  

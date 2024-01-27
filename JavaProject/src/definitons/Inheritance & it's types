@@ -17,10 +17,11 @@ Ex - A(Parent)
 	|_B(Child)
 
 Multiple inheritance means - Multiple (2 or more)Parents class have 1 single child class.
-It's highly discarded bcz suppose Class A & B are the Parent of Class C. And Parent class have common method now child class wud be 
-confused whose method to implement. Since compile-time errors are better than runtime errors, Java renders compile-time error if we 
-inherit 2 classes. But for the Java provides INTERFACE to implement multiple inheritance. Ex- class A implements B,C where(B & C)
-are INTERFACE.
+It's highly discarded bcz suppose Class A & B are the Parent of Class C. And Parent class have same Method
+Signature now child class wud be confused whose method to implement. Since compile-time errors are better
+than runtime errors, Java renders compile-time error if we inherit 2 classes. But for this Java provides
+INTERFACE to implement multiple inheritance at only 1 condition that Method Signature shud be different
+in both the Interfaces B and C. Ex- class A implements B,C where(B & C) are INTERFACE.
 
 Ex - A(Parent)	    B(Parent)
 	        |_C(Child of A and B)	

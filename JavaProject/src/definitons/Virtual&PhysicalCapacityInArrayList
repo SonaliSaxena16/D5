@@ -4,27 +4,29 @@ VIRTUAL CAPACITY - Is always 10 in size & 0-9 as per index. You can't see it or 
 
 PHYSICAL CAPACITY - Is the values you add in the ArrayList. You can find it by using .size()
 
-As soon as you Add values in the ArrayList Physical Capacity gets increased & Virtual Capacity gets decreased. You can see it live as
+As soon as you Add values in the ArrayList Physical Capacity gets increased & Virtual Capacity gets decreased. You can see
+it live as
 -Without adding any vales to ArrayList just print size() as it'll give you PhysicalCap as 0
--Now add some 4 values atleast and now print size() on Debugging you'll see that PhysicalCap has increase from 0 to 4 & VirtualCal has 
-decreased 5-9
+-Now add some 4 values atleast and now print size() on Debugging you'll see that PhysicalCap has increase from 0 to 4 &
+VirtualCal has decreased 5-9
 
--Also you can change the VirtualCap to any number - ArrayList<Object> ar = new ArrayList<Object>(); this is by default give you 10 as capacity
--But in the constructor if you pass the value you want - ArrayList<Object> ar = new ArrayList<Object>(20); As I've given 20 now it has
-increased the capacity from by default 10 to 20
+-Also you can change the VirtualCap to any number - ArrayList<Object> ar = new ArrayList<Object>(); this is by default 
+give you 10 as capacity
+-But in the constructor if you pass the value you want - ArrayList<Object> ar = new ArrayList<Object>(20); As I've given 
+20 now it has increased the capacity from by default 10 to 20
 
 You can add any type of data to ArrayList as ArrayList<> ar = new ArrayList<>(); means now you add any value be it of 
 Int,char,boolean,String any type but Java will give you warning
 
-You can add Raw Type ArrayList as ArrayList<Object> ar = new ArrayList<Object>() by passing the Object generic means now you add any value
-be it of Int,char,boolean,String any type
+You can add Raw Type ArrayList as ArrayList<Object> ar = new ArrayList<Object>() by passing the Object generic means now 
+you add any value be it of Int,char,boolean,String any type
 
 You can have specific ArrayList as well by defining the Wrapper Class in order to store any PrimitiveDataType you want
 ArrayList<Integer> ar = new ArrayList<Integer>() now specifically you can add only Int type values
 
 						GENERICS
-Generics are nothing but the DataType you define while creating the object in the <> arrow brackets of ArrayList what type list you want
-be it Int,Char,String etc
+Generics are nothing but the DataType you define while creating the object in the <> arrow brackets of ArrayList what
+type of list you want be it Int,Char,String etc
 
 
 			4 WAYS TO ITERATE IN ARRAYLIST
