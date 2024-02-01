@@ -1,4 +1,22 @@
-GIT NOTES
+Difference in GIT and GitHub
+
+Git - Is in our own system. Like as soon as we start with git we do initialize a repo in our local machine
+using git init. Now from here we are pushing the code to a Website which is GitHub
+
+GitHub - Is a Website.
+
+Git is a Version Control System, that helps to keep and track changes in the code.
+It is popular, free to download, open-source(License free)
+Fast and scalable(Be it any size of project big or small git can be used)
+It tracks the History of code. Ex- I've started developing HELP btn today and it's taking huge time now I
+thougth to develope it later sometime and as of now I want my previous code back without HELP button.
+Helps in collaboration(Many people are working on the same project, suppose 2 people have made changes to 
+the same file, now whose changes we should keep and whose to discard)That's collaboration and resolving 
+conflicts.
+Using GitHub website we can store and manage our code in a Folder structure popularly known as Repository.
+
+
+
 
 1. git init at the folder location --> command creates a new Git repository. initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
 2. Clone the repo --> git clone copied repo url + press enter

@@ -1,0 +1,17 @@
+In static control flow 3 steps to be followed -
+
+It's a one time activity static gets load 1 time only when class gets load as static is a part of class not object
+
+1 Identify static members (Static Var, Methods, Blocks). Here if data types are defined then they wud be carrying thr default value ex- if int x=10 I've given but at this step it's value is 0
+2 Very 1st static blok will be executed from Top to bottom and assignment of user-defined values to static variables. Here it wud accept int i=10;
+3 At last Main() executes
+
+--------------------------------------------------
+
+In Instance control flow 4 steps to be followed -
+
+It's not a one time activity every time you create a object it wud be performed.
+1 Identify static members (Instance Var, Methods, Blocks). Here if data types are defined then they wud be carrying thr default value ex- if int x=10 I've given but at this step it's value is 0
+2 Very 1st static blok will be executed from Top to bottom and assignment of user-defined values to static variables. Here it wud accept int i=10;
+3Constructor executes
+ At last main() executes
