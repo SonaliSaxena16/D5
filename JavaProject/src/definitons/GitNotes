@@ -5,41 +5,134 @@ using git init. Now from here we are pushing the code to a Website which is GitH
 
 GitHub - Is a Website.
 
+-------------------------------------------------
+
+Advantages of GIT
+
 Git is a Version Control System, that helps to keep and track changes in the code.
+
 It is popular, free to download, open-source(License free)
+
 Fast and scalable(Be it any size of project big or small git can be used)
+
 It tracks the History of code. Ex- I've started developing HELP btn today and it's taking huge time now I
 thougth to develope it later sometime and as of now I want my previous code back without HELP button.
+
 Helps in collaboration(Many people are working on the same project, suppose 2 people have made changes to 
 the same file, now whose changes we should keep and whose to discard)That's collaboration and resolving 
 conflicts.
+
 Using GitHub website we can store and manage our code in a Folder structure popularly known as Repository.
 
+-----------------------------------------------------------
+
+Git workflow when we start from our Local machine to create a repo and start coding in it then pushing 
+the code to GitHub
+
+Initialize an empty git repo at the folder, git init is the cmnd
+Then, git clone to clone the repo from Master to Local
+Then do coding or make some changes
+Then, check git status it must show file changes like untracked or modified
+Then, add those changes to a SAFE Place which is Git Staging Area
+Now commit/finalise those change using git commit -m "commit msg"
+Then, equalise your Local Repo content with Remote Repo send/Push your changes to GitHub Website to 
+generate a PR Link for review
 
 
+------------------------------------------------------------------
+Que What are 4 Type of status shown in - git status cmnd ?
 
-1. git init at the folder location --> command creates a new Git repository. initialize a new, empty repository. Most other Git commands are not available outside of an initialized repository, so this is usually the first command you'll run in a new project.
-2. Clone the repo --> git clone copied repo url + press enter
-3. git restore FILENAME - It is used to undo changes made in a specific file
-4. git status - We can get to know on which file changes  we've did. When changes happened(Add/Delete/Update-Modified) in case of Add it's showed in Green when modified/deleted showed in Red
-5. git add FILENAME - it is used to add your file to Staging Area first 
+Ans Untracked - New file that git doesn't know about or haven't tracked yet.
+
+Modified - File know by git but you've made some changes to it.
+
+Staged - File is ready to be committed. Once you've run the git add filename cmnd then only file reaches to 
+staged area.
+
+Unmodified - Unchanged
+
+Que What is Merge Conflicts ?
+Ans Merge Conflicts occurs when competing changes are made to the same line of file ex- Someone has added
+a line to file1 and another person has deletes the same file.
+
+Que How do you resolve Merge Conflicts ?
+Ans In this situation Git is unable to resolve differences in code automatically between 2 commits.
+It can be resolved by having a discussion with Team whose and what changes needs to be kept then open your 
+editor remove those unwanted line and do git add then commit and lastly push. Conflict Resolved!
+
+Que What is FORK ?
+Ans Fork is a new repository that shares the same code and same visibility settings with the original
+Repository which we've copies or Forked. Basically it's a rough copy. Ex- I went to apple's repository and
+Forked it now I've Apple's code in my Repo this is FORK.
+
+----------------------------------------------------------------------
+
+Common Git Commands
+
+1. git init -> Run command at the folder location, to create a new Git repository. initialize a new, empty 
+repository. Most other Git commands are not available outside of an initialized repository, so this is 
+usually the first command you'll run in a new project.
+
+2. git clone paste repo Link-> Clones the repo to our local machine 
+
+3. git restore filename -> It is used to undo changes made in a specific file
+
+4. git status -> Displays the state of Code. We can get to know on what changes we've did on a file. When 
+changes happened(Add/Delete/Update-Modified). In case of Add it's showed in Green when modified/deleted 
+showed in Red.
+
+5. git add filename - > it is used to add your file to Staging Area first 
+
    git add . -> to add multiple files to staging area
-6. git commit -m "message" - It is used to finalise/save your changes of the local repo. As after commit if you do git status you'll find working tree is clean. Nothing to commit.
-7. git push origin BRANCHNAME(LOCAL BRANCH) - It helps to push my Local Changes to Main/Remote Repo and it'll generate a PR link and now it's ready for review.
-8. git pull origin BRANCHNAME - Pulls a specific branch changes either from any specified Branch or Master branch in your Local
+   
+6. git commit -m "message" -> It is used to finalise/save your changes of the local repo. 
 
-9. git fetch - fetch all(incompleted PRs like Draft or Open) the existing Repo from Remote to Local repo 
+7. git push origin branchName(LOCAL BRANCH)or(master) -> It helps to push my Local Changes to Remote 
+Repo and it'll generate a PR link and now it's ready for review.
 
-10. git checkout BRANCHNAME - If your Local Branch already exists, you can simply use this cmd/ It is used to switch b/w Branches in Local Repo.
-11. git checkout -b BRANCHNAME - When you wanted to create new Local branch and make you switch onto it. It is used to switch b/w Branches in Local Repo.
-12. git branch - It'll give you the list of All the Local Branches which are present in you Local Repo.
+8. git pull origin branchName(or Main/Master) -> Used to fetch and download content from Remote Repo and immediately update the
+Local Repo to match the content he content between these two. 
 
-13. git branch -d BRANCH_NAME --> In order to Delete your Local Branch. Without forcefully. Ex - No unchanged file, code merged.
-14. git branch -D BRANCH_NAME - In order to Delete your Local Branch Do forcefully. Ex - When changes are in Staging area. 
+9. git fetch -> Fetches all(incompleted PRs like Draft or Open) from the existing Repo of Remote to Local repo 
 
-15. git stash --> save your changes temporarily so that we can switch or create a new branch. Ex - You're working o a P2 ticket and suddenly asked to work on P1. In that case you can stash your changes of P2 switch branch and start working on P1.
-16. git stash list - will show list of all stash with the saved index
-17. git stash show stash@{Pass Index} - will show all changes have done in particualr stash 
-18. git stash apply stash@{Pass Index} - will revert the changes of particular stash and saved the copy of stash
-19. git stash pop stash@{Pass Index} -will revert the changes of particular stash and remove the stash from list
+10. git checkout branchName -> If your Local Branch already exists, you can simply use this cmnd.
+
+11. git checkout -b branchName -> When you wanted to create new Local branch and make you switch onto it.
+
+12. git branch -> It'll give you the list of All the Local Branches which are present in you Local Repo.
+    git branch - m newBranchName -> It'll update the branch name.
+
+13. git branch -d newBranchName --> In order to Delete your Local Branch. Not forcefully. 
+Ex - No unchanged file, no code merged.
+
+14. git branch -D newBranchName - In order to DELETE your Local Branch Do FORCEFULLY.
+Ex - When changes are in Staging area. 
+
+15. git diff branchName -> To compare 2 branches. Ex- am currently in feature1 branch and now I do git diff
+feature2. It would shows the difference n content in both the branches.
+
+16. git merge branchName(or Main) -> If I want to merge my current branch with Main/Master branch. 
+Ex- My PR has been approved now from git I can use this cmnd to merge or can be done using GitHub Website
+where we've a button of Merge Pull Request.
+
+	For Undo Changes below are the cmnds:
+17. git reset fileName -> Changes which were added to git but not committed can be reversed.
+   
+    git reset HEAD~1 -> Latest commit would be back by one. Ex - If you've recent made 
+    3-4 commits then using this cmnd you can reverse the LAST COMMIT.
+   
+    git reset hard hashCode(do git log alphanumeric number written beside commit is HashCode) -> 
+    It'll remove the particular commit for which you've provided the HashCode.
+   
+18. git log -> To check all of your commits.
+
+19. git stash --> save your changes temporarily so that we can switch or create a new branch. Ex - You're working o a P2 ticket and suddenly asked to work on P1. In that case you can stash your changes of P2 switch branch and start working on P1.
+
+20. git stash list -> will show list of all stash with the saved index
+
+21. git stash show stash@{Pass Index} -> will show all changes have done in particualr stash 
+
+22. git stash apply stash@{Pass Index} -> will revert the changes of particular stash and saved the copy of stash
+
+23. git stash pop stash@{Pass Index} -> will revert the changes of particular stash and remove the stash from list
 

@@ -1,0 +1,80 @@
+Que What is API and WebService ?
+Ans Application Programming Interface is API, when these APIs are hosted on Web are called WebServices.
+All Webservices are APIs but not all APIs are Webservices.
+
+Que Types of WebServices ?
+Ans 2 types of it :
+SOAP - Simple Object Access Protocal
+REST - Representational State Transfer
+
+Que Difference in SOAP and REST ?
+Ans SOAP 
+Is old to use. 
+It sends and receives data only in xml format. Hence low in performance as XML is not light weighted.
+Supports only POST Request.
+
+REST 
+Trending technology.
+We can send request in any format and get the response also in HTML, JSON, Text, XML format. 
+REST are fast in nature in order to process requests as they carry light-weighted data like HTML, JSON, Text,
+XML. 
+REST supports different Operations/Requests to send data to server like Get, Put, Post, Patch, Delete etc
+
+Que Some common HTTP Requests/Verbs ?
+Ans Get - To retrieve some data from server
+	Post - To create a new data on server
+	Put -  To update a data on server
+	Delete - To delete a resource/data on server
+	
+Que What is uri (Uniform Resource Identifer) and it's parts ?
+Ans URI - https://reqres.in/api/users?page=2. All it's parts collectively makes a URI 
+though Query Parameter may or may not be present but Domain and Path Parameter are a must to make URI
+Domain -  https://reqres.in
+Path Parameter - /api/users
+Query Parameters - page=2
+
+Que What is URL (Uniform Resource Locator)?
+Ans It is more of a generi term, what we are sending to perform operation is URL. Ex- Url can be 
+https://reqres.in or https://reqres.in/api/users or https://reqres.in/api/
+
+Que Can we send an API request on Browser ?
+Ans Yes paste the api in borwser search bar and hit enter it'll return the response in JSON but we cannot do
+validations here for that we need to have a API Testing tool like Postman or Swagger.
+
+Que What is Request Payload/Request Body and Response Payload ?
+Ans Whenever we send POST(to create) or PUT(to update) we send Request Payload/Request Body to the server 
+telling them that this needs to be created or updated.
+After sending either POST or PUT body what we receive in response is called Response Payload.
+
+Que Difference in Query Parameter and Path Parameter ?
+Ans  Query Parameter will filter the data. Ex- https://reqres.in/api/users?page=2. Here filter is page number=2.
+Path Parameter will get the data from the server based on the path we've specified in URI. Ex-
+https://reqres.in/api/users here after domain we use / to indicate Path Parameter that these are the 
+locations server needs to be redirected.
+ 
+
+
+
+PART -5 Auths and API Chaining
+PART -6 Upload/Download a FILE thru API
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
