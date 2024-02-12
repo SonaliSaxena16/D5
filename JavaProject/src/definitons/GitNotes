@@ -3,7 +3,7 @@ Difference in GIT and GitHub
 Git - Is in our own system. Like as soon as we start with git we do initialize a repo in our local machine
 using git init. Now from here we are pushing the code to a Website which is GitHub
 
-GitHub - Is a Website.
+GitHub - Is a Website hosted on Internet.
 
 -------------------------------------------------
 
@@ -62,8 +62,8 @@ editor remove those unwanted line and do git add then commit and lastly push. Co
 
 Que What is FORK ?
 Ans Fork is a new repository that shares the same code and same visibility settings with the original
-Repository which we've copies or Forked. Basically it's a rough copy. Ex- I went to apple's repository and
-Forked it now I've Apple's code in my Repo this is FORK.
+Repository for which we've create a copiyor Forked. Basically it's a rough copy. Ex- I went apple's 
+repository and Forked it now I've Apple's code in my Repo this is FORK.
 
 ----------------------------------------------------------------------
 
@@ -126,7 +126,9 @@ where we've a button of Merge Pull Request.
    
 18. git log -> To check all of your commits.
 
-19. git stash --> save your changes temporarily so that we can switch or create a new branch. Ex - You're working o a P2 ticket and suddenly asked to work on P1. In that case you can stash your changes of P2 switch branch and start working on P1.
+19. git stash --> save your changes temporarily so that we can switch or create a new branch. Ex - You're 
+working o a P2 ticket and suddenly asked to work on P1. In that case you can stash your changes of P2, now
+switch branch and start working on P1.
 
 20. git stash list -> will show list of all stash with the saved index
 
