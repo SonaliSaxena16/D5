@@ -102,10 +102,10 @@ Local Repo to match the content he content between these two.
 12. git branch -> It'll give you the list of All the Local Branches which are present in you Local Repo.
     git branch - m newBranchName -> It'll update the branch name.
 
-13. git branch -d newBranchName --> In order to Delete your Local Branch. Not forcefully. 
+13. git branch -d branchName --> In order to Delete your Local Branch. Not forcefully. 
 Ex - No unchanged file, no code merged.
 
-14. git branch -D newBranchName - In order to DELETE your Local Branch Do FORCEFULLY.
+14. git branch -D branchName - In order to DELETE your Local Branch Do FORCEFULLY.
 Ex - When changes are in Staging area. 
 
 15. git diff branchName -> To compare 2 branches. Ex- am currently in feature1 branch and now I do git diff

@@ -14,9 +14,9 @@ public class ExceptionPrac {
 		        System.out.println(e);
 		    }  
 
-		    catch(ArithmeticException ex){
-		        System.out.println(ex);
-		    }    
+//		    catch(ArithmeticException ex){ //If this line uncommented it'll give error bcz child exception cant be written below. It shud be above then followed by Parent Exception name 
+//		        System.out.println(ex);
+//		    }    
 
 		} 
 

@@ -13,11 +13,11 @@ public class Factorial {
 		int i,fact=1;
 		
 		for(i=1; i<=num; i++) {
-			fact = fact*i;
-			1=1*1=1
-			1=1*2=2
-			2=2*3=6
-			6=6*4=24
+			fact = i*fact;
+//			1=1*1=1
+//			1=1*2=2
+//			2=2*3=6
+//			6=6*4=24
 		}
 		
 		

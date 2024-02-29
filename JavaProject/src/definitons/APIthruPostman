@@ -23,7 +23,8 @@ REST supports different Operations/Requests to send data to server like Get, Put
 Que Some common HTTP Requests/Verbs ?
 Ans Get - To retrieve some data from server
 	Post - To create a new data on server
-	Put -  To update a data on server
+	Put -  To update whole data on server
+	Patch - To update some part of data on server 
 	Delete - To delete a resource/data on server
 	
 Que What is uri (Uniform Resource Identifer) and it's parts ?
