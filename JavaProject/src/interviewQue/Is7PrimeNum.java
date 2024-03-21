@@ -1,4 +1,4 @@
-package practiceInterviewQue;
+package interviewQue;
 
 public class Is7PrimeNum {
 

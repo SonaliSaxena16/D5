@@ -1,0 +1,5 @@
+
+
+We can have multiple Catch Block for 1 Try Block
+There can be Try without Catch but Vice Versa is not possible
+There is no limit on the number of Catch Block corresponding to Try Block

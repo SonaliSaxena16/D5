@@ -1,4 +1,4 @@
-package practiceInterviewQue;
+package interviewQue;
 
  abstract class AbstractPractice{
 

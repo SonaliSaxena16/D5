@@ -1,10 +1,10 @@
-package practiceInterviewQue;
+package interviewQue;
 
 public class ReverseAString {
 
 	public static void main(String[] args) {
 
-		        String str = "Mahadev";
+		        String str = "I AM SONALI";
 		        
 		        String rev = "";
 		        

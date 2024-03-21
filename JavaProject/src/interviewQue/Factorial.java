@@ -1,4 +1,4 @@
-package practiceInterviewQue;
+package interviewQue;
 
 import java.util.Scanner;
 

@@ -42,7 +42,7 @@ static {
 	System.out.println(map2.get("Test"));
 	// Now if you try to add one more entry to this Singleton Map it'll throw UnsupportedOperationException
 	
-	map2.put("Demo", 999); // Runtime Exception
+	//map2.put("Demo", 999); // Runtime Exception
 	
 	
 	

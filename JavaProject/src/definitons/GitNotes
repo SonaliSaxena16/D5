@@ -30,7 +30,7 @@ Git workflow when we start from our Local machine to create a repo and start cod
 the code to GitHub
 
 Initialize an empty git repo at the folder, git init is the cmnd
-Then, git clone to clone the repo from Master to Local
+Then, git clone to clone the repo from Master to Local. (git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 Then do coding or make some changes
 Then, check git status it must show file changes like untracked or modified
 Then, add those changes to a SAFE Place which is Git Staging Area
@@ -62,7 +62,7 @@ editor remove those unwanted line and do git add then commit and lastly push. Co
 
 Que What is FORK ?
 Ans Fork is a new repository that shares the same code and same visibility settings with the original
-Repository for which we've create a copiyor Forked. Basically it's a rough copy. Ex- I went apple's 
+Repository for which we've create a copy or Forked. Basically it's a rough copy. Ex- I went apple's 
 repository and Forked it now I've Apple's code in my Repo this is FORK.
 
 ----------------------------------------------------------------------
@@ -95,7 +95,8 @@ Local Repo to match the content he content between these two.
 
 9. git fetch -> Fetches all(incompleted PRs like Draft or Open) from the existing Repo of Remote to Local repo 
 
-10. git checkout branchName -> If your Local Branch already exists, you can simply use this cmnd.
+10. git checkout branchName -> lets you navigate between the branches. If your Local Branch already exists, 
+ you can simply use this cmnd.
 
 11. git checkout -b branchName -> When you wanted to create new Local branch and make you switch onto it.
 
@@ -137,4 +138,13 @@ switch branch and start working on P1.
 22. git stash apply stash@{Pass Index} -> will revert the changes of particular stash and saved the copy of stash
 
 23. git stash pop stash@{Pass Index} -> will revert the changes of particular stash and remove the stash from list
+
+Que difference between git clone and fork
+
+Ans Forking creates your own copy of a repository in a remote location and You can clone your repository to create a local copy on your computer from Remote Repo
+
+Que What is the use of .gitIgnore file
+
+Ans to ensure that certain files not tracked by Git remain untracked.
+
 

@@ -16,7 +16,6 @@ public class ConvertHashMapToArrayList {
 		compMap.put("Cisco", 5000);
 		
 		System.out.println(compMap.size());
-		
 		// Convert HashMap keys to ArrayList :
 		
 		List<String> compNamesList = new ArrayList<String>(compMap.keySet());
