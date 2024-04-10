@@ -2,6 +2,7 @@ Test Plan
 
 Is a specific Project level Document
 Focuses on the details of how testing will be carried out
+Prepared by the QA Lead
 Provides a roadmap for the testing activities, like what, when, & how to test
 Teams includes testers, developers, managers, and stakeholders
 Parameters are - test scope, objectives, resources, schedule, test environment, test cases, entry/exit criteria, risks, and deliverables
@@ -10,6 +11,7 @@ Parameters are - test scope, objectives, resources, schedule, test environment, 
 Test Strategy
 
 Is a high-leve document, prepared at Organization Level
+Prepared by Project Manager
 It has principles, objectives, and methods to achieve consistent testing across projects
 Teams includes management, project leads, and high-level stakeholders
 Covers testing types (functional, performance, security, etc.), selection of Tools for defect management, risk assessment, and overall process

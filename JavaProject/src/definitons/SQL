@@ -1,4 +1,4 @@
-SQL
+SQL Lecture from Intellipaat - https://www.youtube.com/watch?v=LGTbdjoEBVM
 
 create database happy
 
@@ -43,11 +43,15 @@ select * from Employee where e_name LIKE 'J%' // starts with 'J'
 
 select * from Employee where e_name LIKE 'J%f' // starts with 'J' and ends with 'F'
 
-select count(*) from Employee where e_gender='female'
-
 // Examples with _
 
 select * from Employee where e_age LIKE '4_' // Select from employee db where age is in 40's
+
+// In Operator
+
+delete from department where dept_name in ('content' , 'Support')
+
+delete from department where dept_id in (5,6)
 
 // Between Operator
 select * from Employee where e_age BETWEEN	30 AND 50
@@ -60,4 +64,99 @@ select min(e_age) from Employee where e_gender='Female'
 
 MAX() Function
 select max(e_age) from Employee where e_name like '%f'
+
+Count() Function
+select count(*) from Employee where e_gender='female'
+======================================================
+
+SUM fnct se likhna h ------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Substring() function
+select SUBSTRING('this is me',9,2)
+
+// TOP Clause
+select TOP 3 * from Employee
+
+// GROUP BY clause
+select AVG(e_salary),e_gender from Employee group by e_gender
+
+select count(*),e_gender from Employee group by e_gender
+
+// group by with order by
+select AVG(e_age),e_dept from Employee group by e_dept order by avg(e_age) desc;
+select AVG(e_age),e_dept from Employee group by e_dept order by avg(e_age) ;
+select AVG(e_salary) as avg_salary, e_dept from Employee group by e_dept
+select count(e_salary) as counted_salary, e_dept from Employee group by e_dept
+
+// Having clause must be used with group by
+select AVG(e_salary) as avg_salary, e_dept from Employee group by e_dept having AVG(e_salary)>100000
+
+select count(e_salary) as counted_salary, e_dept from Employee group by e_dept having avg(e_salary) > 100000
+
+// Having clause with group by and order by
+select AVG(e_salary) as avg_salary, e_dept from Employee group by e_dept having AVG(e_salary)>100000 order by e_dept desc
+
+
+// Created Department Table and inserted values to apply joins further -
+create table department(
+dept_id int not null,
+dept_name varchar(20),
+dept_location varchar(20))
+
+insert into department values(1,'Content','New York'),
+(2,'Support','Chicago'),
+(3,'Analytics','New York'),
+(4,'Sales','Boston'),
+(5,'Tech','Dallas'),
+(6,'Finance','Chicago')
+
+select * from Employee
+
+select * from department
+
+// Inner Join
+
+select * from Employee as e inner join department as d on e.e_dept=d.dept_name
+select  e.e_name, e.e_dept, d.dept_name, d.dept_location from Employee as e inner join department as d on e.e_dept=d.dept_name
+
+
+// Left Join
+select * from Employee as e left join department as d on e.e_id=d.dept_id
+
+// Right Join
+select * from department as d right join Employee as e on d.dept_id=e.e_id
+
+
+// Full Join or full outer join
+select * from department as d full  join Employee as e on d.dept_id=e.e_id 
+
+select * from department as d full outer join Employee as e on d.dept_id=e.e_id 
+
+
+
+
+
+
+
+
+
 

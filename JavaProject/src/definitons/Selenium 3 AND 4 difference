@@ -1,0 +1,47 @@
+Selenium 3 and 4 difference ?
+
+1 WebDriver W3C Standardization: 
+Selenium 3 uses Json Wire Protocol 4 uses W3C Standards which provides more
+consistency in interactions with web elements across browsers. This improves cross-browser testing.
+
+2 Relative Locators:
+Selenium 3: You had to rely on traditional locators like XPath or CSS for element identification.
+Selenium 4: Introduces Relative Locators, making it easier to locate elements based on their proximity to other 
+elements (e.g., above, below, to the left, to the right). This simplifies complex element locating scenarios.
+
+3 New Features for JavaScript Execution:
+Selenium 3: Limited support for executing JavaScript in the browser.
+Selenium 4: Enhancements in executing JavaScript code in the browser with new methods like executeAsyncScript. 
+This allows you to work with JavaScript promises and async/await.
+
+4 Improved Event Listeners:
+Selenium 3: Limited support for event listeners.
+Selenium 4: Offers more comprehensive support for listening to browser events, making it easier to track user 
+interactions and events like page load, clicks, and more.
+
+5 New Browsers and Grid Features:
+
+Selenium 3: Had limitations when working with the latest browser versions and grid configurations.
+Selenium 4: Supports the latest browser versions and includes features like a new Grid interface (Grid 4) for 
+better scalability and stability.
+
+6 DevTools Integration:
+
+Selenium 3: Lacked native support for browser DevTools.
+Selenium 4: Provides native integration with browser DevTools, enabling advanced debugging and performance 
+analysis during test execution.
+
+7 Automatic Browser Updates:
+
+Selenium 3: Required manual updates for browser drivers.
+Selenium 4: Offers automatic browser driver updates, reducing maintenance efforts.
+
+8 Improved Documentation:
+Selenium 4: Comes with improved and updated documentation, making it easier for QA engineers to understand and use the framework effectively.
+
+9 Backward Compatibility:
+Selenium 4 aims to maintain backward compatibility with Selenium 3 to ease the transition for existing projects.
+
+10 Community and Support:
+Selenium 4 is expected to have better community support and active development, ensuring ongoing improvements
+and bug fixes.

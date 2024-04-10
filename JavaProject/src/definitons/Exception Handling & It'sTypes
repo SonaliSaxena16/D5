@@ -30,9 +30,9 @@ Exception is what we get on run time --> these are of two types -
 1 Checked exception - these are handled in the code itself by using try/catch
 2 Unchecked exception - these are not necessarily handled in the code
 
-Exceptions can be handled by using Try/Catch Block, Throw, Throws, Throwable & with Exception Keyword as well and these are handled by 
+Exceptions can be handled by using Try/Catch Block, Throw, Throws, Throwable Keyword & with Exception Keyword as well and these are handled by 
 Programmer before hand. Also checked exceptions are extended from java.lang.exception
-
+	
 Try is the block which contains exception & catch is the block where we write code to handle that exception. 
 
 -TRY/CATCH used for reporting & logging of error and by using certain methods with catch. e.printStackTrace() is the 1st fine of catch 

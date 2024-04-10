@@ -21,35 +21,25 @@ value need to initialized
 -If we are expecting DataType int and we've passed String, then it would give InputMismatchException 
 
 -DataTypes are of two types -->
--Primitive --> These are Pre-defined by java. Byte1 Short2 int4 long8 float4 double8 boolean char2
+-Primitive --> These are Pre-defined by java. Byte1 Short2 int4 long8 float4 double8 boolean1 char2
+
+When a variable is declared but not initialized, it is assigned a default value based on its data type. 
+
+Object	null
+byte: 0
+short: 0
+int: 0
+long: 0L
+float: 0.0f
+double: 0.0d
+char: ‘\u0000’ (null character)
+boolean: false
 
 -Non Primitive --> These are user-defined in terms of size or length as these parameters aren't fixed by 
 Java unlike these are fixed for Primitives. NonPrimitives are - class, enum, interface, String.
 NonPrimitives can be declared directly with new Keyword.
 Ex if(new String("Tony")== new String ("Tony")){
-
-
 }
 
 
 
-Variable and their Default values
-
-Object	null
-byte	(byte) 0
-short	(short) 0
-int	0
-long	0L
-float	0.0
-double	0.0d
-boolean	false
-char	\u0000
-
-b 1
-s 2
-i 4
-l 8L
-f 4
-d 8
-b 1
-c 2

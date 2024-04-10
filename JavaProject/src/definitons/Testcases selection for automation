@@ -1,0 +1,8 @@
+How to select test cases for automation ?
+
+Repetitive tests that run for multiple builds.
+Tests that tend to cause human error.
+Tests that require multiple data sets.
+Frequently used functionality that introduces high risk conditions.
+Tests that are impossible to perform manually.
+

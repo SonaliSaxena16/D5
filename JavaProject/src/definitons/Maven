@@ -33,7 +33,7 @@ folder.
 8 Deploy - It copies the packaged code to the remote repository for sharing it with other developers.
 
 Que What would happen if you run project as run as -> 1 maven build ?
-Ans It would ask for Goals(Goals are like taget what you want to do in your project ex- clean/compile or test). So you may 
+Ans It would ask for Goals(Goals are like target what you want to do in your project ex- clean/compile or test). So you may 
 mention clean and hit run button and in the console it'll mention the report of cleaning as Build Successful. Or you may
 directly right click on pom.xml click maven clean. Can be done either ways.
 

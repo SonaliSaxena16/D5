@@ -1,0 +1,4 @@
+What is verbose in TestNG?
+The verbose attribute in TestNG is used to limit the amount of information displayed in the console output during test execution.
+
+The verbose attribute accepts integer values ranging from 0 to 10, with 0 being the least verbose and 10 being the most verbose. The default value is 1, which displays basic test execution information

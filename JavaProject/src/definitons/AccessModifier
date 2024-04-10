@@ -26,7 +26,7 @@ setter(that now plz set this value to the info which you provided to us)
 	3 For Inheritance specifically PROTECTED has been created it's as same as PVT it's just it can be used in INHERITANCE
 	4 We cannot use PROTECTED directly as same as PVT one shud extend the Parent class
 	
-	PROTECTED CAN'T BE APPLIED ON CLASS CAN BE APPLIED ONLY ON DATA MENMBERS AND METHODS()
+	PROTECTED CAN'T BE APPLIED ON CLASS CAN BE APPLIED ONLY ON DATA MEMBERS AND METHODS()
 	
 	Example - 
 	

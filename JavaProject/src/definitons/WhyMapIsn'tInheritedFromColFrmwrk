@@ -1,5 +1,5 @@
 Why Map isn't a Part of Collection Framework ?
-
+Map interface is a part of Java Collection Framework, but it doesn't inherit Collection Interface.
 Because Map has - Keys, values, key-value pairs, entrySet, ketSet and Col Interface
 doesn't have this Key-Value concept as it has simple methods like add(object) etc.  
 So the reason was it was incompatible with Collection Framework and not possible

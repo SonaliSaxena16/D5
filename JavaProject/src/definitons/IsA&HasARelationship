@@ -1,4 +1,4 @@
-IS-A relationship - Used in INHERITANCE hence called as INHERITANCE-RELATIONSHIP when one lass EXTENDS another class. So using of 
+IS-A relationship - Used in INHERITANCE hence called as INHERITANCE-RELATIONSHIP when one class EXTENDS another class. So using of 
 EXTENDS KEYWORD shows IS-A relationship.
 
 Ex - Base class where we directly call it to our TestClass expecting that now we would be able to access all the methods defined in

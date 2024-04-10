@@ -4,4 +4,4 @@
 2. Stores the value in a Node (in Doubly Linked List)
 3. Store in pair of Key Value
 4. Not synchronized means not thread-safe
-5. One null & multiple null values are allowed
+5. One null key & multiple null values are allowed

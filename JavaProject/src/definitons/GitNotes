@@ -93,7 +93,8 @@ Repo and it'll generate a PR link and now it's ready for review.
 8. git pull origin branchName(or Main/Master) -> Used to fetch and download content from Remote Repo and immediately update the
 Local Repo to match the content he content between these two. 
 
-9. git fetch -> Fetches all(incompleted PRs like Draft or Open) from the existing Repo of Remote to Local repo 
+9. git fetch -> Fetches all(incompleted PRs like Draft or Open) from the existing Repo from Remote to Local repo 
+Fetching is what you do when you want to see what everybody else has been working on.
 
 10. git checkout branchName -> lets you navigate between the branches. If your Local Branch already exists, 
  you can simply use this cmnd.

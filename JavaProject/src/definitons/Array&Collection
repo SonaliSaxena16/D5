@@ -12,7 +12,7 @@ Stores similar data types, to overcome this shortfalls, we use OBJECT ARRAY
 In one word, to overcome above mentioned shortfalls, we use Dynamic Array
 
 If the length of the array is n, then the highest index wud be n-1 as it starts from 0 index
-Lowest bound/index =0 & Highest bound/index =n-1(whereas 'n' represents the size of the array)
+Lowest bound/index =0 & Highest bound/index =n-1(whereas 'n' represents the length/size of the array)
 Length always starts with the number 1. And the Array index will always start with the number 0.
 
  length keyword - Use to represent the size of array of primitive data type.
@@ -60,4 +60,4 @@ Key Value
 Duplicate Element
 Null Element
 Thread Safe
-** Detailed screenshot is also avaialable in ImpStuMat folder
+** Detailed screenshot is also available in ImpStuMat folder
