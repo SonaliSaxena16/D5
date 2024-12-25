@@ -1,0 +1,12 @@
+Emulator and Simulator
+
+Emulator - Operates in a virtual production environment & Mimics the behavior of a real Android device bcz it mimics 
+the hardware and software resources for Android devices
+
+Simulator - A simulator creates an environment that mimics the behaviors and configurations in the production 
+environment are for iOS devices.
+
+Type of the Mobile Emulator
+Device Emulator: The manufacturer of the device provides this emulator.
+Browser Emulator: This emulator simulates the environment of the mobile browser.
+Operating Systems Emulator: The operating system Apple provides us the emulator for the iPhones, Google provides the emulator for the Android Phone, and the Microsoft provides the emulator for Windows Phone.

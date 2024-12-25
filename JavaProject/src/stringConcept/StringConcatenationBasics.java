@@ -5,7 +5,6 @@ public class StringConcatenationBasics {
 	public static void main(String[] args) {
 
 //1  String concatenation can be done by using + operator 
-		
 		String s="Sachin"+" Tendulkar";  
 		   System.out.println(s);//Sachin Tendulkar  
 		   
@@ -18,6 +17,7 @@ public class StringConcatenationBasics {
 		   String s2="Tendulkar";  
 		   String s3=s1.concat(s2);  
 		   System.out.println(s3);//Sachin Tendulkar     
+		   
 		   
 	}
 

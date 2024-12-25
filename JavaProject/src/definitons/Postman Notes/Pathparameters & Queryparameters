@@ -1,0 +1,3 @@
+Difference in query parameters & path parameters
+
+The path parameter defines the resource location, while the query parameter defines sort, pagination, or filter operations. 

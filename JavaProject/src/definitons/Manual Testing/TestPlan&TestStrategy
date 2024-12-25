@@ -5,7 +5,7 @@ Focuses on the details of how testing will be carried out
 Prepared by the QA Lead
 Provides a roadmap for the testing activities, like what, when, & how to test
 Teams includes testers, developers, managers, and stakeholders
-Parameters are - test scope, objectives, resources, schedule, test environment, test cases, entry/exit criteria, risks, and deliverables
+In my org it was - test scope, resources, schedule, test environment, Module description, entry/exit criteria, & deliverables.
 
 
 Test Strategy
@@ -16,3 +16,9 @@ It has principles, objectives, and methods to achieve consistent testing across 
 Teams includes management, project leads, and high-level stakeholders
 Covers testing types (functional, performance, security, etc.), selection of Tools for defect management, risk assessment, and overall process
 Components of Test strategy includes- objectives and scope, documentation formats, test processes, team reporting structure, client communication strategy, etc.
+
+RTM - Requirement Tracability Matrix - 
+
+It's components are - S.No. , Module Description, Business Justification, TestCaseId, Status(Started, Yet to start, WIP, Finished)
+
+ 

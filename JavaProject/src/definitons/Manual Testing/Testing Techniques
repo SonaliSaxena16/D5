@@ -1,0 +1,15 @@
+Testing Techniques - 
+
+ECP - we can use to validate OTP by creating equal no. of classes in input set of test data 
+ex - Invalid	Invalid		Valid		Valid
+	digits>=7	digits<=5	digits=6	digits=6
+	1234567		12345		112233		123456
+	
+	
+BVA - Here we take the values from input set of test data which are on extreme edge or boundary.
+Ex - 
+
+Boundary Value Analysis is better than Equivalence Partitioning as it considers both positive
+and negative values along with maximum and minimum value.
+
+		

@@ -152,7 +152,15 @@ select * from department as d full  join Employee as e on d.dept_id=e.e_id
 select * from department as d full outer join Employee as e on d.dept_id=e.e_id 
 
 
+Joins questions Practice - 
+Que - write sql query for book table has different columns bookid bookname and authorid and 
+author table have columns authorid authorname and bookid query should fetch all the details 
+from book table where author has written a book with bookname abc
 
+SELECT book.bookid, book.bookname, book.authorid
+FROM book
+JOIN author ON book.authorid = author.authorid
+WHERE book.bookname = 'abc';
 
 
 
