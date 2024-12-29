@@ -24,6 +24,10 @@ public class mainMethodOverloading {
 	}
 	
 	public static void main(String[] args) {
+		System.out.println("");
+	}
+	
+	public static void main(String[] args) {
 		System.out.println("main method 1");
 		
 		main("Sonali");

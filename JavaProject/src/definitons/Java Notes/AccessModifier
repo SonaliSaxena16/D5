@@ -1,6 +1,7 @@
 -Whenever we are creating a class we've to provide some info to the JVM about our classes like -
 1. Whether this class,method or variable is accessible from any other class/pkg  
 2. Whether we can create child class
+3. Whether these class,method or variables are Inheritable. 
 
 Modifiers applicable for Top Level Classes - public, default, final, abstract
 Modifiers applicable for Top Level Classes - All Top Level + private, protected, static
@@ -10,12 +11,12 @@ Non-Access Modifiers (Doesn't control access levels but provides other functiona
 
 AccessModifier	withinSameCls	childClsSamePkg childClsOutsidePkg	 nonChildClsSamePkg nonChildClsOutsidePkg
 Public				Y					Y				Y					Y					Y
-Protected 			Y					Y			usingExtends					Y					N
-Default				Y					Y				N					Y					N
+Protected 			Y					Y			usingExtends			Y					N
+Default				Y					Y				N					N					N
 Private				Y					N				N					N					N
 	
-In order to user PRIVATE ACCESS MODIFIER, we use getters (that plz give us the info sotred under pvt modifier) and
-setter(that now plz set this value to the info which you provided to us)	
+In order to use PRIVATE ACCESS MODIFIER, we use getters (that plz give us the info stored under pvt modifier) and
+setter(that now plz set this value which you provided to us)	
 	
 	IMP NOTES
 	
