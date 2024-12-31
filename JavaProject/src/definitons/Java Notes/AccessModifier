@@ -11,7 +11,7 @@ Non-Access Modifiers (Doesn't control access levels but provides other functiona
 
 AccessModifier	withinSameCls	childClsSamePkg childClsOutsidePkg	 nonChildClsSamePkg nonChildClsOutsidePkg
 Public				Y					Y				Y					Y					Y
-Protected 			Y					Y			usingExtends			Y					N
+Protected 			Y					Y			usingExtends			N					N
 Default				Y					Y				N					N					N
 Private				Y					N				N					N					N
 	
@@ -40,7 +40,7 @@ setter(that now plz set this value which you provided to us)
 	Pkg2-
 	class Demo extends CodeEra{
 	psvm(String[] args){
-	CodeEra obj = new CodeEra();
+	Demo obj = new Demo();
 	obj.msg()
 	}
 	

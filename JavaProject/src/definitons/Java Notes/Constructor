@@ -21,7 +21,7 @@ A Java constructor cannot be abstract, static, final, and synchronized
 Two types of constructors 
 
 Default constructor (no-arg constructor)
-Parameterized constructor
+User Definer constructor : Parameterized & Non-Parameterized
 
 Is there Constructor class in Java?
 Yes. Java provides a Constructor class which can be used to get the internal information of a constructor in the class. It is found in the java.lang.reflect package.
@@ -34,6 +34,7 @@ it'll return null(You haven't used any return type yet it returns a value).
 Ex - 
 
 //Let us see another example of default constructor which displays the default values  
+
 class Student3{  
 int id;  
 String name;  

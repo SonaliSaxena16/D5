@@ -23,9 +23,12 @@ public class mainMethodOverloading {
 		System.out.println("main method 4");
 	}
 	
-	public static void main(String[] args) {
-		System.out.println("");
-	}
+	// Below are 2 main methods - 
+//	If I uncomment the below one it's giving syntax error to Rename the method - 
+	
+//	public static void main(String[] args) {
+//		System.out.println("");
+//	}
 	
 	public static void main(String[] args) {
 		System.out.println("main method 1");

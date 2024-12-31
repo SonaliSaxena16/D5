@@ -15,28 +15,29 @@ scope will be cls level
 local - created inside method
 scope within particular method
 can access thru obj creation
-value need to initialized
+value needs to be initialized
 
 -A DataType is the type of container that what type of value we going to store ex - int string etc 
 -If we are expecting DataType int and we've passed String, then it would give InputMismatchException 
 
 -DataTypes are of two types -->
--Primitive --> These are Pre-defined by java. Byte1 Short2 int4 long8 float4 double8 boolean1 char2
+-Primitive --> These are Pre-defined by java. Byte1 Short2 int4 long8 float4 double8 boolean2 char1
 
 When a variable is declared but not initialized, it is assigned a default value based on its data type. 
 
 Object	null
-byte: 0
-short: 0
-int: 0
-long: 0L
-float: 0.0f
-double: 0.0d
-char: ‘\u0000’ (null character)
-boolean: false
+byte: 0 - 1
+short: 0 - 2
+int: 0 - 4
+long: 0L - 8
+float: 0.0f - 4
+double: 0.0d - 8
+boolean: false - 2
+char: ‘\u0000’ (null character) - 1
+ 
 
--Non Primitive --> These are user-defined in terms of size or length as these parameters aren't fixed by 
-Java unlike these are fixed for Primitives. NonPrimitives are - class, enum, interface, String.
+-Non Primitive --> These are user-defined in terms of size or length aren't fixed by 
+Java. However size or length are fixed for Primitives ex int ranging from 2147483648 to 2147483647. NonPrimitives are - class, enum, interface, String.
 NonPrimitives can be declared directly with new Keyword.
 Ex if(new String("Tony")== new String ("Tony")){
 }

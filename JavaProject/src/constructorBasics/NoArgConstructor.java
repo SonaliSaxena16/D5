@@ -1,14 +1,14 @@
 package constructorBasics;
 
-public class DefaultConstructor {
+public class NoArgConstructor {
 
-	 DefaultConstructor(){
+	 NoArgConstructor(){
 		System.out.println("Default Constructor or No Arg Constructor");
 	}
 	
 	public static void main(String[] args) {
 
-		DefaultConstructor c = new DefaultConstructor();
+		NoArgConstructor c = new NoArgConstructor();
 	}
 
 }
