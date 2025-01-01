@@ -1,5 +1,5 @@
 -Interface is a BLUEPRINT of a CLASS. Basically how the class will look like what 
-properties and behaviour it wud have that all eud be defined by Interface. 
+properties and behaviour it wud have. all wud be defined by Interface. 
 Ex - Car Interface wud have start, stop and restart method now every class whosoever 
 implementing Car Interface wud be telling abot how the car starts stops and refuel. 
 -Interface is achieving 100% Abstraction

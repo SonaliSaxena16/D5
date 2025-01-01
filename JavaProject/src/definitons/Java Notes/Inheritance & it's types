@@ -2,22 +2,25 @@ Inheritance - When a class acquires all the properties and behaviors of a parent
 It's of 5 types.
 It is an important part of OOPs (Object Oriented programming system).
 
-Why we should use it -
+Why we should use OOPs ?
 For Method Overriding (so runtime polymorphism can be achieved).
 For Code Reusability.
 
-Types of it -
+Types of Inheritance -
 Three types of inheritance in java: Single, Multiple, multilevel, hierarchical and Hybrid. 
 
-Note: Multiple inheritance isn't not supported in Java through class.
+Note: Multiple inheritance isn't supported in Java through class. INTERFACE to implement multiple inheritance at 
+only 1 condition that Method Signature shud be different in both the Interfaces B and C. Ex- class A implements 
+B,C where(B & C) are INTERFACE.
 
-Single inheritance means Single(1)Parent (1)Child. A class has a single child class.
+Single inheritance means Single - (1)Parent (1)Child. A class has a single child class.
 Dog class inherits the Animal class, so there is the single inheritance.
 Ex - A(Parent)
-	|_B(Child)
+		|
+		B(Child)
 
 Multiple inheritance means - Multiple (2 or more)Parents class have 1 single child class.
-It's highly discarded bcz suppose Class A & B are the Parent of Class C. And Parent class have same Method
+It's highly discarded bcz suppose Class A & B are the Parent of Class C. And both Parent class have same Method
 Signature now child class wud be confused whose method to implement. Since compile-time errors are better
 than runtime errors, Java renders compile-time error if we inherit 2 classes. But for this Java provides
 INTERFACE to implement multiple inheritance at only 1 condition that Method Signature shud be different
@@ -27,7 +30,7 @@ Ex - A(Parent)	    B(Parent)
 	        |_C(Child of A and B)	
  
 
-Multilevel inheritance - Stairs (one by one - Level by level)When A is a parent of B but B is alos a parent of C and C is also a Parent of D
+Multilevel inheritance - Stairs (one by one - Level by level)When A is a parent of B but B is also a parent of C and C is also a Parent of D
 When there is a chain of inheritance, it is known as multilevel inheritance.
 BabyDog class inherits the Dog class which again inherits the Animal class, so there is a multilevel inheritance.
 By creating Babydog's obj we can access all the methods of Babydog, dog & animal class
@@ -46,14 +49,14 @@ Ex- 		A(Parent)(AVP)
            B(Mngr)    C(TL)   D(Assosciate)
 
 Hybrid - As name suggest when 2 different things mixed on the basis of there property/behaviour then its called as HYBRID.
-Its a combo of more than 1 inheritance. In the below ex- A is a Parent of B, B is a Parent of C and C is a Parent of D. It's SINGLE INHERITANCE.
-For sometime if we forget about class A and only see class B then it's HIERARCHIAL INHERITANCE. As B has multiple child. 
+Its a combo of more than 1 inheritance. In the below ex- A is a Parent of B, B is a Parent of C and C is a Parent of D. It's MULTILEVEL INHERITANCE.
+Also class C is a Parent of Class Z, this shows Single INHERITANCE. Hence it makes Hybrid Inheritance.
 
 	 A(Parent)
 	 |
 	 B(Parent of C)
-	 |      |
-	 C      Z
+	 |      
+	 C -> Z
 	 |
 	 D 		
 

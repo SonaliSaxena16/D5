@@ -3,15 +3,25 @@ OOPs (Object-Oriented Programming System)
 
 A class can also be defined as a blueprint(plan) from which you can create an individual object. Class doesn't consume any space.
 Object means a real-world entity such as a pen, chair, table, computer, watch, etc. 
-Object-Oriented Programming is a methodology 
+Object-Oriented Programming System it's a SYSTEM or a methodology to organize the code and make it reusable.
 
 OOPs have some basic concepts - 
+
 Object - Real world entity
+
 Class - Is a blueprint/roadmap of the objects(how the obj shud behave wt are the color type properties obj wud hold)
+
+Abstraction - Hiding internal details and showing functionality only -
+
+Interface - is a BLUEPRINT of a CLASS. Basically how the class will look like what 
+properties and behaviour it wud have. all wud be defined by Interface. 
+
 Inheritance - When one Class acquires all the properties and behaviors of a parent Class 
-Polymorphism - Ability to be presented in more than pe form. If one task is performed in different ways, it is known as polymorphism. Ex - Find area, it can be of circle, triangle etc
-Abstraction - Hiding internal details and showing functionality only
+
 Encapsulation - Binding (or wrapping) code and data together into a single unit. Ex-Java Bean is the fully encapsulated class because all the data members are private here. Class Ex- Capsule we don't konw what's wrapped inside it
+
+Polymorphism - Ability to be presented in more than pe form. If one task is performed in different ways, it is known as polymorphism. Ex - Find area, it can be of circle, triangle etc
+
 
 Advantage of OOPs over Procedure-oriented programming language
 

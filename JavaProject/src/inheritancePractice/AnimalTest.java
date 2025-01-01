@@ -1,6 +1,6 @@
 package inheritancePractice;
 
-public class InheritanceTest {
+public class AnimalTest {
 
 	public static void main(String[] args) {
 		
@@ -30,7 +30,18 @@ public class InheritanceTest {
 		
 		System.out.println("Animal Dog and BabyDog class output");
 
-		Animal s = new Dog();
+		Dog s = new BabyDog(); // Upcasting used Using Parent Class D obj am calling child cls reference so only Parent cls methods wud be available as we're creating parent Cls obj.
+		s.animalEats();
+		s.animalRuns();
+		s.dogEats();
 		
+		
+		Animal z = new BabyDog(); // Upcasting used
+		z.animalEats();
+		z.animalRuns();
+		
+		Animal g = new Dog(); // Upcasting used
+		g.animalEats();
+		g.animalRuns();
 	}
 }
