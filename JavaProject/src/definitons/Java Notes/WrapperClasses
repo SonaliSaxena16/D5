@@ -1,0 +1,18 @@
+what are Wrapper Classes ?
+A wrapper class in Java is a class whose object contains or surrounds primitive data types.
+Primitive data types can be stored in a field created when an object to a wrapper class is 
+created. In other words, we can create a wrapper class object out of a primitive value.
+
+Note** Primitives always starts with small letter Wrapper class as Class name always starts with Capital Letter.
+
+Primitive Data Types ----- There Wrapper Classes
+	|							|
+byte			--				Byte
+short			--				Short
+int				--				Integer
+long			--				Long
+float			--				Float
+double			--				Double
+boolean			--				Boolean
+char			--				Character
+

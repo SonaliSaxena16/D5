@@ -2,7 +2,24 @@ Que - Prove How Strings are immutable in Java ?
 Do u mean if String s = "10"; & in next line I wont be able to update  the value ?
 As s = "20" ? Is that so ?
 
-Ans - No it doesn't meant that. By Strings are immutable means wecan update the value as 10 to 20 30 40
-or so on but every time we are passing the new value. It wud chk in String Constant Pool if val
-is value else every time it wud create a neew String Obj with the new values passed/assigned.
+Ans - No it doesn't meant that. By Strings are immutable means we can update the value as 10 to
+20 30 40 or so on but every time we are passing the new value. It wud chk in String Constant Pool
+if value passed thru String Literal ex str="10" or else using new keyword 
+String str=newString("10"); wud chk in Both Heap & StringConstantPool else every time it wud
+create a new String Obj with the new values assigned. Creating a copy of the same value or
+replacing of value isn't allowed in String. Hence Strings are immutable in Java.
 
+
+// Ex - how strings are immutable if I try to chng values
+
+		String sb = new String("Demo");
+		sb.concat("class");
+		System.out.println("Unchanged sb = " + sb); Output -  Demo
+		// And now if I assign the concatinated value to the original var
+		sb=sb.concat("class"); 
+		System.out.println("changed sb = " + sb); Output -  DemoClass
+		
+		
+		Que - Means still var sb values changed right ? Find ans from u tube
+		
+		

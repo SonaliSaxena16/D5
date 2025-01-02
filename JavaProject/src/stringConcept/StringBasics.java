@@ -14,9 +14,10 @@ public class StringBasics {
 		// Ex - how strings are immutable if I try to chng values
 		String sb = new String("Demo ");
 		sb.concat("class"); // Still it'll give Demo
+		System.out.println("Unchanged sb = " + sb);
 		// And now
-		sb = sb.concat("class"); // Demo Class
-		System.out.println(sb);
+		sb=sb.concat("class"); // Demo Class
+		System.out.println("changed sb = " + sb);
 		
 	//	QUE - Difference in .equals() and == operator
 	// IMP NOTE - == Operator used for Reference Variable(Address Var)Comparison & .equals() used for COntent Comparison

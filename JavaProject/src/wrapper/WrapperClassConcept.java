@@ -10,7 +10,7 @@ public class WrapperClassConcept {
 		
 		String zl = "2";
 		byte bb = Byte.parseByte(zl);
-		System.out.println("byte "+zl);
+		System.out.println("byte " +zl);
 		
 		//No Method available for short in Java
 		
@@ -24,17 +24,17 @@ public class WrapperClassConcept {
 		//String to impure integer(means int+string)
 				String m = "100";
 				int r = Integer.parseInt(m);
-				System.out.println(r); //it'll give u NumberFormatException as it has to be proper int value
+				System.out.println(r); 
 			
 				//String to Long
 				String vx = "08";
 				long l = Long.parseLong(vx);
-				System.out.println("long "+l);
+				System.out.println("long "+l + 1);
 				
 				//String to float
 				String v = "80";
 				float f = Float.parseFloat(v);
-				System.out.println("float "+v);
+				System.out.println("float "+1 + v);
 				
 		//String to double
 	String y = "12.33";
@@ -42,9 +42,9 @@ public class WrapperClassConcept {
 		System.out.println(d+10);
 		
 		//String to boolean
-		String z = "true";
+		String z = "Sonali";
 		boolean b = Boolean.parseBoolean(z);
-		System.out.println(b);
+		System.out.println(b); // Here boolean wud return it default val i.e. false.
 		
 		
 		//Not Method available for short in Java
