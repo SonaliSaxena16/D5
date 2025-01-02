@@ -23,7 +23,6 @@ Overloading -
 	Using child class Obj we can call Methods of child as well as Parent class. 
 	
  However using Parent class Obj one can call only Parent class method not child class. Bcz Parent's can't  
-	
  have Child's prorpeties, whereas child can inherit properties from Parents.
 	
  In Test class if Parent class wants to call common method b/w Parent and Child class, then child class
@@ -33,8 +32,8 @@ Overloading -
 	
  This is also called UPCASTING -> Typecasting a Child Obj to a Parent Obj
 	
-	-------------Till here it's called Upcasting/RUN-TIME/LATE BINDING/DYNAMIC Polymorphism--------------------------
+	-------------Till here it's called Upcasting/RUN-TIME/Early BINDING/DYNAMIC Polymorphism--------------------------
 	
- Ex- I've used Overridding in Selenium findElement/findElements, get(), navigate()
+ Ex- I've used Overridding in Selenium findElement/findElements, get(), navigateTo()
  
  

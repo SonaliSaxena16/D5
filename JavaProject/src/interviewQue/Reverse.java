@@ -1,4 +1,4 @@
-package abstractionConcept;
+package interviewQue;
 
 public class Reverse {
 

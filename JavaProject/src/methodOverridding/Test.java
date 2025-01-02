@@ -11,14 +11,14 @@ public class Test {
 		b.stops();
 		b.refuel();
 		b.engine();
-		System.out.println("-----------------");
+		System.out.println("--------1---------");
 		
 		Car c = new Car();
 		c.start();
 		c.stops();
 		c.refuel();
 		c.engine();
-		System.out.println("-------------------");
+		System.out.println("---------2----------");
 		
 		
 		Car c1 = new BMW(); // TypeCasting child cls obj has been created with the to Parent cls name and it's reference i.e. UPCASTING fitting Child(small) obj into bigger (Parent)thing
@@ -26,7 +26,7 @@ public class Test {
 		c1.stops();
 		c1.refuel();
 		c1.engine();
-		System.out.println("------------------");
+		System.out.println("---------3---------");
 		
 //Car c2 = new Vehicle(); // DOWNCASTING isn't allowed as (Parent)Big thing can't be fitted into (Child)Smaller thing
 //Car c2 = (Car)new Vehicle();// DOWNCASTING is possible like this, but it'll give u Run time exception i.e. ClassCastException

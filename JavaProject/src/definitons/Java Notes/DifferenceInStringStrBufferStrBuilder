@@ -1,0 +1,8 @@
+Que - Prove How Strings are immutable in Java ?
+Do u mean if String s = "10"; & in next line I wont be able to update  the value ?
+As s = "20" ? Is that so ?
+
+Ans - No it doesn't meant that. By Strings are immutable means wecan update the value as 10 to 20 30 40
+or so on but every time we are passing the new value. It wud chk in String Constant Pool if val
+is value else every time it wud create a neew String Obj with the new values passed/assigned.
+

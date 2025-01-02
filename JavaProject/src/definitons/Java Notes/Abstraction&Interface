@@ -1,13 +1,13 @@
 												ABSTRACTION	in JAVA
 Hiding the partial implementation and showing the functionality only is called ABSTRACTION bcz methods may or may not be 
 abstract
-We can create empty Abstract class as well, which means no Variable and no methods defined.
-An abstract class may or may not have any abstract() method
-Object can't be created for Abstract class
+We can create Abstract class.
+An abstract class may or may not have any abstract() method.
 If a method is ABSTRACT, then class must be ABSTRACT and if class is ABSTRACT there may or may not be Abstract methods 
-present
+present.
+Object can't be created for Abstract class
 You can achieve 0-100% abstraction in ABSTRACION CLASS
-Showing partial implementations like Abstract Parent class Bank have common non-abstract methods like deposit()and withdraw() and one 
+Showing partial implementations like Abstract Parent class: Bank have common non-abstract methods like deposit()and withdraw() and one 
 abstract() like loanROI() now every child class must provide implementation for it. Hence hiding the partial functionality for some methods
 like loan()
 Performance wise Abstract classes are faster then Interface bcz methods defined in Test class need to traverse a lot first
@@ -35,6 +35,8 @@ It always class extends class and then Implements interface || Interface always 
 
 														|| Interface also represents the IS-A relationship
 
-NOTE -> class to interface not possible.
+NOTE -> InterfaceA implements class B - NOT Possible as u can't traverse Interface to Class
+NOTE -> InterfaceA implements class B,C - NOT Possible as u can't traverse Interface to single or multiple Class
+But Class A extends Class B implements Interface C,D.
 
 

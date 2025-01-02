@@ -1,6 +1,6 @@
 package abstractionConcept;
 
-public class HDFCBank extends Bank{
+public  class HDFCBank extends Bank{
 
 	@Override
 	public void loan() {//This method overridded from Bank(Parent class)as Method name and parametr same 
@@ -15,5 +15,7 @@ public class HDFCBank extends Bank{
 	public void funds(){
 		System.out.println("HDFC funds");
 	}
+
+	
 
 }

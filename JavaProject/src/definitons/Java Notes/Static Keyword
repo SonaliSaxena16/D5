@@ -1,7 +1,8 @@
 -If a value of variable is not varied from obj to obj, we can declare such variables using STATIC modifier
--Static keyword in Java is used for memory management mainly
--We can apply static keyword with variables, methods, blocks and nested classes
-- Static VARIALES & METHODS are not part of the object but are the part of the class.
+-Static keyword in Java is used for memory management mainly.
+-We can apply static keyword with variables, methods, blocks and nested classes.
+-Top-level classes can't be Static in java as its unsupported.
+-Static VARIALES & METHODS are not part of the object but are the part of the class.
 Ex- class Student{
 	int rollNo;
 	String stuName;

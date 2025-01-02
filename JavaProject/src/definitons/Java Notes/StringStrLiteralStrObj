@@ -5,8 +5,17 @@ String is basically an object that represents sequence of char values Ex below -
 String is Thread Safe and Final Class in Java
 char[] ch={'j','a','v','a','t','p','o','i','n','t'};  
 We can call String by using 1. Literals 2. By creating Object with new Keyword
-String s=new String(ch);  using 1. Literals
-String s = new String(ch); using 2. Object ref
+
+String str = ("ch");  using 1. Literals
+This is string literal. When you declare string like this, you are actually calling intern()
+method on String. This method references internal pool of string objects. If there already exists
+a string value “GeeksForGeeks”, then str will reference of that string and no new String object
+will be created.
+
+String str = new String("ch"); using 2. Object ref
+In the above line, This is string object. In this method JVM is forced to create a new string 
+reference, even if “ch” is in the reference pool.
+
 The java.lang.String class is used to create a string object.
 
 String objects are stored in STRING CONSTANT POOL which is available inside Heap Memory
@@ -17,7 +26,7 @@ compare(), concat(), equals(), split(), length(), replace(), compareTo(), intern
 The java.lang.String class implements Serializable, Comparable and CharSequence interfaces.
 
 The CharSequence interface is used to represent the sequence of characters. 
-String, StringBuffer and StringBuilder classes implement it. It means, we can create strings in Java by
+String, StringBuffer and StringBuilder classes implements it. It means, we can create strings in Java by
 using these three classes.
 
 String Objects are immutable which means it cannot be changed. Whenever we change any string, 
