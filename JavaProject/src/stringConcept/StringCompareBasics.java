@@ -21,7 +21,7 @@ public class StringCompareBasics {
 		   
 		   System.out.println("....................");
 		   
-// equals() returns true if String objects are matching and both strings are of same case. equalsIgnoreCase() returns true regardless of cases of strings.
+// equals() returns true if String objects are matching and both strings are of same case. equalsIgnoreCase() returns true regardless of cases of strings & matches val only.
 		
 		   String sa="Sachin";  
 		   String sb="Sachin";  
@@ -47,6 +47,9 @@ public class StringCompareBasics {
 		   System.out.println(s11.compareTo(s33));//-5 because "h" is 5 times lower than "m"  
 		   System.out.println(s11.compareTo(s44));//-1 because "l" is 1 times lower than "m"  
 		   System.out.println(s11.compareTo(s55));//2 because "h" is 2 times greater than "f"   
+		   System.out.println("--- " + s55.compareTo(s11));//2 because "h" is 2 times greater than "f"   
+
+	
 	}
 
 }     

@@ -19,7 +19,10 @@ replacing of value isn't allowed in String. Hence Strings are immutable in Java.
 		sb=sb.concat("class"); 
 		System.out.println("changed sb = " + sb); Output -  DemoClass
 		
-		
-		Que - Means still var sb values changed right ? Find ans from u tube
-		
+Que What happened to the Older Value ?
+Ans The older value Demo in the above case wub be taken as a garbage and removed by Java Garbage
+Collector but the point is value is still present it wasn't replaced or updated with new value.
+For reference - Chk Screenshot in Git Repo named as Strings are Immutable & String Constant Pool
+& Heap Memory.
+	
 		

@@ -6,10 +6,8 @@ public class StringBasics {
 
 	//	String s1="java";//creating string with string literal 
 		String s1="Lava"; 
-// here I've easily changed the value of s1 from Java to Lava and physically we can see it on console 
-// but internally in the StringConstantPool Java already exists and now Lava also added. Earlier the 
-//reference s1 which was pointing to java now pointing to lava and JVM wud internally give some ref. to
-// Java. This is how Strings are immutable. 
+		String sz="Lava";
+		System.out.println(s1 + sz);
 		
 		// Ex - how strings are immutable if I try to chng values
 		String sb = new String("Demo ");
@@ -20,7 +18,7 @@ public class StringBasics {
 		System.out.println("changed sb = " + sb);
 		
 	//	QUE - Difference in .equals() and == operator
-	// IMP NOTE - == Operator used for Reference Variable(Address Var)Comparison & .equals() used for COntent Comparison
+	// IMP NOTE : == Operator used for Reference Variable(Address Var)Comparison & .equals() used for Content Comparison
 		
 	//	https://www.youtube.com/watch?v=i7vYjvJOIiw
 			
@@ -36,18 +34,11 @@ public class StringBasics {
 //area HENCE FLSE
 		System.out.println(as1.equals(as2) + "chk content"); // TRUE bcz it'll compare on Content present inside
 		
-		
-		
-		
-		
-		
-		
-		
 		char ch[]={'s','t','r','i','n','g','s'};    
 		String s2=new String(ch);//converting char array to string    
 		String s3=new String("example");//creating string with new keyword    
 		System.out.println(s1);    
-		System.out.println(s2);    
+		System.out.println("s2 " + s2);    
 		System.out.println(s3);  
 		
 		
@@ -63,5 +54,5 @@ public class StringBasics {
 	   			String st="Sachin";  
 	   		    st = st.concat(" Tendulkar");  
 	   		   System.out.println(st);  
-	}  
 }
+	}

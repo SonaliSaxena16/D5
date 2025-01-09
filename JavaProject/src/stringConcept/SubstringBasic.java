@@ -9,7 +9,7 @@ public class SubstringBasic {
 		 System.out.println("Substring starting from index 6: " +s.substring(6));//Tendulkar    
 		 System.out.println("Substring starting from index 0 to 6: "+s.substring(0,6)); //Sachin  
 
-		 // Index starts from 0 and it'll goto lastIndex-1
+	 // Index starts from 0 and it'll goto lastIndex-1 i.e. 0 to 6-1=5 hence 0 to 5 it'll fetch.
 		 
 		 
 	

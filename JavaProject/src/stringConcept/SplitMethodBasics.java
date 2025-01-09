@@ -10,11 +10,11 @@ public class SplitMethodBasics {
 		
 		String text = "Hello, My name is, Sachin";  
         /* Splits the sentence by the delimeter passed as an argument */  
-         String[] sentences = text.split(",");  
+          String[] sentences = text.split(",");  
       //  System.out.println(Arrays.toString(sentences));  // It'll print in a single line
+         System.out.println("Text is " + text); 
         
-        
-        // If you want output seperately/ vetically use loop
+        // If you want output seperately/vertically use loop
         String st = new String("Hello, My name is, Sonali");
 //        for(String splitted : st.split(",")) {
 //        	System.out.println(splitted);

@@ -1,0 +1,31 @@
+// IMP NOTE - == Operator used for Reference Variable(Address Var)Comparison & .equals() used
+for Content Comparison
+
+However == Operator when used for primitives, checks value equality. Ex a=10, b=10 a==b : True
+
+Illustration of .euals() - Its a String()
+
+String str1 = "hello";
+String str2 = "hello";
+String str3 = new String("hello");
+
+// Using .equals() to compare content of strings
+boolean result1 = str1.equals(str2);  // true, because their contents are the same
+boolean result2 = str1.equals(str3);  // true, even though str3 is a different object
+
+System.out.println(result1);  // Outputs true
+System.out.println(result2);  // Outputs true
+
+--------------------------------------------------------------
+
+Illustration of == : Its a operator in Java
+String str1 = "hello";
+String str2 = "hello";
+String str3 = new String("hello");
+
+// Using == to compare references
+boolean result1 = str1 == str2;  // true, because they refer to the same instance in the string pool
+boolean result2 = str1 == str3;  // false, because str3 is a new object with a different memory address
+
+System.out.println(result1);  // Outputs true
+System.out.println(result2);  // Outputs false

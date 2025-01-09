@@ -11,10 +11,19 @@ This is string literal. When you declare string like this, you are actually call
 method on String. This method references internal pool of string objects. If there already exists
 a string value “GeeksForGeeks”, then str will reference of that string and no new String object
 will be created.
+Its object wud be stored under SCP String Constant Pool only.
 
-String str = new String("ch"); using 2. Object ref
+String str1 = new String("ch"); using 2. Object ref
 In the above line, This is string object. In this method JVM is forced to create a new string 
 reference, even if “ch” is in the reference pool.
+Its object wud be stored under Heap Memory as well as SCP String Constant Pool.
+
+Another ex - String str2 = new String("ch"); In this case it'll chk and found that already value
+ch is present in SCP hence wud not create a copy rather str2 wud point to the already existing 
+val then it wud come in heap memory another obj it wud create for str2=ch. Now for ch val we've
+2 objects created in Heap one is str1 and other is str2.
+
+
 
 The java.lang.String class is used to create a string object.
 

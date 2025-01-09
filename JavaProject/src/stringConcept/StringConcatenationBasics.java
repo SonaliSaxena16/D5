@@ -8,7 +8,7 @@ public class StringConcatenationBasics {
 		String s="Sachin"+" Tendulkar";  
 		   System.out.println(s);//Sachin Tendulkar  
 		   
-		   String st=50+30+"Sachin"+40+40;  // 80Sachin4040 bcz anything return before String like it's int so it'll perform int add operation and whtever you've return after String it'll simplly included it in String.
+		   String st=50+30+"Sachin"+40+40;  // 80Sachin4040 bcz anything written before String like it's int so it'll perform int add operation and whtever you've written after String it'll simply included it in String.
 		   System.out.println(st);//80Sachin4040  
 		
 		// 2 & By concat() method

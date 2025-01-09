@@ -36,11 +36,14 @@ public class StringMethods {
 	 String l = "Sachin";    
 	 System.out.println(l.length());//6 
 	 
-	 // intern() - ??
+	 // intern() - The intern() method in Java is used to store a copy of a string in the 
+	 // string constant pool,
 	 
 	 String i=new String("Sachin");    
 	 String in=i.intern();    
 	 System.out.println(in);//Sachin   
+	 boolean equal = i==in;
+	 System.out.println("eqqqqq  " + equal);
 	 
 	// valueOf() - coverts given type such as int, long, float, double, boolean, char and char array into String 
 	 
