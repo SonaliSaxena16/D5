@@ -13,7 +13,7 @@ public class A {
 	
 
 	 A(int i,String name){
-		System.out.println("Parent class constructor with i & name value:" + i +" , "+name);
+		System.out.println("Parent class constructor with i & name value : " + i +" , "+name);
 	}
 	
 	 public static void main(String[] args) {
@@ -23,6 +23,6 @@ public class A {
 	}
 
 }
-// NOTE: If u want to call all the constructors of class A using Super in child class B then u must create 3 different costructor
-// as per parameters.
+// NOTE: If u want to call all the constructors of class A using Super in child class B then u must
+// create 3 different constructors as per parameters.
 // You cannot have 2 two Super kweywords in one constructor

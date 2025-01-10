@@ -5,9 +5,10 @@
  Super Keyword shud always be written in Child class and it shud be the first statement written inside a Constructor
  As we Call Parent class constructor thru child cls obj/constructor is called Constructor Chaining can be done by Using SUPER keyword in child class.
  
- class Animal{  
+class Animal{  
 String color="white";  
 }  
+
 class Dog extends Animal{  
 String color="black";  
 void printColor(){  
@@ -15,6 +16,7 @@ System.out.println(color);//prints color of Dog class
 System.out.println(super.color);//prints color of Animal class  
 }  
 }  
+
 class TestSuper1{  
 public static void main(String args[]){  
 Dog d=new Dog();  
@@ -28,5 +30,4 @@ white
 
 
  
- This And Super
  
