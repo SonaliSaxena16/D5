@@ -2,13 +2,11 @@ Que - Prove How Strings are immutable in Java ?
 Do u mean if String s = "10"; & in next line I wont be able to update  the value ?
 As s = "20" ? Is that so ?
 
-Ans - No it doesn't meant that. By Strings are immutable means we can update the value as 10 to
-20 30 40 or so on but every time we are passing the new value. It wud chk in String Constant Pool
-if value passed thru String Literal ex str="10" or else using new keyword 
-String str=newString("10"); wud chk in Both Heap & StringConstantPool else every time it wud
-create a new String Obj with the new values assigned. Creating a copy of the same value or
-replacing of value isn't allowed in String. Hence Strings are immutable in Java.
-
+Ans - No it doesn't meant that. Every time we're trying to update the value for variable 's' it wud
+be pointing to the new value ex- earlier it was 10 then updated to 20 that does not mean that old
+value 10 is replaced with new va 20 no its still present thr in the StringConstantPool however with no
+reference var now it wud be treated as a Garbage and wud be removed by using Java Garbage Collector.
+Refer to Screenshot in Github - String are immutable in java.png
 
 // Ex - how strings are immutable if I try to chng values
 

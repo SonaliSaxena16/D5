@@ -16,7 +16,7 @@ public class StringBuilderBasics {
         System.out.println(s + " ...................");  //Displays result  
       
         
-// Converts the value from other Data Type to String. Take wrapper class while converting a DataType to String
+// Converts the value from other Int Data Type to String. Take wrapper class while converting a DataType to String
         
         int a = 10;
         System.out.println(Integer.toString(a));

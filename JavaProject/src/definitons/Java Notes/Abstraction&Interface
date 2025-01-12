@@ -35,8 +35,10 @@ It always class extends class and then Implements interface || Interface always 
 
 														|| Interface also represents the IS-A relationship
 
+Class extends another Class
+Interface extends another Interface
 NOTE -> InterfaceA implements class B - NOT Possible as u can't traverse Interface to Class
 NOTE -> InterfaceA implements class B,C - NOT Possible as u can't traverse Interface to single or multiple Class
-But Class A extends Class B implements Interface C,D.
+But Class A extends Class B implements Interface C,D -> POSSIBLE.
 
 

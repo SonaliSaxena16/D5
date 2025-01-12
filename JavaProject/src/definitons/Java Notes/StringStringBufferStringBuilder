@@ -1,0 +1,30 @@
+	
+Since String is immutable in Java, whenever we do String manipulation like concatenation, substring,
+etc. it generates a new String and discards the older String for garbage collection. These are heavy 
+operations and generate a lot of garbage in heap. So Java has provided StringBuffer and StringBuilder
+classes that should be used for String manipulation. StringBuffer and StringBuilder are mutable 
+objects in Java. They provide append(), insert(), delete(), and substring() methods for String 
+manipulation.
+	
+StringBuffer was the only choice for String manipulation until Java 1.4 provides Thread safety but at
+a performance cost. 
+So Java 1.5 introduced a new class StringBuilder, its same as that to StringBuffer only difference is
+String Builder isn't thread safe or synchronized.
+
+So if you are in a single-threaded environment or don’t care about thread safety, you should use 
+StringBuilder. Otherwise, use StringBuffer for thread-safe operations. 
+
+	Feature 		String 		StringBuffer		StringBuilder
+1	Mutability		Immutable		Mutable			Mutable
+
+2	Thread			Yes				Yes				No
+	Safety
+	
+3  	Usage		Used when we      Used when 		Used when thread safety isn't required
+			       want  	 	  thread safety
+			    immutability	  is required
+			    & thread 
+			    safety
+			    
+			    
+			

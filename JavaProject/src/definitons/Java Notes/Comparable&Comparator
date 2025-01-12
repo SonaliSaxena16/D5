@@ -1,8 +1,13 @@
+
+Video reference - https://www.youtube.com/watch?v=hbXpzOER270
+
 Comparable																Comparator
 
-It provides single sorting sequence like we can sort on the || It provides multiple sorting sequence like we can sort on the 
-basis of either name, id or price									basis of multiple aspects name, id or price
+1. It provides single sorting sequence like || 1. It provides multiple sorting sequence like we can  
+we can sort on the basis of one property		sort on the basis of multiple aspects name, id or phn.
+ex- employee list. We can sort either using 
+name, id or phone.									
 
-It's available in java.lang.package	|| 	It's available in java.util.package
+2. It's available in java.lang.package	|| 2. It's available in java.util.package
 
-Provides compareTo() method to sort elements || Provides compare() method to sort elements
+3. Provides compareTo() method to sort elements || 3. Provides compare() method to sort elements

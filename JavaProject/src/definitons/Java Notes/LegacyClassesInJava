@@ -1,0 +1,12 @@
+the Collection framework didn't include in Java. In the early version of Java, 
+All the legacy classes are synchronized. The java.util package defines the following legacy classes:
+in Java 1.0 version.
+
+HashTable
+Stack
+Dictionary
+Properties
+Vector
+
+ we have several classes and interfaces which allow us to store objects. After adding the Collection 
+ framework in JSE 1.2

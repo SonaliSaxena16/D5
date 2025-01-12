@@ -2,25 +2,25 @@
 String is a class in Java
 String is a non-primitive data type also as it can store value of different data types like "1" , 's' . It can store int, char etc.										
 String is basically an object that represents sequence of char values Ex below -
-String is Thread Safe and Final Class in Java
+String is Thread Safe and Final Class (immutable) in Java
 char[] ch={'j','a','v','a','t','p','o','i','n','t'};  
 We can call String by using 1. Literals 2. By creating Object with new Keyword
 
-String str = ("ch");  using 1. Literals
+1. Using Literals - String str = "ch";   
 This is string literal. When you declare string like this, you are actually calling intern()
-method on String. This method references internal pool of string objects. If there already exists
-a string value “GeeksForGeeks”, then str will reference of that string and no new String object
-will be created.
-Its object wud be stored under SCP String Constant Pool only.
+method on String. This method checks internal pool of string objects. If there already exists
+a string value “ch”, then variable str will reference to that string and no new String object
+will be created. Its object wud be stored under SCP String Constant Pool only.
 
-String str1 = new String("ch"); using 2. Object ref
+2. Using new Keyword obj wud be created in Heap Memory - String str1 = new String("ch"); 
 In the above line, This is string object. In this method JVM is forced to create a new string 
-reference, even if “ch” is in the reference pool.
-Its object wud be stored under Heap Memory as well as SCP String Constant Pool.
+reference, even if “ch” is in the StringConstantPool. This object wud be stored under Heap Memory 
+as well as SCP String Constant Pool if ch doesn't exists in SCP no duplicate val is stored in SCP 
+rather the new ref var wud be pointing to the new old value present in SCP. 
 
 Another ex - String str2 = new String("ch"); In this case it'll chk and found that already value
 ch is present in SCP hence wud not create a copy rather str2 wud point to the already existing 
-val then it wud come in heap memory another obj it wud create for str2=ch. Now for ch val we've
+val then it wud come in heap memory another obj it wud create for str2=ch. Now for value 'ch' we've
 2 objects created in Heap one is str1 and other is str2.
 
 

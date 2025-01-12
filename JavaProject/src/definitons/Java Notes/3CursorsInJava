@@ -1,3 +1,39 @@
-1 Enumeration
-2 Iterator
-3 ListIterator
+
+Video for reference - https://www.youtube.com/watch?v=5Zs5quJcflM
+PPT Link - https://docs.google.com/presentation/d/1F-W6i3-ixTm0XoJ3MLoTOiffXzwwrvfJGcCVK4zftJE/edit#slide=id.g226eda90f91_0_356
+
+Que - What are Cursors in Java ?
+Ans - If we want to get Objects one by One from the Collection then we should go for Cursors.
+
+1 Enumeration - uses .elements()
+- Applicable only for Legacy classes in Collection Framework ex- Vector & Stack. hence not a universal cursor.
+- We can perform only Read operation not remove.
+- To overcome above shorfalls, Iterator introduced.
+- It has 2 Methods - 
+public boolean hasMoreElements()and public Object nextElement()
+- ex - Enumeration e = v.elements() // v is for any Vector obj
+
+2 Iterator - uses .iterator()
+- Can be applied on any type of Collection hence universal cursor
+- We can perform only Read & Remove operation.
+- ex - Iterator itr = c.iterator(); // c is any Collection object.
+- It has 3 Methods -
+public boolean hasNext()and public Object next()and public void remove()
+
+3 ListIterator - uses .listIterator()
+- It's the child Interface of list Iterator.
+- Moves Bi-directional Forward & Backward both.
+- Has Read, Remove, Addition & Replacement of existing objects
+- ex - ListIterator ls = l.listIterator()
+- It has 9 Methods
+3 methods for forward 
+public boolean hasNext()and public Object next() and public int nextIndex()
+
+3 methods for backward
+public boolean hasPrevious()and public Object previous() and public int previousIndex()
+
+Remaining 3 methods
+public void remove()
+public void set(Object new) - To replace existing Objects
+public void add(Object new) - To add new Objects
+

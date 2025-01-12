@@ -1,0 +1,40 @@
+
+						COLLECTION-Interface
+	
+	Set-I						List-I					Queue-I
+	HashSet-C					ArrayList-C				PriorityQueue-C
+	LinkedHashSet-C			LinkedList-C			Deque-I
+	SortedSet-I					Vector-C				|
+	|							|						LinkedList-C & ArrayDeque-C
+	TreeSet-C					Stack-C
+	
+	
+	
+						MAP-I
+						HashTable-C
+						LinkedHashMap-C
+						HashMap-C
+						SortedMap-I
+						|
+						TreeMap-C
+						
+						
+						
+Que - What is Collection Framework ?
+1. Its a combination of Classes & Interfaces
+2. Used to store dynamic data in terms of Objects.
+3. Means it can store hetrogeneous type of data. At once we can store int with string with float etc.
+4. Memory utilisation is good as a lot of different types of objects stored under one category.
+5. Performance wise Arrays are faster as they store homogeneous type of data.
+
+Que - Is Map a part of Collection Framework ?
+Yes it is but is not inherited from Collection Interface or it does not extends Collection Interface 
+
+Que - Why Map does not extend Collection Interface
+Because Map is a collection of key and value pairs. However other Collection Framework have List,Set
+& Queue which have a ADD function it takes value to add an element but no key is supported. Though
+Map has a PUT function to add elements i nthe form of Key-Value pair.
+Hence the Map Structuring is different from Collection Interface where Map takes arguments as
+Key-Value pair hence not relevant to Collection Framework.
+
+
