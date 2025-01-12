@@ -10,24 +10,13 @@ Constructor Private.
 
 3 Steps to make singleton class, however there's no such keyword in Java but a CONCEPT
 
-a Declare a Variable(Pvt Static instance). 
-b Declare a Pvt Constructor
-c Declare a public static method, namely getInstance() (is the method we use as it return a 
-Signature object) which'll return the singleTon object/instance created in Point(a)
-as it is wrapped inside a IFstatement 
+1. Create a static obj 
+2. Declare a private Constructor
+3. Declare a public static with return type(classname) with methodname, namely getObject() which wud 
+return the object of the class every time it is being called.
 
 Ex - 
 
-public class Employee{
+Refer to the Singleton Program created
+Video reference - https://www.youtube.com/watch?v=KUTqnWswPV4
 
-private static Employee instance; // Variable
-
-private Employee(){  // Pvt Constructor
-}
-
-public static Employee getInstance(){
-
-if(instance==null){
-instance = new Employee();
-}
-}

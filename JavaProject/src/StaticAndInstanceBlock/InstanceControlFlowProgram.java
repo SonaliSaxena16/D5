@@ -16,8 +16,17 @@ public class InstanceControlFlowProgram {
 		int intVariableOne = 5;				//First Step :
 											//intVariableOne = 0 (Read Indirectly Write Only [RIWO]) 
 											
-											//Second Step :
-											//intVariableOne = 5 (Read & Write [R&W])
+			// Instance method						//Second Step :
+		void methodExampleTwo() {
+			System.out.println("Method 2-- 2nd line to be printed");
+		}
+		
+		// Instance Blok - Calling of Instance Method
+		{
+			this.methodExampleTwo();
+			
+			System.out.println("Method 2 - 3rd line to be printed");
+		}
 		
 		//First Instance Block
 		{
@@ -32,16 +41,22 @@ public class InstanceControlFlowProgram {
 			System.out.println("Value of First Instance Variable : " +this.intVariableOne);
 		}
 		
+		
+
 		//Main Method
-		public static void main(String[] args) {		
+		public static void main(String[] args) {	
+			System.out.println("1st line to be pritned");
 			InstanceControlFlowProgram obj = new InstanceControlFlowProgram();
+			System.out.println("Main method");
 			obj.methodExampleOne();
+			obj.methodExampleTwo();
 		}
 		
 		//Instance Method
 		void methodExampleOne() {
-			System.out.println("Value of Second Instance Variable : " +this.intVariableTwo);
+			System.out.println("Method 1 ---Value of Second Instance Variable : " +this.intVariableTwo);
 		}
+		
 		
 		//Second Instance Variable
 		int intVariableTwo = 10;				//First Step :
@@ -54,4 +69,20 @@ public class InstanceControlFlowProgram {
 		{
 			System.out.println("Inside Second Instance Block.");
 		}
+		
+		
+
+		 
 	}
+
+
+
+// Value of Second Instance Variable : 0
+// Inside First Instance Block.
+//Inside Second Instance Block.
+//Value of Second Instance Variable : 10 -----
+//Inside Constructor.
+//Value of First Instance Variable : 5
+//Value of Second Instance Variable : 10
+
+

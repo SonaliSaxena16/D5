@@ -1,17 +1,78 @@
+
+
+Video link for reference - https://www.youtube.com/watch?v=Tfh0xPl2ayA
+
 In static control flow 3 steps to be followed -
 
 It's a one time activity static gets load 1 time only when class gets load as static is a part of class not object
 
-1 Identify static members (Static Var, Methods, Blocks). Here if data types are defined then they wud be carrying thr default value ex- if int x=10 I've given but at this step it's value is 0
-2 Very 1st static blok will be executed from Top to bottom and assignment of user-defined values to static variables. Here it wud accept int i=10;
+1 Identify static members (Static Var, Methods, Blocks). Here if data types for variables are defined then they wud be carrying
+thr default value ex- if int x=10 I've given but at this step it wud take int default value i.e. 0
+2 Very 1st static blok will be executed from Top to bottom and now assignment of user-defined values to static 
+variables wud be done. Here it wud accept int i=10;
 3 At last Main() executes
+4 We dont have constructor here cz constructor cant be static.
 
---------------------------------------------------
+-----------------------------------------------------------------------
+Instance Execution -
+1. instance means related to Obj. And obj created inside Main(). Now if any line mentioned inside main() before obj creation
+line then it wud be executed first. Then,
 
-In Instance control flow 4 steps to be followed -
+2. Whtever written at the top of program after class name,ex any print statement then it'll be executed. If its a method written followed by a 
+instance blok where its called then it wud be executed first then other instance blok wud be executed in the mentioned order top to bottom. 
 
-It's not a one time activity every time you create a object it wud be performed.
-1 Identify static members (Instance Var, Methods, Blocks). Here if data types are defined then they wud be carrying thr default value ex- if int x=10 I've given but at this step it's value is 0
-2 Very 1st static blok will be executed from Top to bottom and assignment of user-defined values to static variables. Here it wud accept int i=10;
-3Constructor executes
- At last main() executes
+3. And if it starts with a Instance var, instance blok, main() or constructor the execution wud always starts with Instance block 
+then constructor then Main(). In main() it'll execute all the lines mentioned after obj creation.
+
+Here sperately execution of methods isn't considered be it a Instance Block or Staticc block bcz
+- In Instance Block - We call obj either in Main() after obj creation or with this keyword in Instance block
+so it way it covered be either covered in Instance Block exection or Main() execution hence not mentioning Methods() execution separately
+bcz Methods() are never separately executed
+
+- Same is the case with Statc Block. Static Methods() are either called inside Static Block with 
+ClassName or in Main() directly. Either way Static Methods() execut
+ion are covered either in Static 
+Block or in Main() no other way to call them directly.
+ 
+
+Imp Que/Ans
+
+
+
+Video link for reference - https://www.youtube.com/watch?v=Tfh0xPl2ayA
+
+Static Block will execute first even b4 Main()
+
+We can have n number of Static Blocks
+
+It can be written anywhere in the program but will be executed in the sequence as they were written. 
+So output wud be Static Block 1,2,3,4
+
+Que - If there's a static Block and static() which will execute first. 
+Static block wud be executed first and for method it depends where it is written only 2 options to call the static method either it wud be in any static block then it wud be executed 1st else it wud be called in Main() then it wud be executed last.
+
+Que - If there's a static Block and in Main() we're calling static() wt'll execute first. 
+So 1st wud be Static block then static() then Main(). Whever be the 1st line in main() is wriiten is executed first
+be it any print statement or any static().
+
+Que - How can we run a program without creating a object
+For that, Members functions shud be Static then we can either call them directly or with classname.
+
+Que - How can we create object of 1 class in another class, if we make the constructor private ?
+Either with static block or with static()
+
+Que - Is it possible to run & compile a Java Program without writing Main() ?
+Not possible. It was possible prior to Java 7 version.
+
+Que - Can we initialize Non-Static Variable with Static Block ?
+Yes for that create obj of the class inside Static Block and with obj ref call the var within Static Block
+
+Static Variables declared at class level can be directly initialized inside static block.
+
+NOTE - Always 1st static block wud be executed then Main() then instance block then constructor
+
+ 
+ 
+ 
+
+ 

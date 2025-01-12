@@ -10,12 +10,23 @@ package StaticAndInstanceBlock;
 
 class StaticControlFlowProgram {
 	
+	
+	// Static method
+	public static void Method1() {
+		System.out.println("Method1");
+	}
+	
+	
+	
 	static int staticIntExampleOne = 24;	//First Step :
 											//staticIntExampleOne = 0 (Read Indirectly Write Only [RIWO]) 
 	
 											//Second Step :
-											//staticIntExampleOne = 24 (Read & Write [R&W])
+							//staticIntExampleOne = 24 (Read & Write [R&W])
 	 
+	
+	
+	
 	//First Static Block
 	static {
 		System.out.println("Value of First Static Int Variable : " + StaticControlFlowProgram.staticIntExampleOne);		
@@ -26,8 +37,9 @@ class StaticControlFlowProgram {
 	
 	//Main Method
 	public static void main(String[] args) {
+		System.out.println("Test");	
 		StaticControlFlowProgram.staticMethodExample();
-		System.out.println("Inside Main Method");				
+		System.out.println("Inside Main Method");	
 	}
 	
 	//Static Method
@@ -45,5 +57,9 @@ class StaticControlFlowProgram {
 	
 											//Second Step :
 											//staticIntExampleTwo = 44 (Read & Write [R&W])
+	
+	static {
+		StaticControlFlowProgram.Method1();
+	}
 }
 
