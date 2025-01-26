@@ -6,9 +6,9 @@ You can check it out google - hashset java api - goto docJar link
 - It's true that HashSet Uses HashMap Internally 
 - HashSet<> hs = new HashMap<>();
 - Though Map works on Key, Value pair but in HashSet we don't have any key
-- But in set we do hs.add("Naveen"); internally it's taking Naveen as a Key and a Constant which is 
+- But in set we do hs.add("Sonali"); internally it's taking Sonali as a Key and a Constant which is 
   PRESENT 
-- So it takes hs.add("Naveen",PRESENT(null)); where there are 2 keys Naveen and PRESENT and value = null;
+- So it takes hs.add("Sonali",PRESENT(null)); where there are 2 keys Sonali and PRESENT and value = null;
 
 
 

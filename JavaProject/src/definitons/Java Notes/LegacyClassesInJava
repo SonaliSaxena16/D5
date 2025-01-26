@@ -8,5 +8,5 @@ Dictionary
 Properties
 Vector
 
- we have several classes and interfaces which allow us to store objects. After adding the Collection 
- framework in JSE 1.2
+A separate framework named the “Collection Framework” has been defined in JDK 1.2 which holds all the Java 
+Collection Classes and Interface in it.

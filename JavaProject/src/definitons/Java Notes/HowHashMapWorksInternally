@@ -1,4 +1,6 @@
 
+Naveen's Video link for reference - https://www.youtube.com/watch?v=SXfsBDTodpY
+
 HashMap always have a bucket of 16 nodes or 0-15 you can say. If no node is added to the Parent node then
 it is called as HashMap once 2 or more nodes added to the Parent Node it becomes Linked List and to the
 max of 8 nodes if added to the LinkedList then it is converted to Balanced Binary Tree.
@@ -31,7 +33,8 @@ HashCode & Key for that particular index or until and this way Hashmap converted
 
 QUE - Wht is the Hashcode of a null ?
 Ans - Hashcode wud be zero and index wud also be zero.
-IMP******** HashCode & Index of Null key is always null means 0. Ex- marks.put(null,700); // It'll return null
+
+IMP******** HashCode & Index of Null key is always null means 0. Ex- marks.put(null,700); // It'll return NULL
 Also we can have only 1 null in the HashMap for that particular HashCode. Another node can be added if we get 
 other node with different HashCode means you've already 700 value at 0th index now you entered 
 marks.put(null,800), it'll not give you error. It'll simply update the value to 800. And you entered the 

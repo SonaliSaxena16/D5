@@ -5,8 +5,8 @@
 	HashSet-C					ArrayList-C				PriorityQueue-C
 	LinkedHashSet-C			LinkedList-C			Deque-I
 	SortedSet-I					Vector-C				|
-	|							|						LinkedList-C & ArrayDeque-C
-	TreeSet-C					Stack-C
+	|													LinkedList-C & ArrayDeque-C
+	TreeSet-C					
 	
 	
 	

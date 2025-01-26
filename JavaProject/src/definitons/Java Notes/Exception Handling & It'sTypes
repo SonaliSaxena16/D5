@@ -1,7 +1,7 @@
 An unexpected or unwanted event that disturbs normal flow of the program is called Exception. 
-A program Throws exception, means Java Interpreter wud create an Obj of the exception and 
-throws it to the area where exceptions are being handled. So if you've written a code to catch or handle, it'll be
-handled else it'll terminate the program by throwing an exception which can be seen in your console
+A program Throws exception, means an Obj of the exception would be created and throws it to the area where exceptions are
+being handled. So if we've written a code to catch or handle, it'll be handled else it'll terminate the program by 
+throwing an exception which can be seen in the console.
 							
 							  Object			(SuperSuper class for every class)
 							  
@@ -35,7 +35,7 @@ Programmer before hand. Also checked exceptions are extended from java.lang.exce
 	
 Try is the block which contains exception & catch is the block where we write code to handle that exception. 
 
--TRY/CATCH used for reporting & logging of error and by using certain methods with catch. e.printStackTrace() is the 1st fine of catch 
+-TRY/CATCH used for reporting & logging of error and by using certain methods with catch. e.printStackTrace() is the 1st line of catch 
 block this method help to debug as it mentions the line no. in the console
 
 -Throws isn't used for reporting. Is used for a particular method, if you find that method is suspicious and may encounter exception. It's 

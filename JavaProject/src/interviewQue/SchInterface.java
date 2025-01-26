@@ -1,9 +1,8 @@
 package interviewQue;
 
 public interface SchInterface {
-
+ 
+	void test();
 	
-	public abstract void air();
-	
-	
+	void air();
 }
