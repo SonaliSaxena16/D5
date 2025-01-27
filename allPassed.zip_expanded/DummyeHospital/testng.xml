@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<groups>
+<run>
+ 
+ 	<!-- <include name = "Functional"/>
+
+  -->
+ 
+ 	<include name = "Smoke"/>
+
+</run>
+
+</groups>
+
+<listeners>
+<listener class-name = "nic.ehospital.qa.base.EhospitalListener"/>
+</listeners>
+
+  
+  
+  <test name="TestLogin">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest"/>  
+    </classes>
+    </test> <!-- Test -->
+    
+
+
+<!-- 
+    <test name="TestHome">
+       <classes>
+      <class name="nic.ehospital.qa.testcases.HomePageTest"/>
+    </classes>
+</test>   Test  
+
+  
+ --> 	
+ 	<test name="TestCHI">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ConfigureHospitalInfraPageTest"/>
+    </classes>
+</test> <!-- Test -->    
+
+
+
+	<test name="TestCPOT">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ConfigurePointOfTreatmentPageTest"/>
+    </classes>
+</test>  <!-- Test -->           
+
+
+
+	<test name="TestCRP">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ConfigureRegistrationParametersTest"/>
+    </classes>
+</test>  <!-- Test -->           
+
+
+ 
+	<test name="TestConfigService">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ConfigureServicesTest"/>
+    </classes>
+</test>  <!-- Test -->           
+ 
+ 
+ 
+	<test name="TestHCR">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.HospitalConfigurationReportTest"/>
+    </classes>
+</test>  <!-- Test -->           
+
+
+<test name="TestAuditTrail">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.AuditTrailTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+<test name="TestAddEditUserRole">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.AddEditUserRoleTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+<test name="TestResetUserPassword">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ResetUserPasswordTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+<test name="TestUpdateUserDisplayPicture">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.UpdateUserDisplayPictureTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+
+<test name="TestUserVsBillingTypeMapping">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.UserVsBillingTypeMappingTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+<test name="TesUpdatePatientData">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.UpdatePatientDataTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+<test name="TestEditIncome">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.EditIncomeTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+
+
+<test name="TestUserPermissionForPatientUpdate">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.UserPermissionForPatientUpdateTest"/>
+    </classes>
+</test>  <!-- Test -->  
+
+
+ 
+	</suite> <!-- Suite -->
+
+	
+

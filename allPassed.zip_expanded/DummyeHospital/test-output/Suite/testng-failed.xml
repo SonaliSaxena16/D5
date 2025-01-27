@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="nic.ehospital.qa.base.EhospitalListener"/>
+  </listeners>
+  <test name="TestLogin(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="SelectParentwindow"/>
+          <include name="eHospitalLogoTest"/>
+          <include name="setUp"/>
+          <include name="ValidLoginScndPageTest"/>
+          <include name="validateValidLoginFirstPage"/>
+          <include name="ClickOnPMCaresButton"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+    </classes>
+  </test> <!-- TestLogin(failed) -->
+  <test name="TestHome(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.HomePageTest">
+        <methods>
+          <include name="changePwdInOneGo"/>
+          <include name="HomePageTitleTest"/>
+          <include name="changePwdKeyBtnIsEnabld"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- TestHome(failed) -->
+  <test name="TestCHI(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.ConfigureHospitalInfraPageTest">
+        <methods>
+          <include name="AdminLinkisDisplayed_TIDA001_EH203"/>
+          <include name="ValidateManageFloorisClickableTest"/>
+          <include name="editBuildingNameAndUpdateValidData_TIDA0020_EH17"/>
+          <include name="validBuildingNameEntered_TIDA0017_EH17"/>
+          <include name="ValidateManageBuildingisClickable_TIDA0012_EH206"/>
+          <include name="manageBuildingBlockClickableTest_TIDA0022_EH226"/>
+          <include name="manageHospitalRoomsIsClikabl"/>
+          <include name="validFloorAdded"/>
+          <include name="LoginLogoutRegister_ClickLoginOutReport"/>
+          <include name="selectBuidingAndBlockNameTest_TIDA0028_EH60"/>
+          <include name="hospitalLogo_UploadLogo"/>
+          <include name="hospitalLogoisEnabled"/>
+          <include name="updateAllFiedsInOneGo"/>
+          <include name="editFloor_UpdateValidData"/>
+          <include name="ConfigureHospitalInfraLinkisClickable_TIDA009_EH205"/>
+          <include name="LoginLogoutRegisterIsEnabled"/>
+          <include name="AdminLinkisClickable_TIDA003_EH203"/>
+          <include name="ManageHospitalDetailsLink_IsEnabled"/>
+          <include name="editBuildingBlockNameAndUpdateTest_TIDA0033_EH60"/>
+          <include name="HospitalAdminisClickable_TIDA006_EH204"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ConfigureHospitalInfraPageTest -->
+    </classes>
+  </test> <!-- TestCHI(failed) -->
+  <test name="TestCPOT(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.ConfigurePointOfTreatmentPageTest">
+        <methods>
+          <include name="editDeptWithValidDataInOneGO"/>
+          <include name="manageWardsIsEnabled"/>
+          <include name="manageDepartmentIsEnabled"/>
+          <include name="closeBedListBtnIsEnabled"/>
+          <include name="addClinicInOneGo"/>
+          <include name="manageUnitsLinkisEnabled"/>
+          <include name="addBedBtnIsEnabled"/>
+          <include name="fetchesTotallNoOfBedsThenAdd1Bed"/>
+          <include name="edit_ClinicInOneGo"/>
+          <include name="RefreshBtnIsEnabled"/>
+          <include name="addValidUnitInOneGo"/>
+          <include name="addWardUnitMappingInOneGo"/>
+          <include name="removeBedBtnIsEnabled"/>
+          <include name="mapWardVsIcuIsolationLinkIsEnabled"/>
+          <include name="showBedListBtnIsEnabled"/>
+          <include name="ConfigPointOfTrtment_ManageUserIsEnabled"/>
+          <include name="editShiftInOneGo"/>
+          <include name="editValidUnitInOneGo"/>
+          <include name="pediatericChkboxIsDisplayed"/>
+          <include name="clickManageWardsToReachWardUnitMappingLink"/>
+          <include name="EditBtnIsEnabled"/>
+          <include name="changeBedNoRadioBtnIsEnabled"/>
+          <include name="createShiftInOneGo"/>
+          <include name="manageClinicLinkIsEnabled"/>
+          <include name="wardUnitMappingLinkIsEnabled"/>
+          <include name="editWardBtnIsEnabled"/>
+          <include name="manageShiftsLinkIsEnabled"/>
+          <include name="ConfigPointOfTreatmentIsDisplayed"/>
+          <include name="removeOneBedFromTable"/>
+          <include name="ManageUser_EditUser"/>
+          <include name="addWardInOneGo"/>
+          <include name="editWardUnitMappingInOneGo"/>
+          <include name="changeBedNoInOneGo"/>
+          <include name="clickManageWardsToReachMapWardVsIcuIsolationLink"/>
+          <include name="addIsolationWardInOneGo"/>
+          <include name="editWardInOneGo"/>
+          <include name="ConfigPointOfTreatmentIsEnabled"/>
+          <include name="editIcuWardInOneGo"/>
+          <include name="ManageUser_FillRequiredDetails"/>
+          <include name="createDeptWithAllDetailsInOneGo"/>
+          <include name="addIcuWardInOneGo"/>
+          <include name="editIsolationWardInOneGo"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ConfigurePointOfTreatmentPageTest -->
+    </classes>
+  </test> <!-- TestCPOT(failed) -->
+  <test name="TestCRP(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.ConfigureRegistrationParametersTest">
+        <methods>
+          <include name="ConfigPointOfTreatmentIsDisplayed"/>
+          <include name="manageBillingTypeLinkIsEnabled"/>
+          <include name="listOfCountrDeptMappng_AddMappingInOneGo"/>
+          <include name="deptUserMapping_CreateMappingInOneGo"/>
+          <include name="printsTextInsideFirstRowCol"/>
+          <include name="selectEntryAndCompare25Pages"/>
+          <include name="regRoomCreation_SelectEntryAndDelete"/>
+          <include name="addCounter_AddInOneGo"/>
+          <include name="getValuesOfAllRowsAndCols"/>
+          <include name="searchDeptClicksCheckboxClicksSelectRemoveBtn"/>
+          <include name="editBillingType_InOneGo"/>
+          <include name="selectEntryAndCompare10Pages"/>
+          <include name="counterVsDeptMapping_AddMappingInOneGo"/>
+          <include name="cerateDeptClinicFeeIntrvlInOneGo"/>
+          <include name="createRegRoomInOneGo"/>
+          <include name="printTotalRowCols"/>
+          <include name="manageDeptClinicFeeIntrvlLinkIsEnabled"/>
+          <include name="configureRegParaLinkIsEnabled"/>
+          <include name="addNewBillingType_InOneGo"/>
+          <include name="manageCounterLinkIsEnabled"/>
+          <include name="departmentUserMappingLinkIsEnabled"/>
+          <include name="editDeptClinicFeeIntrvlInOneGo"/>
+          <include name="selectCounterUser_AddMappingInOneGo"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ConfigureRegistrationParametersTest -->
+    </classes>
+  </test> <!-- TestCRP(failed) -->
+  <test name="TestConfigService(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.ConfigureServicesTest">
+        <methods>
+          <include name="configureServicesLinkIsEnabled"/>
+          <include name="addServiceInOneGo"/>
+          <include name="configureServicesLinkIsDisplayed"/>
+          <include name="createServiceCategoryInOneGO"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ConfigureServicesTest -->
+    </classes>
+  </test> <!-- TestConfigService(failed) -->
+  <test name="TestHCR(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.HospitalConfigurationReportTest">
+        <methods>
+          <include name="hospitalConfigurationReportLinkIsEnabled"/>
+          <include name="hospitalConfigurationReportLinkIsDisplayed"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.HospitalConfigurationReportTest -->
+    </classes>
+  </test> <!-- TestHCR(failed) -->
+  <test name="TestAuditTrail(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.AuditTrailTest">
+        <methods>
+          <include name="auditTrailLinkIsDisplayed"/>
+          <include name="auditTrailLinkIsEnabled"/>
+          <include name="auditTrail_SearchBtnIsEnabled"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.AuditTrailTest -->
+    </classes>
+  </test> <!-- TestAuditTrail(failed) -->
+  <test name="TestAddEditUserRole(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.AddEditUserRoleTest">
+        <methods>
+          <include name="userAdministrationLinkIsDisplayed"/>
+          <include name="addEditUserRoleLinkIsEnabled"/>
+          <include name="createRoleInOneGo"/>
+          <include name="userAdministrationLinkIsEnabled"/>
+          <include name="addEditUserRoleLinkIsDisplayed"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.AddEditUserRoleTest -->
+    </classes>
+  </test> <!-- TestAddEditUserRole(failed) -->
+  <test name="TestResetUserPassword(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.ResetUserPasswordTest">
+        <methods>
+          <include name="resetUserPasswordLinkIsDisplayed"/>
+          <include name="resetUserPasswordLinkIsEnabled"/>
+          <include name="resetPwdInOneGo"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ResetUserPasswordTest -->
+    </classes>
+  </test> <!-- TestResetUserPassword(failed) -->
+  <test name="TestUpdateUserDisplayPicture(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.UpdateUserDisplayPictureTest">
+        <methods>
+          <include name="updateUserDisplayPicInOneGo"/>
+          <include name="updateUserDisplayPicLinkIsDisplayed"/>
+          <include name="updateUserDisplayPicLinkIsEnabled"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.UpdateUserDisplayPictureTest -->
+    </classes>
+  </test> <!-- TestUpdateUserDisplayPicture(failed) -->
+  <test name="TestUserVsBillingTypeMapping(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.UserVsBillingTypeMappingTest">
+        <methods>
+          <include name="addUsrVsBllngTypeMappngInOneGo"/>
+          <include name="userVsBillingTypeMappingLinkIsDisplayed"/>
+          <include name="userVsBillingTypeMappingLinkIsEnabled"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.UserVsBillingTypeMappingTest -->
+    </classes>
+  </test> <!-- TestUserVsBillingTypeMapping(failed) -->
+  <test name="TesUpdatePatientData(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.UpdatePatientDataTest">
+        <methods>
+          <include name="updatePatDetailsInOneGo"/>
+          <include name="updatePatientDataLinkIsEnabled"/>
+          <include name="updatePatientDataLinkIsDisplayed"/>
+          <include name="patientDataAdministrationLinkIsEnabled"/>
+          <include name="patientDataAdministrationLinkIsDisplayed"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.UpdatePatientDataTest -->
+    </classes>
+  </test> <!-- TesUpdatePatientData(failed) -->
+  <test name="TestEditIncome(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.EditIncomeTest">
+        <methods>
+          <include name="editIncomeLinkIsDisplayed"/>
+          <include name="editIncomeLinkIsEnabled"/>
+          <include name="updateBillingTypeInOneGo"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.EditIncomeTest -->
+    </classes>
+  </test> <!-- TestEditIncome(failed) -->
+  <test name="TestUserPermissionForPatientUpdate(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="nic.ehospital.qa.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.LoginPageTest -->
+      <class name="nic.ehospital.qa.testcases.UserPermissionForPatientUpdateTest">
+        <methods>
+          <include name="userPermissionForPatientUpdateLinkIsEnabled"/>
+          <include name="selectUserAndPermissonThenUpdatePermissonInOneGo"/>
+          <include name="userPermissionForPatientUpdateLinkIsDisplayed"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.UserPermissionForPatientUpdateTest -->
+    </classes>
+  </test> <!-- TestUserPermissionForPatientUpdate(failed) -->
+</suite> <!-- Failed suite [Suite] -->

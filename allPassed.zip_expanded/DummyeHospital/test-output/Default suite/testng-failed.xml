@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="nic.ehospital.qa.testcases.ConfigureRegistrationParametersTest">
+        <methods>
+          <include name="manageDeptClinicFeeIntrvl_SelectDeptClinicOnly"/>
+          <include name="manageDeptClinicFeeIntrvl_FollowupFeeIntrvalDrpdwnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_SaveBtnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_NoOfVisitsAllowdTxboxTxboxIsEnabled"/>
+          <include name="enterInvalidNoOfVisitsAllowdClickSaveBtn"/>
+          <include name="manageDeptClinicFeeIntrvl_NoOfVisitsAllowdTxboxTxboxIsDisplyed"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicDrpdwnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicDrpdwnIsMultiple"/>
+          <include name="manageDeptClinicFeeIntrvl_FollowupFeeIntrvalDrpdwnIsDisplyed"/>
+          <include name="manageDeptClinicFeeIntrvl_SaveBtnIsDisplayed"/>
+          <include name="cerateDeptClinicFeeIntrvlInOneGo"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicTypeDrpdwnIsMultiple"/>
+          <include name="manageDeptClinicFeeIntrvl_SlipTemplateDrpdwnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvlLinkIsDisplayed"/>
+          <include name="manageDeptClinicFeeIntrvl_FollowupFeeTxboxIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_FollowupFeeTxboxIsDisplyed"/>
+          <include name="enterInvalidFollowupFeeClickSaveBtn"/>
+          <include name="manageDeptClinicFeeIntrvl_SelectDeptClinicClinicTypeOnly"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicDrpdwnIsDisplyed"/>
+          <include name="manageDeptClinicFeeIntrvl_DeptDrpdwnIsMultiple"/>
+          <include name="ConfigPointOfTreatmentIsDisplayed"/>
+          <include name="enterValidFollowupFeeClickSaveBtn"/>
+          <include name="selectSlipTemplateClickSaveBtn"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicTypeDrpdwnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_SlipTemplateDrpdwnIsDisplyed"/>
+          <include name="manageDeptClinicFeeIntrvl_DeptDrpdwnIsDisplyed"/>
+          <include name="manageDeptClinicFeeIntrvl_ClinicTypeDrpdwnIsDisplyed"/>
+          <include name="enterInvalidFollowupFeeIntrvlClickSaveBtn"/>
+          <include name="manageDeptClinicFeeIntrvl_DeptDrpdwnIsEnabled"/>
+          <include name="manageDeptClinicFeeIntrvl_SelectDeptOnly"/>
+          <include name="manageDeptClinicFeeIntrvlLinkIsEnabled"/>
+          <include name="enterValidFollowupFeeIntrvlClickSaveBtn"/>
+          <include name="configureRegParaLinkIsEnabled"/>
+          <include name="enterValidNoOfVisitsAllowdClickSaveBtn"/>
+          <include name="manageDeptClinicFeeIntrvl_SlipTemplateDrpdwnIsMultiple"/>
+        </methods>
+      </class> <!-- nic.ehospital.qa.testcases.ConfigureRegistrationParametersTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
