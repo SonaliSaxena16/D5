@@ -1,4 +1,5 @@
-What is CSS ?
+What is CSS Selector ?
+
 Css allows only one directional flow which means the traversal is from parent to child only.
 CSS selector syntax is more beginner-friendly, as well as easier to maintain. Also, these are 
 faster than XPath, 

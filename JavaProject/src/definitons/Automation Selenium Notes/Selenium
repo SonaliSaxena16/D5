@@ -1,0 +1,60 @@
+
+What is Selenium ?
+1 Selenium is one of the most widely used open source Web UI (User Interface) automation testing suite.
+It was originally developed by Jason Huggins in 2004 as an internal tool at Thought Works. 
+2 Selenium supports automation across different browsers, platforms and programming languages.
+3 Selenium can be easily deployed on platforms such as Windows, Linux, Solaris and Macintosh. Moreover, it supports OS (Operating System) for mobile applications like iOS, windows mobile and android.
+Selenium supports a variety of programming languages through the use of drivers specific to each 
+language.Languages supported by Selenium include C#, Java, Perl, PHP, Python and Ruby. Currently, 
+Selenium Web driver is most popular with Java and C#. Selenium test scripts can be coded in any of the
+supported programming languages and can be run directly in most modern web browsers. 
+4 Browsers supported by Selenium include Internet Explorer, Mozilla Firefox, Google Chrome and Safari.
+5 Selenium can be used to automate functional tests and can be integrated with automation test tools
+such as Maven, Jenkins, & Docker to achieve continuous testing. 
+5 It can also be integrated with tools such as TestNG, & JUnit for managing test cases and generating 
+reports.
+
+Selenium has basically 4 Components -
+
+Selenium IDE - Is a plugin for Chrome/Firefox, which records the user actions and then executes them as a
+test script.
+
+Selenium RC(Remote Control) Server - Test scripts created by the QA are send to this server then the 
+Server sends them to browser.
+
+WebDriver - Is an Interface allow us to create test scripts and work on web elements to do operations on it.
+It uses JSON Wire Protocol.
+
+Selenium Grid - Allows us to perform multiple tests on multiple machine at a same time.
+It uses W3C Protocol.
+
+Architecture of Selenium Suite -
+
+			 Selenium Suite
+		IDE	RC	WebDriver	Grid
+			Selenium2.0(Merged RC+WebDriver)
+			Selenium3.0(New advanced features with Bug fixtures of 2.0)
+
+What is Selenese? 
+Selenese is the set of Selenium commands which are used to test your web application.
+And its classified as - Actions, Assertions and Accessors.
+
+Pros & Cons of Selenium ?
+
+PROS - 
+
+1 Cross-browser compatibility: Supports many browsers, including Chrome, Firefox, Safari, and Internet Explorer 
+2 Community support: Has a community of users who can help with issues 
+3 Supports multiple programming languages: Can be used with many different programming languages 
+4 Mobile testing: Can test native, hybrid, or web mobile apps with additional software 
+4 Handles dynamic elements: Can wait for page elements to load and interact with dynamic content
+
+CONS -
+1 Limited reporting: Lacks built-in reporting capabilities, so test results need to be managed using external tools 
+2 Limited support for desktop applications: Primarily designed for web application testing 
+3 Complex setup: Setting up and configuring a test framework from scratch can be time consuming 
+4 Challenges with dynamic elements: Can generate false positives and negatives, which can mislead the testing team 
+5 Code-based: Requires code to set up, implement, and maintain tests  
+6 Selenium cant automate Gaming apks & Captcha.
+
+ 

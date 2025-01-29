@@ -1,0 +1,18 @@
+
+
+1. Are used to Locate Web Elements based on HTML tag & attributes on a web page.
+2. Using them to perform actions like clicking buttons, entering text, and validating 
+the presence of elements. 
+3. Locators are static and there return type is 'By'. As locators are present inside Abstract Class called 'By'
+4. Locators are of 8 types - 
+
+1 id
+2 name
+3 class
+4 tagName
+5 linkText
+6 partialLinkText
+7 xpath
+8 css selector
+
+ex - WebElement sbmtBtn = driver.findElement(By.id("Btn")).click();

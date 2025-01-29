@@ -1,0 +1,9 @@
+
+1. findElement() is a method in the WebDriver Interface in Selenium. It is used to locate the first 
+element that matches the specified locator strategy and conditions. 
+2. It's return type is WebElement.
+3. When using the @find element command in Selenium and no matching element is found on the page,
+the exception thrown is called "NoSuchElementException". 
+
+
+ex - WebElement sbmtBtn = driver.findElement(By.id("Btn")).click();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite1" parallel="false">
+  <test name="Test1">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.amazon.BrowLaunch.LaunchBrowserTest">
+        <methods>
+          <include name="testMethod1"/>
+          <include name="testMethod2"/>
+        </methods>
+      </class>
+      <class name="com.example.tests.TestClass2">
+        <methods>
+          <exclude name="testMethod3"/>
+          <include name="testMethod4"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

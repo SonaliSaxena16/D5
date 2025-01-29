@@ -31,6 +31,7 @@ public class TestBase {
 
 		prop.load(fis);
 		
+		
 	}
 	
 	public static void initialization(){

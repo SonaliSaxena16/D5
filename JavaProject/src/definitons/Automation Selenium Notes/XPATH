@@ -16,9 +16,13 @@ selection from anywhere within the document
 //div[class="qa-logo"]/a
 
 8 Types of XPATH Axes are there -
-Descendant - descendant and descendant-or-salf (Mere bachche)
+Descendant - descendant and descendant-or-self (Mere bachche)
 Ancestor - ancestor and ancestor-or-self (Dadaji/poorvaj)
 Sibling - preceding-sibling(Mere piche-backward) and following--sibling(Mere aage wle-forward)
 child - child
 Parent - parent
 Extra methods - preceding and following
+text() function
+contains()
+start-with()
+indexing in XPATH

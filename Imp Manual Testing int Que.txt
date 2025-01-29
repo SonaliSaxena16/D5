@@ -1,0 +1,67 @@
+Imp Manual Testing int Que
+
+Que 1 What you do if you find a Production Bug ?
+Ans 1 Start with Analysis
+2 Add bug to Jira or the org's Bug Tracking Tool
+3 Share the bug to the slack group or your office group's teams channel
+4 Do RCA - Dev+QA
+5 and share with the scrum team or Stakeholder like your PM or client Manager
+6 Then add missing test case to TMT and to the automation flow
+
+Que 2 Waht to do if Stakeholder says take X days for testing & release the project ?
+Ans 1 Prepare the test estimation sheet
+2 show them with data. How many testcases you've how much Bandwidth you've and accordingly ask for timeline
+3 Let them know the risk involved in missing out the imp testing aspects or modules.
+4 Explain them how you would be covering scenario in testing Priority wise. Like 1st 3 days will cover P1 next 4 days P2 and so on.
+
+Que 3 Tell me about the most imp bug that you've discovered ?
+Ans 1 Prepare well for your answer.
+Them explain why that bug was imp 
+Explain its impact on Customer
+Explain its impact on Business
+
+Que 4 What to do if your test env isn't working or current branches aren't deployed yet ?
+Ans 1 Discuss about the checklist the entry & exit criteria to start & conclude the testing
+2 Post the issue in group or do email to highlight the issue
+
+Que 5 Documentation vs bug ?
+Ans 1 Clearly them documentation is must for a clear visibility and helps us to be in a better position when bug arises
+2 That's ok only for hot fixes as they don't require documentation
+3 Add doc creation time: Docs are Test Plan, Test Cases, Bug Reports, Test Execution Report
+4 Docs saves us from Bugs
+
+Que 6 Explain your typical day as a QA ?
+Ans 1 Creating the test cases
+2 Once finished I execute them
+3 While executing if any questions arises those needs to be clarified in the eve scrum call
+4 Running a smoke test if required
+5 If found a defect would be discussed with the scrum team and accordingly logged in bug tracking tool
+6 Report status to stakeholder
+7 Complete the other tasks if assigned
+
+Que 7 How do you debug a error in Login Page ?
+Ans 1 Check for the console error - Inspect element chrome dev tools - Will chk API response & status code as 200
+2 Will go for Cross Browser Testing like IE, Firefox, Safari etc if page or functionality breaks. 
+
+Que 8 Explain any huge bug you've reported and got acknowledged for it ?
+Ans 1 In NIC I was handed over the SSO functionality to test, as soon as I click on Login button it redirects to the Nextgen/Onboarding of new hospitals apk rather then launching Ehospital apk then I need to refresh to land at the desired apk
+2 In Global Logic, in SIS I was testing the Teacher Module where I need to add a tester - assign a roster - assign courses. If I assigned more than 4 courses then teacher wasn't appearing in the roster page.
+3 In Virtusa, It was taking incorrect time and defaults to 12am in the intake form which the insurance operator fills when Customer calls to file a med claim in case of intergartion when case was registered either from Salesforce or Trucare.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
