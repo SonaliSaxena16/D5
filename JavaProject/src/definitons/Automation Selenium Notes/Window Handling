@@ -1,0 +1,27 @@
+
+
+What is a Window Handle?
+It is a unique identifier that holds the address of all the windows. Think of it as a pointer to a window,
+which returns the string value. It is assumed that each browser will have a unique window handle. 
+This window handle function helps to retrieve the handles of all windows.
+
+get.windowhandle(): Returns String :  This method helps to get the window handle of the current window
+
+get.windowhandles(): Returns Set<String> : This method helps to get the handles of all the windows opened
+
+close() - closes the current window.
+quit() - quits the browser by closing all windows.
+
+set: This method helps to set the window handles in the form of a string. 
+set<string> set= driver.get.windowhandles();
+
+switch to: This method helps to switch between the windows
+action: This method helps to perform certain actions on the windows
+
+Single window handle : String singleWindow = driver.getWindowHandle();
+
+Multiple window handle : Set<String> allWindows = driver.getWindowHandles();
+
+Code snippet to demonstrate :
+
+

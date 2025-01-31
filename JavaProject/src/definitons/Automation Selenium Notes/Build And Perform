@@ -1,0 +1,13 @@
+
+Once you have specified all the actions you want to perform, you can call the build method to build the
+Actions object. 
+
+Perform is used to execute the actions that were built using the build method. Once you call to perform,
+Selenium will execute the actions in the order that they were specified.
+
+Que1 Can we use perform without build?
+Ans Yes, without calling the build() method, you could call the perform() method for performing the
+sequence of actions.
+
+Actions act = new Actions(driver);
+act.moveToElement().click().perform();

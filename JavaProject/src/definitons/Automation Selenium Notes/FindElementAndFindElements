@@ -1,0 +1,11 @@
+
+
+findElement: 
+This is used to uniquely identify any web element within the web page.
+If no matching element is found, it throws a NoSuchElementException.
+Its return type is WebElement
+
+findElements: This is used to uniquely identify the list of web elements within the web page.
+This is used to identify the list of WebElements within the web page.
+If there are no matching elements, it returns an empty list(not null).
+Its return type is List<WebElement> 

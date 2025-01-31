@@ -1,0 +1,29 @@
+
+
+<table> is the HTML tag that is used to define a web table. 
+While <th> is used for defining the header of the table 
+<tr> for Rows and <td> for Column
+
+1. Static Web Tables
+These tables have fixed data that remains unchanged throughout. Due to the static nature of their content, they are called Static web tables.
+
+2. Dynamic Web Tables
+These tables have data that changes over time, and hence the number of rows and columns might also change depending upon the data shifts.
+
+code snippet to find the total number of rows and columns for the above Dynamic Web Table
+
+// To Locate a Web Table
+
+WebElelemnt table = driver.findElement(By.id("WebTable"));
+
+//Finding number of Rows
+List<WebElement> rows = table.findElements(By.xpath(“//*[@id="content-8b4988b9-2ec9-4e77-9b4d-9c2994bd9e8a"]/div/div/table[1]/tbody/tr[1]/td[1]”));
+int rowCount = rows.size();
+System.out.println("No of rows in this table : " + rowCount);
+
+
+// Let’s identify the data present in the 6th Row and 6th Column of the given dynamic web table
+WebElement cell = row.findElement(By.xpath(“//*[@id="content-8b4988b9-2ec9-4e77-9b4d-9c2994bd9e8a"]/div/div/table[1]/tbody/tr[4]/td[3]”));
+int cellCount = cell.size();
+String value = cell.getText();
+System.out.println(“The Cell Value is : “ +value);

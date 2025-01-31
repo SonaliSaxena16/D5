@@ -1,0 +1,26 @@
+
+ Action Class in Selenium used to Handle Keyboard & Mouse Events.
+ 
+Mouse Actions -
+click
+doubleClick(): Performs double click on the element
+context-click()
+clickAndHold(): Performs long click on the mouse without releasing it
+dragAndDrop(): Drags the element from one point and drops to another
+moveToElement(): Shifts the mouse pointer to the center of the element
+clickAndHold()
+release()
+dragAndDropBy()
+contextClick(): Performs right-click on the mouse
+
+Keyboard Actions -
+
+sendKeys(): Sends a series of keys to the element
+keyUp(): Performs key release
+keyDown(): Performs keypress without release
+
+
+WebElement element = driver.findElement(By.linkText("Get started free"));
+
+Actions act = new Actions(driver); 
+act.moveToElement(element).click().perform();
