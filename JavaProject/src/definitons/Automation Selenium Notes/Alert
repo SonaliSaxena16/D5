@@ -1,0 +1,22 @@
+
+https://www.browserstack.com/guide/alerts-and-popups-in-selenium
+
+The simplest of these is referred to as an alert, which shows a custom message, and a single button which dismisses the alert, labelled in most browsers as OK.
+
+There are three types of Alert in Selenium, described as follows:
+
+Simple Alert - This alert is used to notify a simple warning message with an ‘OK’ button. 
+Prompt Alert - This alert will ask the user to input the required information to complete the task.
+Confirmation Alert - This alert is basically used for the confirmation of some tasks. For Example: Do you wish to continue a particular task? Yes or No?
+
+First we need to switch to alert
+
+ alert = driver.switchTo().alert();
+ 
+ Alert have 4 methods()-
+ 1. driver.switchTo().alert().getText();
+ 2. driver.switchTo().alert().dismiss();
+ 3. driver.switchTo().alert().accept();
+ 4. driver.switchTo().alert().sendKeys("Text");
+ 
+ 

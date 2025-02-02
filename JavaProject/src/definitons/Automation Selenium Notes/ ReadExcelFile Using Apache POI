@@ -1,0 +1,15 @@
+
+class ReadExcelFile{
+
+	psvm(){
+	
+	FileInputStream fis = new FileInputStream();
+	Workbook wb = WorkbookFactory.create(fis);
+	
+	Sheet sh = wb.getSheet("Sheet1"); 
+	Row r = sh.getRow(0);
+	Cell c = r.getCell(0);
+	String data = c.getStringCellValue();
+	
+
+}}

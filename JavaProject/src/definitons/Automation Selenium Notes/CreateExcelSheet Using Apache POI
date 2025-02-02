@@ -1,0 +1,22 @@
+
+class CreateExcelFile{
+
+	psvm(){
+Workbook wb = new XSSFWorkbook();
+Sheet sh = wb.createSheet("Sheet1"); 
+
+Row rw = sh.createRow();
+Cell ce = re.createCell(0).setCellValue("EmpName");
+Cell ce = re.createCell(1).setCellValue("Age");
+Cell ce = re.createCell(2).setCellValue("Dept");
+
+Row rw = sh.createRow();
+Cell ce = re.createCell(0).setCellValue("Sonali");
+Cell ce = re.createCell(1).setCellValue("30");
+Cell ce = re.createCell(2).setCellValue("IT");
+
+FileOutputStream fos = new FileOutputStream("Employee.xlsx"); // To save the file with Employee file name this line is written.
+wb.write(fos);
+wb.close();
+
+}}

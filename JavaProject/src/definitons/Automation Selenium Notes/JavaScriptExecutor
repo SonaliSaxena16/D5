@@ -1,0 +1,27 @@
+
+JavaScriptExecutor is an interface provided by Selenium that helps in executing JavaScript commands. 
+This interface provides methods to run JavaScript on the selected window or the current web page.
+
+ JavaScriptExecutor can be used to implement java script methods and with sendKeys() method as well.
+ 
+ JavaScriptExecutor js = (JavaScriptExecutor)driver; // We've upcasted Web driver into java script executor(I). As Interface cannot be instantiated.
+ 
+  // Try these 3 on google.com - inspect - console - write - alert("msg")
+  
+ js.executeScript("alert('Welcome')");
+ js.executeScript("prompt('Hey, your name please')"); // Prompt would ask you with textbox to enter your answer
+ js.executeScript("confirm('Are you sure?')");
+ 
+ // If textbox is visibe and enable then only we can do sendkeys in DOM else it'll fail but with js if textbox is 
+ Disabled still we can do force sendKeys that's the power of js.
+ 
+ JavaScriptExecutor js = (JavaScriptExecutor)driver; // We've upcasted Web driver into java script executor(I). As Interface cannot be instantiated.
+ 
+ WebElement email = driver.findElement(By.id("user_email"));
+ 
+ js.executeScript("arguments[0].value='abc@gmail.com'", email);
+ 
+ WebElement loginBtn = driver.findElement(By.id("Login"));
+  
+ js.executeScript("arguments[0].click()", loginBtn);
+ 

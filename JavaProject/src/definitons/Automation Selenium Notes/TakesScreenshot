@@ -1,0 +1,19 @@
+Youtube video reference - https://www.youtube.com/watch?v=BV2S170h-ss
+
+To capture screenshots in Selenium, one has to utilize the method TakesScreenshot(). 
+This notifies WebDriver that it should take a screenshot in Selenium and store it.
+
+Step 1 – Convert web driver object to TakeScreenshot(I)
+
+TakesScreenshot ts =(TakesScreenshot)driver; // We've upcasted Web driver into TakesScreenshot(I). As Interface cannot be instantiated.
+
+Step 2 – Call getScreenshotAs method to create image file
+
+File ss = ts.getScreenshotAs(OutputType.FILE);
+
+Step 3 - Now I want to see that Screenshot visually so I'll use copy() of FILE class from com.google.commom.io.
+
+Files.copy(ss , new File("path of the screenshot folder"));
+
+
+

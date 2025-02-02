@@ -1,0 +1,7 @@
+
+
+Apache POI is an open-source java library to create and manipulate various file formats based on Microsoft Office. 
+
+Apache POI contains HSSF implementation - HSSF (Horrible Spreadsheet Format): It is used to read and write xls format of MS-Excel files.
+
+Apache POI contains HSSF implementation - XSSF (XML Spreadsheet Format): It is used for xlsx file format of MS-Excel. Means this is the llatest one we would be using XSSF.
