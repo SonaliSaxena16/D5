@@ -1,0 +1,46 @@
+
+TestNG is a Unit Testing Framework Tool, which is inspired from JUnit & NUnit.
+Unit testing framework tools are used by Dev's as well as Automation Engineers.
+
+Que1 Why QA uses Unit Test Framework ?
+Ans1 Bcz of structured testing as testcases are written & maintained in an organised way.
+Integration to CICD Pipelines.
+Reporting & Analysis - of each funtionality/module for which testcase is written.
+Regression Testing 
+
+Que2 What are the Advance features of TesNG ?
+Ans2 It provides HTML Report
+It provides TestNG Annotations
+Batch Execution is easier through TestNG.xml. As multiple test files gets executed at once.
+Parameterization using @parameters & @dataProvider
+Group Execution using @groups= {"Smoke"}
+Parallel execution
+Assertion
+TestNG Listeners
+
+Que3 How to configure TestnG in Java Project ?
+Ans Right click on Project - Build Path - Add Library - TestNG - Apply & Close
+
+Que4 How to create TestNG class ?
+Ans There are 2 ways - 
+- Right click on package - TestNG - Create TestNG class - Finish
+- By creating a general class & import @test annotation manually or right click on java Class - TestNG 
+- convert to testNG
+
+Que5 What is TestNG class ?
+Ans5 Which contains @test annotation. As  @test annotation internally uses Main() to execute java code.
+@test annotation method should be the script name, access modifier should be public & return type must be void.
+
+Que6 How to execute TestnG class ?
+Ans6 To run a TestNG test in Eclipse, you can right-click on the test class, package, or TestNG suite XML file and select Run As > TestNG Test. 
+
+Que7 How to get TestnG HTML report ?
+Ans7 Once we execute TestNG class refresh the project for the 1st time, we'll get Test-Output folder there it contains different types of TestNG reports.
+Ex - index.html & emailable report.
+
+Que8 How to execute TestNG suite file ?
+Ans8 Right click on TestnG suite file - run as TestNG suite.
+
+Que9 How to execute a script multiple times ?
+Ans9 @Test(invocationCount=10)
+ 
