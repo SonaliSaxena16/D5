@@ -43,4 +43,80 @@ Ans8 Right click on TestnG suite file - run as TestNG suite.
 
 Que9 How to execute a script multiple times ?
 Ans9 @Test(invocationCount=10)
- 
+
+Que9 What is Cross Browser Testing ?
+Ans9 Selenium supports Cross Browser Testing. By using browser-specific drivers (like ChromeDriver for
+Chrome or GeckoDriver for Firefox), Selenium WebDriver interacts directly with each browser, 
+simulating real user actions such as clicking, typing, and navigating between pages.
+
+Que10 How is Cross Browser Testing achived in Selenium using TestNG ?
+Ans10 Using @Parameters, in config file I can define my multiple browsers in the XML file I can mention
+@Paramaters name="browser" value="chrome"
+
+Que11 Difference in parallel testing and cross browser testing ?
+Ans11 While both terms are often used together in software testing, "parallel testing" refers to the
+practice of running multiple tests simultaneously across different environments to speed up the
+testing process, while "cross browser testing" specifically focuses on checking how an application 
+behaves and functions across different web browsers to ensure compatibility and consistency across 
+platforms; essentially, parallel testing can be used to perform cross browser testing faster by 
+running tests on multiple browsers concurrently. 
+
+Que12 Why we do Parallel testing ?
+Ans12 Parallel testing is a testing methodology where multiple test cases are executed at the same time.
+It allows the execution of the same tests simultaneously in multiple environments(Browsers, OS, Servers).
+The goal of parallel testing is to reduce time and resource constraints.
+
+Que13 How to do parallel testing ?
+Ans13 Parallel execution can be achieved either with @Data Provider Or Using defining cretain properties in Xml file.
+Either mention this in your xml file <suite name="Parallel_Testing" parallel="methods" thread-count="2">.
+Or create a class add methods later - Right Click - COnvert to testNG class - There in the class creation window set the above properties.
+Mainly 2 aspects we need to focus in nParalle testing -
+1. Set your XML file
+2. In your test.java class inside your test script call this - Thread.currentThread().getId // This method shows the latest thread running and gives its id in console.
+Add Thread.currentThread().getId in all of your test scripts
+
+Que14 what is thread count in testng.xml ?
+Ans14 The no. of times I want my Test script to run. 
+Ex - <suite name = "Suite1" thread-count="5" parallel="methods">
+Output - 
+Thread ID: 18
+Thread ID: 22
+Thread ID: 19
+Thread ID: 20
+Thread ID: 21
+
+Que15 Difference between thread count and invocation count
+Ans15  "thread count" refers to the number of concurrent threads (parallel how many browser instances 
+are launched)to execute tests in parallel, while "invocation count" specifies how many times a single 
+test method should be run independently.
+
+Que16 enabled=false and alwaysRun=true ? If mentioned in a test script or methos, would it be executed ?
+This test script would not be executed alwaysRun=true only works if its dependsOnmethod is failed but still it would be executed apart from it it does not have any privilege. If script set to enable = false then it would not be executed.
+
+Que17 Why do you use TestNG and why not JUnit?
+Ans17 They share many similarities but also have some notable differences. JUnit is a simpler and more
+lightweight framework, while TestNG provides more advanced features, such as parallel test execution,
+data-driven testing using @Data Provider, and test configuration flexibility.
+
+Que18 @Test (priority=-1 -2 0 and 1) then in which order scripts would be run ?
+Ans18When using @Test(priority=-1, -2, 0, 1) in TestNG, the scripts will be executed in the following order: first the tests with priority -2, then -1, followed by 0, and finally the tests with priority 1; essentially, lower priority numbers execute first. 
+
+Que19 What is the order of annotations in testng ?
+Ans19 @BeforeSuite.
+@BeforeTest.
+@BeforeClass.
+@BeforeMethod.
+@Test.
+@AfterMethod.
+@AfterClass.
+@AfterTest.
+@AfterSuite.
+
+Que20 What is grouping in testng ?
+Ans20 Grouping in TestNG is a feature that lets you organize test cases into groups for better management and execution.
+@Test(groups= {"SmokeTest"})  and update your xml like below -
+<groups>  
+<run>  
+<include name="SmokeTest"/>  
+</run>  
+</groups>  

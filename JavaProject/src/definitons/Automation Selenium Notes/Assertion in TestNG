@@ -1,0 +1,15 @@
+
+Actual result is compared with expected result with the help of Assertion. It means verification is
+done to check if the state of the application is the same to what we are expecting or not.
+
+There are two types of Assertion:- 
+
+Hard Assertions - if the assert condition is not met, test case execution will be aborted. The remaining tests are skipped, and the test case is marked as failed. These assertions are used as checkpoints for testing or validating business-critical transactions.
+Different types of Hard Assert - assertEquals() , assertNotEquals(), assertTrue(), assertFalse(), assertNull(), assertNotNull(), assertSame(), assertNotSame() etc.
+We can directly use Hard Assert method as they are static
+Soft assertions - Verify or Soft Asserts will report the errors at the end of the test. Simply put, tests will not be aborted if any condition is not met.
+To view assertions result at the end of the test, the tester has to invoke assertAll().
+But for Soft Assert or Verify we've to create obj softAssert sa = new SoftAssert()
+sa.assertAll();
+ 
+

@@ -1,0 +1,25 @@
+
+
+Que12 Why we do Parallel testing ?
+Ans12 Parallel testing is a testing methodology where multiple test cases are executed at the same time.
+It allows the execution of the same tests simultaneously in multiple environments(Browsers, OS, Servers).
+The goal of parallel testing is to reduce time and resource constraints.
+
+Que13 How to do parallel testing ?
+Ans13 Parallel execution can be achieved either with @Data Provider Or Using defining cretain properties in Xml file.
+Either mention this in your xml file <suite name="Parallel_Testing" parallel="methods" thread-count="2">.
+Or create a class add methods later - Right Click - COnvert to testNG class - There in the class creation window set the above properties.
+Mainly 2 aspects we need to focus in nParalle testing -
+1. Set your XML file
+2. In your test.java class inside your test script call this - Thread.currentThread().getId // This method shows the latest thread running and gives its id in console.
+Add Thread.currentThread().getId in all of your test scripts
+
+Que14 what is thread count in testng.xml while Parallel Test Execution ?
+Ans14 The no. of times I want my Test script to run. 
+Ex - <suite name = "Suite1" thread-count="5" parallel="methods">
+Output - 
+Thread ID: 18
+Thread ID: 22
+Thread ID: 19
+Thread ID: 20
+Thread ID: 21

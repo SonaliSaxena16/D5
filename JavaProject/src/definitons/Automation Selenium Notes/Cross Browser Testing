@@ -1,0 +1,9 @@
+
+What is Cross Browser Testing ?
+Selenium supports Cross Browser Testing. By using browser-specific drivers (like ChromeDriver for
+Chrome or GeckoDriver for Firefox), Selenium WebDriver interacts directly with each browser, 
+simulating real user actions such as clicking, typing, and navigating between pages.
+
+How is Cross Browser Testing achived in Selenium using TestNG ?
+Using @Parameters, in config file I can define my multiple browsers in the XML file I can mention
+@Paramaters name="browser" value="chrome"

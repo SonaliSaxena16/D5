@@ -1,0 +1,9 @@
+
+Difference in parallel testing and cross browser testing ?
+
+While both terms are often used together in software testing, "parallel testing" refers to the
+practice of running multiple tests simultaneously across different environments to speed up the
+testing process, while "cross browser testing" specifically focuses on checking how an application 
+behaves and functions across different web browsers to ensure compatibility and consistency across 
+platforms; essentially, parallel testing can be used to perform cross browser testing faster by 
+running tests on multiple browsers concurrently. 
