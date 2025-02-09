@@ -27,3 +27,5 @@ WebElement cell = row.findElement(By.xpath(“//*[@id="content-8b4988b9-2ec9-4e7
 int cellCount = cell.size();
 String value = cell.getText();
 System.out.println(“The Cell Value is : “ +value);
+
+

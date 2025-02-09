@@ -1,0 +1,44 @@
+
+What is a page object model?
+
+The Page Object Model (POM) is a design pattern in Selenium it is used to store & initialize the Web 
+Element page wise, whaich are required at run time, basically it represents web pages as objects in code. It's used to organize Selenium tests. 
+Any kind of framework can use Page Object Model (POM), including modular, data-driven, keyword-driven, 
+and hybrid frameworks.
+To store Web Element in POM design pattern we uses @FindBy annotation & to store bulk Web Elements we uses List<Web Element>
+Ex - different Page classes of Locators are an example of it. 
+Ex -@FindBy(xpath="//*[contains(@src,'images/logo.png')]")
+	public WebElement eHospitalLogo;
+	
+	@FindBy(id="txtuid")
+	public WebElement username;
+	
+	public LoginPage_Locators() throws IOException {
+		PageFactory.initElements(driver, this);
+	}
+	
+page object model is only for java based projects ?
+No, the Page Object Model (POM) is not exclusively for Java-based projects; it's a design pattern 
+that can be implemented in any programming language used for web automation testing, including Python,
+JavaScript, C#, and Ruby, as long as you're using a web automation framework like Selenium to interact
+with web elements on a page.
+
+What is the Page Factory Class?
+
+The class where we store Web Elements using @Find By is called POM Class.
+POM class is used to initialize the Web Elements. 
+In Page Factory Class, we've static & overloaded method called init elements. Which takes 2 arguments
+i.e. driver, obj of POM class.
+
+What is initElements method() ?
+It converts @FindBy annotation into findElement or findElements method.
+
+What is Lazy Initialization ?
+POM uses a concept called Lazy Initialization i.e. initializing the Web Element at the time of utilization or at run time.
+
+Diff in POM & Page Factory Class ?
+POM is a selenium design pattern. Whereas Page Factory Class is used to implement this pattern.
+
+ 
+
+ 

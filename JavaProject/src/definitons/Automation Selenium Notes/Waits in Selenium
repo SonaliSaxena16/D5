@@ -1,0 +1,97 @@
+
+Implict Wait
+Explicit Wait
+Fluent Wait
+Thread.sleep
+
+Why Do We Need Waits In Selenium?
+Most of the web applications are developed using Ajax and Javascript. When a page is loaded by the
+browser the elements which we want to interact with may load at different time intervals.
+
+Implicit Wait - Static Wait - 
+The Implicit Wait in Selenium is used to tell the web driver to wait for a certain amount of time 
+before it throws a “No Such Element Exception”. The default setting is 0. Once we set the time, 
+the web driver will wait for the element for that time before throwing an exception.
+
+1. We need to define it just for once and it'll wait for all of the elements of that particular class where you've extended waits/utils class(where you've mentioned explicit wait).
+2. No need to write for every element.
+3. Its static bcz if an element is found within 2 seconds and you've defined timeout of 10sec it'll wait for whole 10s.
+4. It throws a “No Such Element Exception” if element not found within defined timeout range.
+
+Syntax - driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+Explicit Wait 
+1. The Explicit Wait in Selenium is used to tell the Web Driver to wait for certain conditions
+(Expected Conditions) or maximum time exceeded before throwing “ElementNotVisibleException” exception.
+2. It is an intelligent/dynamic kind of wait, as if timeout is 10sec and element found within 4sec it would not wait for the remaining time limit.
+3. But it can be applied only for specified elements. 
+4. We've to create obj of WebDriverWait in order to pass expected conditions.
+5. It throws “ElementNotVisibleException” exception.
+
+Syntax - WebDriverWait wait = new WebDriverWait(driver,20);
+		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(//id=1).click());
+		 
+The following are the Expected Conditions that can be used in Selenium Explicit Wait
+
+alertIsPresent()
+elementSelectionStateToBe()
+elementToBeClickable()
+elementToBeSelected()
+frameToBeAvaliableAndSwitchToIt()
+invisibilityOfTheElementLocated()
+invisibilityOfElementWithText()
+presenceOfAllElementsLocatedBy()
+presenceOfElementLocated()
+textToBePresentInElement()
+textToBePresentInElementLocated()
+textToBePresentInElementValue()
+titleIs()
+titleContains()
+visibilityOf()
+visibilityOfAllElements()
+visibilityOfAllElementsLocatedBy()
+visibilityOfElementLocated()
+
+
+Fluent Wait 
+1. Is used to define maximum time for the web driver to wait for a condition, as well as the frequency
+ with which we want to check the condition before throwing an exception.
+2. It throws “ElementNotVisibleException” exception. It checks for the web element at regular intervals
+ until the object is found or timeout happens.
+3. Syntax for Selenium 4 :
+			Wait＜WebDriver＞ wait = new FluentWait＜WebDriver＞(driver)
+                       .withTimeout(Duration.ofSeconds(30))
+                       .pollingEvery(Duration.ofSeconds(5))
+                       .ignoring(NoSuchElementException.class); // Any exception can be chosen.
+            wait.until(ExpectedConditions.alertIsPresent());
+                       
+4. Syntax for Selenium 3 :
+ 
+  Wait wait = new FluentWait(driver)
+    .withTimeout(30, TimeUnit.SECONDS)
+    .pollingEvery(5, TimeUnit.SECONDS)
+    .ignoring(NoSuchElementException.class);
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

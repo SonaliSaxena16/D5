@@ -1,0 +1,15 @@
+
+A StaleElementReferenceException in Selenium occurs when a referenced web element is no longer attached
+to the DOM. This can happen when the element is removed from the page, the page is refreshed, 
+or the element is destroyed and recreated. 
+
+How to handle it ?
+1. Use Explicit Wait i.e. WebDriverWait with different conditions -  
+Method 1 : Wait until the element is present -
+ wait.until(ExpectedConditions.presenceOfElementLocated(Web element locator")))
+
+Use the try-catch block - The element which is suspected to throw the StaleElementReferenceException
+should be kept under try block and in catch block the web page should be refreshed and the element 
+should be recreated again.
+
+

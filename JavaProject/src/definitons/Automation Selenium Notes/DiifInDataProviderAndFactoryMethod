@@ -1,0 +1,8 @@
+DataProvider - Used to supply test data to our test class. We can run same set of testcases but with 
+multiple set of test data using data provider.
+
+
+FactoryMethod - Its a design pattern as it create multiple instances or Objects of web elements
+page wise in the framework.
+
+

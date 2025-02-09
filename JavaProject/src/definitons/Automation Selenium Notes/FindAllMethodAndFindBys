@@ -1,0 +1,33 @@
+
+
+FindAll() annotation is used when we want to locate a particular Web Element with more than 1 type of 
+locator.
+
+@FindAll annotation is used to locate a WebElement or list of WebElements with more than one selector.
+While using @FindAll, it should be noted that either of the Selectors used should be matching to locate
+the respective WebElement(s).
+It is an “OR” condition between all the selectors given in the annotation. @FindAll uses multiple
+@FindBy annotation statements in the parameter to locate the WebElements.
+Using @FindAll, we can provide two or more different selectors for a WebElement, so in case the first
+locator doesn’t work, it will check the second. 
+
+Ex - 
+
+public WebElement searchBox();
+@FindAll(
+	@FindBy(css= "id-12:45er")
+		@FindBy(id= "id-12:1212")
+
+		
+FindBys() annotation is @FindBys annotation is used to locate a WebElement or list of WebElements with
+more than one selector. The condition in using @FindBys is that all of the selectors given in the
+@FindBys should match the respective WebElement(s) criteria.
+It is an “AND” condition between all the selectors given in the annotation. This is helpful in cases
+where we don’t have a unique locator for the WebElement that we need to interact with on the web page.
+
+Ex - 
+
+public WebElement txtBox();
+@FindBys(
+	@FindBy(css= "id-12:45er") // Main Div.
+		@FindBy(id= "id-12:1212") // This is the exact row I was looking for.

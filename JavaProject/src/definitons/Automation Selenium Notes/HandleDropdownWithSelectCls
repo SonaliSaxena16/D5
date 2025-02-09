@@ -5,9 +5,11 @@ Select class Methods are -
 - selectByValue
 - selectByIndex
 - selectByVisibleText
+
 - deselectByValue
 - deselectByIndex
 - deselectByVisibleText
+
 - deselectAll
 - getOptions() - uses ArrayList inside as retrieval is faster
 - isMultiple() - returns false usually as mostly dropdowns are single select.

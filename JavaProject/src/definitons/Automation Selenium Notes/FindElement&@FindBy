@@ -6,6 +6,8 @@ Below are the differences between FindBy and findElement in Selenium WebDriver:
   findElement is normal way of locating a web element.
 - If we do not initialize page objects using PageFactory, @FindBy will throw NullPointerException 
   which is not the case with findElement() or findElements() methods.
+- findElement method throws a NoSuchElementException & indElements() will not throw any exceptions 
+instead it will return empty list if the element is not found in the current page.
 - FindBy will look for the element only when it is used while findElement will look for an element
  as soon as you call it.
 - FindBy supports lazy initialization while findElement() and findElements does not.

@@ -1,0 +1,55 @@
+
+#1. ABSTRACTION
+Abstraction is the methodology of hiding the implementation of internal details and showing the
+functionality to the users.
+
+In Page Object Model design pattern, we write locators (such as id, name, xpath etc.,) and the methods 
+in a Page Class. We utilize these locators in tests but we can’t see the implementation of the methods.
+Literally we hide the implementations of the locators from the tests.
+
+For example, we don’t know how our phone works internally. We don’t bother about the internal mechanism 
+but still we can make calls. 
+
+
+#2. INTERFACE
+Basic statement we all know in Selenium is WebDriver driver = new FirefoxDriver();
+
+WebDriver itself is an Interface. So based on the above statement
+WebDriver driver = new FirefoxDriver(); we are initializing Firefox browser using Selenium WebDriver.
+It means we are creating a reference variable (driver) of the interface (WebDriver) and creating an 
+Object. Here WebDriver is an Interface and FirefoxDriver is a class.
+
+#3. INHERITANCE
+We create a Base Class in the Automation Framework to initialize WebDriver interface, WebDriver waits, Property files, Excels, etc., in the Base Class.
+
+We extend the Base Class to every other classes such as Tests and Utility Class.
+
+#4. POLYMORPHISM
+Polymorphism allows us to perform a task in multiple ways.
+
+Combination of overloading and overriding is known as Polymorphism. 
+#A. METHOD OVERLOADING
+Method Overloading is same Methods name but different parameters.
+We use Implicit wait in Selenium. Implicit wait is an example of overloading. In Implicit wait we use different time stamps such as SECONDS, MINUTES, HOURS etc.,
+
+Action class in TestNG is also an example of overloading.
+
+Assert class in TestNG is also an example of overloading.
+
+#B. METHOD OVERRIDING
+Method Overridding is Methods with same signature(which means same method name with same parameters) are
+
+Declaring a method in child class which is already present in the parent class is called Method
+Overriding. Examples are get and navigate.
+
+#5. ENCAPSULATION
+All the classes in a framework are an example of Encapsulation. In POM classes, we declare the data members using @FindBy and initialization of data members will be done using Constructor to utilize those in methods.
+
+Encapsulation is a mechanism of binding code and data (variables) together in a single unit.
+We define private locators and later in the class utilise them using getter & setters in the calling method.
+
+@FindBy(xpath="//*[contains(@src,'images/logo.png')]")
+	@Getter
+	private WebElement eHospitalLogo;
+	
+	

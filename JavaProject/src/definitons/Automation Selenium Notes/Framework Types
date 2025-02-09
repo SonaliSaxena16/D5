@@ -1,0 +1,10 @@
+
+Keyword Driven Framework - In the Base class, I've made suppose 20 common methods and now am calling
+those methods in every other class whenever required ex- soft assert, implicit wait etc. Now these 
+methods are working as a Keyword for us. Hence it's keyword driven framework.
+
+Data Driven Framework - A Data Driven Framework in Selenium is a technique of separating the “data set”
+from the actual “test case” ex - fetching test data whether reading a file or creating a file in excel 
+is called 	Data Driven framework.
+
+Hybrid Fraework - Its a mixture of Keyword Driven Framework & Data Driven Framework 

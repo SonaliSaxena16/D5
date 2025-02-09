@@ -1,13 +1,11 @@
 Overloading - 
  Method Overloading is same Method name but different Parameter
- Method resolution is taken care by based on reference type.
  It's also called Late and Static Binding
  Ex- I've used Overloading in Selenium - Action Class, Implicit Wait, Assert
  
  Overridding
  
- 	 Polymorphism - One type of Data used in Many Forms
-	 Method resolution is taken care by JVM IN CASE OF OVERLOADING based on RUNTIME OBJECT.
+ 	 Polymorphism - Allows us to perform a task in multiple ways.
 	 It's also called Early and Dynamic Binding
 	
 	Method Overridding is Methods with same signature(which means same method name with same parameters) are

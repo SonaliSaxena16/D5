@@ -5,7 +5,7 @@ class CreateExcelFile{
 Workbook wb = new XSSFWorkbook();
 Sheet sh = wb.createSheet("Sheet1"); 
 
-Row rw = sh.createRow();
+Row re = sh.createRow();
 Cell ce = re.createCell(0).setCellValue("EmpName");
 Cell ce = re.createCell(1).setCellValue("Age");
 Cell ce = re.createCell(2).setCellValue("Dept");

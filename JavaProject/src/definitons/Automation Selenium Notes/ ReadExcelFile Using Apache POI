@@ -2,9 +2,9 @@
 class ReadExcelFile{
 
 	psvm(){
-	
-	FileInputStream fis = new FileInputStream();
-	Workbook wb = WorkbookFactory.create(fis);
+	File filePath = new File("path of the file")
+	FileInputStream readingFile = new FileInputStream(filePath);
+	Workbook wb = WorkbookFactory.create(readingFile);
 	
 	Sheet sh = wb.getSheet("Sheet1"); 
 	Row r = sh.getRow(0);

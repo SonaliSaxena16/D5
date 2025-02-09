@@ -179,7 +179,7 @@ public class ConfigureHospitalInfraPage extends TestBase{
 	@FindBy(xpath="//th[text()='Today']")
 	WebElement LoginLogoutRegister_Today;
 	
-	@FindBy(id="btnUserDetail")
+	 @FindBy(id="btnUserDetail")
 	WebElement LoginLogoutRegister_ShowBtn;
 	
 	//Constructor to initialize base class elements
