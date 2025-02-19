@@ -6,8 +6,8 @@ public static void main(String[] args) {
 		
 		
 		// WAP to print counting from 1 to 100
-		
-		for(int i=1; i<=99; i++) {
+		int start=1, stop=100;
+		for(int i=start; i<=stop; i++) {
 			System.out.println(i);
 		}
 
