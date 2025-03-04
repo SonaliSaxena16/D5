@@ -27,5 +27,6 @@ public class SumOfNoEnteredInARange {
 		System.out.println("Count is " + count);
 
 	}
+	
 
 }
