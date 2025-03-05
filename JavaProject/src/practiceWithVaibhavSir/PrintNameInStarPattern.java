@@ -22,7 +22,6 @@ public class PrintNameInStarPattern {
 			System.out.println();
 		}
 	}
-
 }
 
 

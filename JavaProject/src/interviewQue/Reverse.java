@@ -5,7 +5,7 @@ public class Reverse {
 	public static void main(String[] args) {
 
 		
-		int num = 1234584;
+		int num = 112233;
 		
 		int rev=0;
 		

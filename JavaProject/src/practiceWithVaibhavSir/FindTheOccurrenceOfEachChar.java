@@ -14,7 +14,7 @@ public class FindTheOccurrenceOfEachChar {
 			}
 			
 			else {
-				System.out.println(ch[i] + ":" + count);
+				System.out.println(ch[i] +"-"+ count);
 				count=1;
 			}
 		}
