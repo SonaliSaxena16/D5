@@ -1,0 +1,41 @@
+Why we use Getters & Setters in Java
+
+Getter and setter in java are used to achieve encapsulation and data hiding. 
+
+It is because if you remember we've used one of the OOPs concept i.e. Encapsulation where we've defined
+objects as WebElement private element;
+
+Now in order to access those private elements we use getters & setters. Getters to get the value and then setters in order to set the value which we've got using getters.
+
+class GetSet {
+ 
+    // Member variable of this class
+    private String name;
+ 
+    // Method 1 - Getter
+    public String getName() { return name; }
+ 
+    // Method 2 - Setter
+    public void setName(String N)
+    {
+ 
+        // This keyword refers to current instance itself
+        this.name = N;
+    }
+}
+
+
+class GFG {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Creating an object of class 1 in main() method
+        GetSet obj = new GetSet();
+ 
+        // Setting the name by calling setter method
+        obj.setName("Geeks for Geeks");
+        // Getting the name by calling getter method
+        System.out.println(obj.getName());
+    }
+}

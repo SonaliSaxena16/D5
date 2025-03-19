@@ -2,7 +2,7 @@
  
 @DataProvider: It is annotation used by TestNG to execute the test method multiple numbers of times
 based on the data provided by the DataProvider. Used to supply test data to test methods. This can 
-be useful when you need to test a single method with different sets of input dataIt works on 2d 
+be useful when you need to test a single method with different sets of input data. It works on 2d 
 Array. Only 1 instance(object) of class is required that too gets created implicitly no needs to
 created on your own. Can be run directly with @Test Annotation with the dataProvider name provided.
 

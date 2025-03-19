@@ -20,8 +20,9 @@ action: This method helps to perform certain actions on the windows
 
 Single window handle : String singleWindow = driver.getWindowHandle();
 
-Multiple window handle : Set<String> allWindows = driver.getWindowHandles();
+Multiple window handle : Set<String> allWindows = driver.getWindowHandles().toArray()[0].toString();
 
-Code snippet to demonstrate :
-
+							driver.switchTo().window(allWindows);
+							
+							
 

@@ -1,4 +1,4 @@
-It's a Dynamic Wait means if you have defined 20 sec and driver instance has found the web element in 2 sec
+It's a Static Wait means if you have defined 20 sec and driver instance has found the web element in 2 sec
 then it'll move to the other action and would not wait for rest 18 seconds.
 
 Though thread.sleep(5000); is a static and HardCoded wait.
@@ -23,3 +23,10 @@ While both implicit wait and PageLoadTimeout can be used in the same script, it'
 judiciously to avoid unnecessary delays in test execution. Using them together can help ensure that your
 script waits for both individual elements to load and for the entire page to load before proceeding 
 with the next steps.
+
+
+Implicit Wait focuses on searching for elements, waiting before assuming they are not present, 
+while Page Load Timeout waits for the entire page to finish loading before throwing an error.
+
+Imp wait throws - NoSuchElementException
+PageLoadTimeout - TImeOut exception. 

@@ -2,17 +2,17 @@ Java Interview Programming Questions -
 
 1 BASIC PROGRAMS
 
-1 Given no is Prime or not
-2 Chk Prime no from a Given Range
-3 Factorial
-4 Fabonacci Series
-5 Armstrong number
-6 Reverse of a Interger
+1 Given no is Prime or not - DONE
+2 Chk Prime no from a Given Range - DONE
+3 Factorial - DONE
+4 Fabonacci Series - DONE
+5 Armstrong number - DONE
+6 Reverse of a Integer - DONE
 7 Swapping of 2 Integers using 3rd Var
 8 7 Swapping of 2 Integers without using 3rd Var
-9 Print the sum of Given Integer = 549 (5+4+9)
+9 Print the sum of Given Integer = 549 (5+4+9) - DONE
 10 Show Null Pointer Exception
-11 Show Array Out Of Bound Index Exception
+11 Show Array Out Of Bound Index Exception - DONE
 12 Showcase use of Switch Statement and break using multi level statements
 13 Print Date in Specified Format
 
@@ -20,6 +20,7 @@ Java Interview Programming Questions -
 
 2 STRING
 
+Basic String methods to practice - charAt(), length(), compareTo(), compareToIgnoreCase(), concat(), contains(), contentEquals(), 
 1 Palindrome
 2 Check two Strings are Anagram or not
 3 Total no of characters in a String

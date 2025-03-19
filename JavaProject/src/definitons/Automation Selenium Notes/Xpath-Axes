@@ -1,0 +1,70 @@
+
+Reference video - https://www.youtube.com/watch?v=aAWvwGFkySI
+
+Below are the xpaths for Facebook.com
+
+(xpath="//input[@id='email']")
+
+(xpath="//input[@class='inputtext _55r1 _6luy']")
+
+(xpath="//input[@name='email']")
+
+(xpath="//h2[text()='Facebook helps you connect and share with the people in your life.']")
+
+(xpath="//input[@data-testid='royal-email']")
+
+(xpath="//*[contains(@name,'email')]")
+
+(xpath="//*[contains(text(),'Create a Page')]")
+
+What are AXIS Methos ? 
+
+Axis are - when we try to locate Target Element with the help of Current Element. This relationship between target & current element is called Axis. 
+Ex - Textbox Label=Email
+Below is the textbox to enter your email. Now to uniquely locate email textbox suppose I don't have any unique attribute. So I would be taking help of Xpath Axis where I would be locating the Current Element first which Email
+then with this Label email I would be traversing to locate my target element which email textbox.
+
+Now we've many xpath axes methods but there are main 5 based on Relationship -
+Ancestor
+Parent
+Sibling
+Child
+Descendant
+Extra Methods - following / preceding 
+
+							A
+							|
+							B
+							|
+							C
+							|
+						W - ME - X
+							|
+						D		E	
+						|		|
+						F		G,H,I
+						
+Explanation :
+For ME -> C is the Parent
+For ME -> C,B,A all works as a GrandParent means - Ancestor
+For ME -> D,E are Child
+D,E are Sibling with each other
+For ME -> D,E,F,G,H,I all are GrandChildren means Descendant
+
+Now here are the detailed xpath methods -
+Always start thing from ME.
+
+My Ancestor = ancestor[It would return C,B,A] /  ancestor-or-self[It would return ME,C,B,A] Ex - 
+Parent = parent[It would return C]
+Sibling = preceding-sibling for ME is W /  following-sibling for H is X.
+Child = child[It would return D,E]
+Descendant = descendant[It would return D,E,F,G,H,I] / descendant-or-self[It would return ME,D,E,F,G,H,I]
+						
+Syntax o use any axes : (xpath)/axes::tagName[indexing]
+
+Ex - goto amazon - search mobiles under 20000 - scroll and locate the 4th mobile. 
+
+
+//a[@href='/realme-Storage-Chipset-Comfort-Display/dp/B0D9NFLZMQ/ref=sr_1_4?crid=27VATZOHTKTL8&dib=eyJ2IjoiMSJ9.7Gpm6t58sXkXklc_3qu6_7TApyiazLHP26OPilBAVvxO64pzJknvLucngsAHwi_FXaWRKbBLEKYBSAHPTzE6PP1SMR9bUFe2kSCdbHoqT3O5j4WrsfXBtGiRSYWsq0kqD0WZ6cH72C86gam4NmTOPZBEuk0j-rAbFS5bNEJqMdnhQukC9m3BpQ6Hp0CtA6B03LZtO5hWpcilGFVZGjOWHF8SUv-tRFW1MdSqv0-ODug.lMPNRa8PbG4TghrZhjse_r02gDe9Tgc32eb15hG4CtY&dib_tag=se&keywords=mobile+phone+under+20000&qid=1742410535&sprefix=%2Caps%2C224&sr=8-4']/following::span[text()='13,498']
+
+

@@ -2,4 +2,40 @@ What is CSS Selector ?
 
 Css allows only one directional flow which means the traversal is from parent to child only.
 CSS selector syntax is more beginner-friendly, as well as easier to maintain. Also, these are 
-faster than XPath, 
+faster than XPath.
+
+There are five types of CSS Selectors available, those are:
+1) Simple Selectors
+2) Combinator selectors
+3) Pseudo-class selectors
+4) Pseudo-elements selectors
+5) Attribute selectors
+
+-- Simple Selectors --
+Used for finding the elements based on simple attributes (id and class)
+
+-- Combinator selectors --
+Used for defining the relationship between elements in the HTML webpage.
+
+-- Pseudo-class selectors --
+Used for finding the elements based on element locations/positions/indexes
+
+-- Pseudo-elements selectors --
+Used for selecting an element then apply a style to part of that element.
+
+-- Attribute selectors --
+Used for finding the elements based on attributes and attribute values
+
+There are four patterns available in CSS SIMPLE Selectors.
+1) CSS Element Selector - We use TasgName here to locate element using CSS - To use TagName goto - DevTools - ctrl+f - directly mention tagname ex - button ; but this method isn't reliable as using button tagname would give multiple results.
+2) CSS ID Selector - We use id of the element here to locate element using CSS - To use id use #valueOfTheId. Ex - DevTools - ctrl+f - #firstName. driver.findElement(By.cssSelector("#name"))
+3) CSS Class Selector - We use class of the element here to locate element using CSS - To use class use .valueOfTheId. Ex - DevTools - ctrl+f - .gender. driver.findElement(By.cssSelector(".name"))
+4) CSS Universal Selector - It'll selects all the web elements present in the web page. driver.findElement(By.cssSelector("*")).size();
+
+CSS Element Selector:- This finds the elements in the HTML page based on the element tagname.
+
+CSS ID Selector:- This finds the elements in the HTML page based on the element's id attribute value.
+
+CSS Class Selector:- This finds the elements in the HTML page based on the element's class attribute value.
+
+CSS Universal Selector:- The universal selector (*) finds all HTML elements on the page.

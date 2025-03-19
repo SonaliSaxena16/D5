@@ -25,3 +25,5 @@ This interface provides methods to run JavaScript on the selected window or the 
   
  js.executeScript("arguments[0].click()", loginBtn);
  
+ js.executeScript("window.scrollBy(0,250)", ""); // Scroll Syntax
+ 
