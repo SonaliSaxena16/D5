@@ -8,8 +8,8 @@ Java Interview Programming Questions -
 4 Fabonacci Series - DONE
 5 Armstrong number - DONE
 6 Reverse of a Integer - DONE
-7 Swapping of 2 Integers using 3rd Var
-8 7 Swapping of 2 Integers without using 3rd Var
+7 Swapping of 2 Integers using 3rd Var - DONE
+8 7 Swapping of 2 Integers without using 3rd Var - Done
 9 Print the sum of Given Integer = 549 (5+4+9) - DONE
 10 Show Null Pointer Exception
 11 Show Array Out Of Bound Index Exception - DONE
@@ -26,7 +26,7 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 3 Total no of characters in a String
 4 Divide String in Equal parts
 5 Find all Subset of a String
-6 Remove all white spaces from String without using built-i function()
+6 Remove all white spaces from String without using built-in function()
 7 Replace the spaces of a String with a specific Character
 8 Reverse the String by each Character
 9 Separate vowels & consonants from a given String and given their counts separately
@@ -66,7 +66,7 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 15 Right rotate the elements of an array
 16 Sum of all the items of the array
 17 Number of elements present in an array 
-19 Print Elements of an array present on oOdd position
+19 Print Elements of an array present on Odd position
 20 Print Elements of an array present on Even position
 21 Print the Elements of Array
 22 Rotate any element from Left and any element from Right

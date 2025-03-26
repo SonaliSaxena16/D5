@@ -4,7 +4,8 @@ for Content Comparison
 However == Operator when used for value comparison for primitives, checks value equality. 
 Ex a=10, b=10 a==b : True.
 
-Illustration of .euals() - Its a String()
+In reference to String : .equals() is used for Content equality & == used for Memory location equality
+Illustration of .equals() - Its a String(). And it is used for Content equality
 
 String str1 = "hello";
 String str2 = "hello";

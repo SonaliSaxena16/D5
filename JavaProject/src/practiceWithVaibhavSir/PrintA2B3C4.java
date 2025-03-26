@@ -13,7 +13,7 @@ public class PrintA2B3C4 {
 			
 		//	str[i]*n(str[i+1]);
 			
-			System.out.println(String.valueOf(ch[i])*(Integer.parseInt(String.valueOf(ch[i+1]))));
+		//	System.out.println(String.valueOf(ch[i])*(Integer.parseInt(String.valueOf(ch[i+1]))));
 		}
 		
 	}
