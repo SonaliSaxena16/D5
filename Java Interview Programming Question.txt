@@ -31,7 +31,7 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 8 Reverse the String by each Character
 9 Separate vowels & consonants from a given String and given their counts separately
 10 find the Duplicate Character in a String
-11 Find the frequency of a particular character in a String with its Index/Position
+11 Find the frequency of a particular character in a String with its Index/Position 
 12 Find the Largest & Smallest WORD in a given String
 13 Separate the individual Character from a given String
 14 Reverse the String by WORD
@@ -45,7 +45,7 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 
 
 
-3 STAR PATTERN 
+3 STAR PATTERN - Few DONE
 
 4 ARRAYS
 
@@ -70,7 +70,7 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 20 Print Elements of an array present on Even position
 21 Print the Elements of Array
 22 Rotate any element from Left and any element from Right
-23 Copy all elements of one array into another array
+23 Copy all elements of one array into another array - DONE
 
 5 COLLECTION FRAMEWORK
 
