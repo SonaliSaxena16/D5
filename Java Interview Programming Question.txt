@@ -61,14 +61,14 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 10 Find Second Smallest Number in an Array[10,25,15,30,5,55,45]
 11 Largest Number in an Array
 12 Second Largest Number in an Array
-13 Sort the elements of an array in Descending order
-14 Sort the elements of an array in Ascending order
+13 Sort the elements of an array in Descending order - DONE
+14 Sort the elements of an array in Ascending order - DONE
 15 Right rotate the elements of an array
-16 Sum of all the items of the array
-17 Number of elements present in an array 
+16 Sum of all the items of the array - DONE
+17 Number of elements present in an array - DONE
 19 Print Elements of an array present on Odd position
 20 Print Elements of an array present on Even position
-21 Print the Elements of Array
+21 Print the Elements of Array - DONE
 22 Rotate any element from Left and any element from Right
 23 Copy all elements of one array into another array - DONE
 

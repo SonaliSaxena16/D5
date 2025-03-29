@@ -7,7 +7,7 @@ public class CopyOneArrayToAnother {
 	public static void main(String[] args) {
 
 		int origArr[] = {1,2,3,4,5};
-		int copyArr[] = new int[5];
+		int copyArr[] = new int[origArr.length];
 		
 		
 //		System.out.println(origArr.length);
