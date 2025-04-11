@@ -17,17 +17,16 @@ Java Interview Programming Questions -
 13 Print Date in Specified Format
 
 
-
 2 STRING
 
 Basic String methods to practice - charAt(), length(), compareTo(), compareToIgnoreCase(), concat(), contains(), contentEquals(), 
 1 Palindrome
-2 Check two Strings are Anagram or not
+2 Check two Strings are Anagram or not - Done
 3 Total no of characters in a String
-4 Divide String in Equal parts
+4 Divide String in Equal parts - THIS-----
 5 Find all Subset of a String
 6 Remove all white spaces from String without using built-in function()
-7 Replace the spaces of a String with a specific Character
+7 Replace the spaces of a String with a specific Character 
 8 Reverse the String by each Character
 9 Separate vowels & consonants from a given String and given their counts separately
 10 find the Duplicate Character in a String
@@ -42,7 +41,6 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 19 Replace the String and convert into Double (using Wrapper Class)
 20 Remove zero from Left Side of a given String="00003200" and print the remaining digits
 21 Take 1st name & Last name - 1. reverse the Last name 2. Print First name in Upper Case with reversed Last Name in Lower Case
-
 
 
 3 STAR PATTERN - Few DONE
@@ -66,16 +64,15 @@ Basic String methods to practice - charAt(), length(), compareTo(), compareToIgn
 15 Right rotate the elements of an array
 16 Sum of all the items of the array - DONE
 17 Number of elements present in an array - DONE
-19 Print Elements of an array present on Odd position
-20 Print Elements of an array present on Even position
+19 Print Elements of an array present on Odd position - DONE
+20 Print Elements of an array present on Even position - Done
 21 Print the Elements of Array - DONE
-22 Rotate any element from Left and any element from Right
+22 Rotate any element from Left and any element from Right - Done but Debug by yourself
 23 Copy all elements of one array into another array - DONE
 
 5 COLLECTION FRAMEWORK
 
 1 Convert HashMap to ArrayList
 2 Find the longest consecutive occurrence of integers in a given Array
-
 
 

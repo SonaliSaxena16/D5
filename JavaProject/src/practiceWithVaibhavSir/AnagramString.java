@@ -12,11 +12,11 @@ public class AnagramString {
 		String s2 = "typhon";
 		char b[] = s2.toCharArray(); // s i l e n t
 		
-		for(int i=0; i<a.length; i=i+1) {
+		for(int i=0; i<a.length; i=i+1) { // l i s t e n
 			
 			count=1;
 			
-			for(int j=0; j<b.length; j=j+1) {
+			for(int j=0; j<b.length; j=j+1) { // s i l e n t
 				
 				if(a.length==b.length && a[i]==b[j]) {
 				count+=1;
@@ -31,5 +31,4 @@ public class AnagramString {
 			System.out.println("Not an Anagram");
 		}
 	}
-
 }
